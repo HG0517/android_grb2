@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="facebook_app_id"></string>
+
+  <string name="weixin_mp_appsecret"></string>
+  <string name="weixin_mp_appid"></string>
+  <string name="weixin_mp_redirect_uri"></string>
+  <!--分享 web 微信oauth2授权登录-->
+  <string name="wechat_share_web">https://open.weixin.qq.com/connect/oauth2/authorize?appid=%1$s&amp;redirect_uri=%2$s&amp;response_type=code&amp;scope=snsapi_userinfo&amp;state=%3$s#wechat_redirect</string>
+
+  <string name="umeng_channel">umeng</string>
+  <string name="umeng_appid">5d8483cf3fc195da71000c01</string>
+  <string name="umeng_pushsecret"></string>
+
+  <string name="weixin_appid">wx986c37a1e64a5920</string>
+  <string name="weixin_appsecret">3cbb1ba2b78eabc151b74560e5478803</string>
+
+  <string name="qq_appid">101794293</string>
+  <string name="qq_appsecret">77b18747d31122000aedf48887e7d2f7</string>
+
+  <string name="sina_appid"></string>
+  <string name="sina_appsecret"></string>
+  <string name="sina_oauth_url">http://sns.whalecloud.com</string>
+
+</resources>

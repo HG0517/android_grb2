@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/shop_iv"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@mipmap/ic_layout_empty_shop_cart" />
+
+        <TextView
+            android:id="@+id/shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toRightOf="@+id/shop_iv"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="大米 苏软香10kg 中粮出品 苏北粳 米 非东北大米" />
+
+        <ImageView
+            android:id="@+id/shop_accumulate_bg"
+            android:layout_width="137dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/ic_flash_sale_accumulate"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toRightOf="@+id/shop_iv"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shop_name" />
+
+        <TextView
+            android:id="@+id/shop_accumulate_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="18dp"
+            android:textColor="#FB355C"
+            android:textScaleX="1.4"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/shop_accumulate_bg"
+            app:layout_constraintRight_toRightOf="@+id/shop_accumulate_bg"
+            app:layout_constraintTop_toTopOf="@+id/shop_accumulate_bg"
+            tools:text="12345" />
+
+        <com.jgkj.grb.view.textview.BoldTextView
+            android:id="@+id/total_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#F74B70"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toRightOf="@+id/shop_iv"
+            app:layout_constraintTop_toBottomOf="@+id/shop_accumulate_bg"
+            tools:text="@string/total_top_text" />
+
+        <com.jgkj.grb.view.textview.BoldTextView
+            android:id="@+id/total_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="3dp"
+            android:textColor="#999999"
+            android:textSize="11sp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toRightOf="@+id/shop_iv"
+            app:layout_constraintRight_toLeftOf="@+id/shop_action"
+            app:layout_constraintTop_toBottomOf="@+id/total_top" />
+
+        <ImageView
+            android:id="@+id/shop_action"
+            android:layout_width="84dp"
+            android:layout_height="30dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/ic_flash_sale_lijiqiang"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

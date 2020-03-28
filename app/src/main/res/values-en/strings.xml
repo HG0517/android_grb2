@@ -1,0 +1,825 @@
+<resources>
+
+
+    <string name="activity_title_address_add">Address addition</string>
+    <string name="activity_title_address_edit">Address Editing</string>
+    <string name="address_username_left">Consignee</string>
+    <string name="address_username_input_tip">Enter the name of the consignee</string>
+    <string name="address_userphone_left">Cell-phone number</string>
+    <string name="address_userphone_input_tip">Input the consignee\'s mobile number</string>
+    <string name="address_userarea_left">Selection of areas</string>
+    <string name="address_userarea_tip">Selection of consignee\'s location</string>
+    <string name="address_userarea_input_tip">Provinces, cities and counties</string>
+    <string name="address_useraddress_left">Detailed address</string>
+    <string name="address_useraddress_tip">Enter the detailed address of the consignee</string>
+    <string name="address_useraddress_input_tip">Address to the door number</string>
+    <string name="address_useraddress_default_left">Set the default address</string>
+    <string name="address_useraddress_default_tip">Each time you shop, you will choose the address first, which is convenient for you to shop easily.</string>
+    <string name="address_useraddress_add_sure">Confirm the addition</string>
+    <string name="address_useraddress_edit_sure">Confirmation of modifications</string>
+    <string name="address_useraddress_delete_sure">Delete address</string>
+
+    <string name="activity_title_address_manager">Address Management</string>
+    <string name="activity_title_address_manager_menu">Add</string>
+    <string name="activity_title_address_manager_edit">edit</string>
+
+    <string name="activity_title_advance_sale">Pre-sale of Gongyibao</string>
+    <string name="activity_title_advance_sale_start">MM Month DD Opens</string>
+
+    <string name="activity_title_apply_after_exchange">Exchange</string>
+    <string name="activity_title_apply_after_refund">Refund</string>
+    <string name="activity_title_apply_refund">Application for refund</string>
+    <string name="activity_title_apply_result">Application submission</string>
+    <string name="apply_result_tip_00">The merchant has received your refund application</string>
+    <string name="apply_result_tip_01">The merchant will process your refund as soon as possible. If the refund is not processed within 7 working days, the payment will be automatically refunded to your payment account</string>
+    <string name="apply_result_tip_10">The merchant has received your refund application</string>
+    <string name="apply_result_tip_11">Businessmen will process your application as soon as possible. If it is not processed within 7 working days, please contact online customer service in time</string>
+    <string name="apply_result_tip_20">The merchant has received your information and submitted it</string>
+    <string name="apply_result_tip_21">Businessmen will review your information as soon as possible. We will submit your information for review within one working day. If you have any questions, please contact customer service for processing</string>
+    <string name="activity_title_apply_after_sale">Method of application</string>
+    <string name="apply_after_sale_choose_refund">I want a refund</string>
+    <string name="apply_after_sale_choose_refund_tip">Goods received need to be returned</string>
+    <string name="apply_after_sale_choose_exchange">I want to exchange goods</string>
+    <string name="apply_after_sale_choose_exchange_tip">Goods received need to be replaced</string>
+    <string name="apply_after_exchange_title">Reasons for Exchange</string>
+    <string name="apply_after_exchange_specs">Specifications</string>
+    <string name="apply_after_refund_reason">Reasons after sale</string>
+    <string name="apply_after_refund_reason_choose_tip">Reasons for refund</string>
+    <string name="apply_after_refund_reason_choose">Please choose</string>
+    <string name="apply_after_refund_refund_amount">refund amount</string>
+    <string name="apply_after_refund_refund_amount_tip">Amount refund:</string>
+    <string name="apply_after_refund_reason_tip">Please choose the reason for the refund...</string>
+    <string name="apply_after_refund_note">Reimbursement note</string>
+    <string name="apply_after_refund_note_0">(obligatory)</string>
+    <string name="apply_after_refund_note_tip">Please fill in the refund instructions...</string>
+    <string name="apply_after_refund_sure">Confirmation of application</string>
+    <string name="apply_after_refund_details_status_1">Refund audit...</string>
+    <string name="apply_after_refund_details_status_2">The refund has been audited and awaits refund...</string>
+    <string name="apply_after_refund_details_status_3">In the refund of goods...</string>
+    <string name="apply_after_refund_details_status_5">Refund has been completed</string>
+
+    <string name="apply_after_exchange_details_reason">Reasons for refund:%s</string>
+    <string name="apply_after_exchange_details_notpass">Your after-sale application has not been approved</string>
+    <string name="apply_after_exchange_details_notpass_tip">· The reason for the application does not match the description. If you have any questions, please consult the customer service.</string>
+    <string name="apply_after_sales_number">After-sales Number:%s</string>
+    <string name="apply_after_exchange_details_status_1">Exchange audit ...</string>
+    <string name="apply_after_exchange_details_status_2">Replacement has been examined and awaits replacement...</string>
+    <string name="apply_after_exchange_details_status_4">In exchange ...</string>
+    <string name="apply_after_exchange_details_status_5">Replacement has been completed</string>
+    <string name="apply_after_exchange_details_info">Exchange information</string>
+    <string name="apply_after_exchange_details_specs">Original:%s</string>
+    <string name="apply_after_exchange_details_specs_ex">Replace with:% s</string>
+    <string name="apply_after_exchange_details_num">Exchange Quantity:%d Parts</string>
+    <string name="apply_after_exchange_details_reason_ex">Reasons for exchange:%s</string>
+    <string name="apply_after_exchange_details_audit_time">Audit time:%s</string>
+
+    <string name="apply_refund_details_status_1">You have issued a refund application. Please wait patiently for the platform to process it...</string>
+    <string name="apply_refund_details_status_2">Your application for refund has been approved. Please wait patiently for the platform to process...</string>
+    <string name="apply_refund_details_status_3">In the platform refund, please pay attention to your payment account...</string>
+    <string name="apply_refund_details_status_5">Platform Refund Successful, Refund Acceptance Ended</string>
+    <string name="apply_refund_details_status_11">· The platform has not been audited within 7 days. Please contact customer service promptly.</string>
+    <string name="apply_refund_details_status_21">· If the platform rejects your application, you can contact customer service consultation.</string>
+    <string name="apply_refund_details_status_31">· Platform refund to your original payment account, please pay attention to your payment account</string>
+    <string name="apply_refund_details_status_51">· Payment has been returned to your payment account. Please check it carefully</string>
+    <string name="apply_refund_details_apply_time">Application time:%s</string>
+    <string name="apply_refund_details_completion_time">Completion time:%s</string>
+
+    <string name="permission_ondenied">Please grant application permission!</string>
+    <string name="permission_location_ondenied">Location service has not been turned on</string>
+    <string name="open_activity_error_option">Parameter error, view failure!</string>
+    <string name="open_activity_apply_after_error_option">Parameter error, failed to apply for refund!</string>
+    <string name="open_activity_payment_order_error_option">Payment order parameter error, please try again...</string>
+    <string name="payment_order_error_payment">Please choose the mode of payment...</string>
+    <string name="payment_order_error_addr">Please choose the receiving address...</string>
+    <string name="open_activity_apply_after_exchange_">Exchange function is not open yet. Please look forward to it...</string>
+    <string name="search_input_empty">There\'s nothing at all. Please type in first!</string>
+    <string name="order_view_empty">You haven\'t ordered yet</string>
+    <string name="apply_after_status_0">To be audited</string>
+    <string name="apply_after_status_1">Audited</string>
+    <string name="apply_after_status_2">In exchange</string>
+    <string name="apply_after_status_21">In refund</string>
+    <string name="apply_after_status_3">Completed</string>
+
+    <string name="activity_title_binding_alipay">Binding Alipay</string>
+    <string name="binding_alipay_tip">Alipay Account</string>
+    <string name="binding_alipay_tip_input">Please enter your Alipay account number</string>
+    <string name="activity_title_binding_cloud_flash">Binding Cloud Flash</string>
+    <string name="binding_cloud_flash_tip">Cloud Flash Payment Account</string>
+    <string name="binding_cloud_flash_tip_input">Please enter your cloud flash payment account</string>
+    <string name="activity_title_cloud_warehouse">Cloud Warehouse</string>
+    <string name="activity_title_cloud_warehouse_record">Record of pick-up</string>
+    <string name="order_view_num">Order number:%s</string>
+    <string name="cloud_warehouse_record_num">Quantity of delivery:%d</string>
+    <string name="cloud_warehouse_record_num_tip">Quantity of delivery:</string>
+    <string name="cloud_warehouse_dialog_title">Selection of pick-up quantity</string>
+    <string name="cloud_warehouse_record_freight_tip">Cargo handling charges:</string>
+    <string name="cloud_warehouse_record_status_0">To be picked up</string>
+    <string name="cloud_warehouse_record_status_1">Successful delivery</string>
+
+    <string name="activity_title_flash_sale">Flash sale</string>
+    <string name="activity_title_payment_orders">Payment of orders</string>
+    <string name="activity_title_settlement">Settlement</string>
+    <string name="activity_title_product_evaluation">evaluate</string>
+    <string name="activity_title_product_evaluate_details">Details of the evaluation</string>
+    <string name="activity_title_convention_centre">Conference Center</string>
+    <string name="convention_centre_time">Activity time:%s</string>
+    <string name="convention_centre_addr">Address:%s</string>
+    <string name="convention_centre_tel">Telephone:%s</string>
+    <string name="activity_title_setting">Set up</string>
+    <string name="activity_title_setting_personal">personal data</string>
+    <string name="activity_title_setting_personal_nick">Modify nicknames</string>
+    <string name="activity_title_setting_accounts_security">Safety Center</string>
+    <string name="activity_title_binding_bank_cards">Binding bank cards</string>
+    <string name="activity_title_choose_bank_card">Choose bank card</string>
+    <string name="flash_sale_tip">Good price! Good stuff! Time-limited snatch!</string>
+
+    <string name="activity_title_luck_draw">GRB Draw</string>
+    <string name="activity_title_luck_draw_mine">My prize</string>
+    <string name="luck_draw_chance">You also have %d lottery chance</string>
+    <string name="luck_draw_tip">%dGRB once</string>
+    <string name="luck_draw_regret_tip">I\'m sorry you didn\'t win the prize.~</string>
+    <string name="luck_draw_chance_buy_tip">Does it cost %dGRB to win a prize?</string>
+    <string name="luck_draw_chance_outof_tip">The lottery has run out...</string>
+    <string name="luck_draw_mine_received">Received</string>
+    <string name="luck_draw_mine_provided">Issued</string>
+    <string name="luck_draw_mine_receive_success">Success! We will deliver the goods to you as soon as possible.</string>
+    <string name="luck_draw_mine_receive_dialog_title">Please add your receiving address</string>
+    <string name="luck_draw_mine_receive_dialog_name_tip">Please enter your name</string>
+    <string name="luck_draw_mine_receive_dialog_phone_tip">Mobile phone</string>
+    <string name="luck_draw_mine_receive_dialog_addr_tip">address</string>
+    <string name="luck_draw_mine_receive_dialog_addr_tip_1">Please enter the detailed receiving address to the door number accurately</string>
+    <string name="luck_draw_mine_receive_dialog_addr_tip_2">(Please fill in the correct address and ensure that it is correct. If you do not receive the goods due to address errors or other problems, the platform will not handle them. Thank you for your cooperation. )</string>
+    <string name="luck_draw_mine_receive_dialog_addr_sure">Confirmation of Receiving Address</string>
+
+    <string name="index_find_00">information</string>
+    <string name="index_find_01">Click on Consultation to View Gongyibao Real-time consultation</string>
+    <string name="index_find_10">Meeting</string>
+    <string name="index_find_20">news</string>
+    <string name="index_find_21">Click on the Message to View the Official Notice and Notice of Gongyengbao</string>
+    <string name="find_details_author">Originality:%s</string>
+    <string name="find_details_read">Reading:%d</string>
+    <string name="flash_sale_status_0">It\'s over</string>
+    <string name="flash_sale_status_1">Distance from End</string>
+    <string name="flash_sale_status_2">begin in a minute</string>
+
+    <string name="main_navi_0">home</string>
+    <string name="main_navi_1">find</string>
+    <string name="main_navi_2">game</string>
+    <string name="main_navi_3">cart</string>
+    <string name="main_navi_4">my</string>
+    <string name="main_exit_app_tip">Press exit %s again</string>
+
+    <string name="activity_title_message_management">news</string>
+    <string name="message_management_systom">System Notification</string>
+    <string name="message_management_mall">Mall Activities</string>
+    <string name="message_management_proxy">Proxy announcement</string>
+    <string name="order_details_status_0">Waiting for buyer to pay</string>
+    <string name="order_details_status_3">Waiting for Seller to Delivery</string>
+    <string name="order_details_status_4">Waiting for the buyer to receive the goods</string>
+    <string name="order_details_status_5">Successful trade</string>
+    <string name="order_details_status_31">Your goods are ready to go~</string>
+    <string name="order_details_status_41">Your goods are coming to you.~</string>
+    <string name="order_details_status_51">Thank you for your trust and support!</string>
+    <string name="order_details_delivery_time">Shipment time:%s</string>
+    <string name="order_details_order_time">Order time:%s</string>
+    <string name="content_copy">copy</string>
+    <string name="popular_hot">Popular</string>
+    <string name="activity_title_order_management_mall">Mall orders</string>
+    <string name="activity_title_order_management_cloud">Cloud warehouse orders</string>
+    <string name="activity_title_order_management_rushbuy">Snap-up order</string>
+    <string name="activity_title_order_management_refund_after_sale">Refund/After Sale</string>
+    <string name="order_management_mall_status_0">payment</string>
+    <string name="order_management_mall_status_3">To be shipped</string>
+    <string name="order_management_mall_status_4">To be received</string>
+    <string name="order_management_mall_status_5">completed</string>
+    <string name="order_management_after_sale_status_1">After sale</string>
+    <string name="order_management_after_sale_status_11">Refund only</string>
+    <string name="order_management_after_sale_status_12">Refund refund after sale</string>
+    <string name="order_management_after_sale_status_13">Exchange</string>
+    <string name="order_management_after_sale_status_51">Refund only Refund completed</string>
+    <string name="order_management_after_sale_status_52">Return refund Finish after sale</string>
+    <string name="order_management_after_sale_status_53">Exchange completed</string>
+    <string name="order_management_after_sale_status_61">Refund only Refund closed</string>
+    <string name="order_management_after_sale_status_62">Return refund closed after sales</string>
+    <string name="order_management_after_sale_status_63">Exchange closed</string>
+    <string name="order_management_after_sale_status_5">Finish after sale</string>
+    <string name="order_management_after_sale_status_6">Application failure</string>
+    <string name="order_management_cloud_status">Waiting for delivery</string>
+    <string name="order_management_cancel">Cancellation of order</string>
+    <string name="order_management_contact_service">Contact customer service</string>
+    <string name="order_management_view_logistics">View Logistics</string>
+    <string name="order_management_confirm_receipt">Confirm receipt</string>
+    <string name="order_management_apply_after_sale">Application for after sale</string>
+    <string name="order_management_evaluation">Immediate evaluation</string>
+    <string name="order_management_view_details">View details</string>
+    <string name="order_management_fillin_logistics">Fill in Logistics</string>
+    <string name="order_management_fillin_logistics_dialog_title">Fill in the exchange number</string>
+    <string name="order_management_fillin_logistics_dialog_company">Express company</string>
+    <string name="order_management_fillin_logistics_dialog_number">ExpressNumber</string>
+    <string name="order_management_prompt_delivery">Prompt delivery</string>
+    <string name="order_management_apply_refund">Apply for refund</string>
+    <string name="order_management_flash_sale_tip">If the purchase is over, the order will be cancelled automatically</string>
+
+    <string name="shop_cart_top_right_0">edit</string>
+    <string name="shop_cart_top_right_1">complete</string>
+    <string name="coupon_dialog_title">Coupon Collection</string>
+    <string name="confirm_address">Determine the address</string>
+    <string name="confirm_shop_info">Pick-up information</string>
+
+    <string name="activity_title_personal_balance">Account balance</string>
+    <string name="personal_order">My order</string>
+    <string name="personal_order_all">All orders</string>
+    <string name="personal_order_0">Payment</string>
+    <string name="personal_order_1">To be shipped</string>
+    <string name="personal_order_2">To be received</string>
+    <string name="personal_order_3">To be evaluated</string>
+    <string name="personal_order_4">Refund/After Sale</string>
+    <string name="personal_assets">My assets</string>
+    <string name="personal_assets_0">Account balance</string>
+    <string name="personal_assets_1">GRB (part)</string>
+    <string name="personal_assets_2">GRC(part)</string>
+    <string name="personal_assets_3">Coupons</string>
+    <string name="personal_service">My service</string>
+    <string name="personal_service_promotion">My promotion</string>
+    <string name="personal_balance_total">Total balance</string>
+    <string name="personal_balance_bill_details">Bill details</string>
+    <string name="personal_balance_month">%s months</string>
+    <string name="personal_balance_year_month">%s year %s months</string>
+    <string name="activity_title_personal_gra">GRA Details</string>
+    <string name="activity_title_personal_circulation">GRB Details</string>
+    <string name="personal_circulation_total_gra">%sTotal\\n%sGRA</string>
+    <string name="personal_circulation_total_grb">%sTotal\\n%sGRB</string>
+    <string name="personal_circulation_total_grc">%sTotal\\n%sGRC</string>
+    <string name="personal_circulation_type_0">expenditure</string>
+    <string name="personal_circulation_type_1">income</string>
+
+    <string name="activity_title_personal_collect">My Collection</string>
+    <string name="personal_collect_num">%d collection</string>
+    <string name="activity_title_personal_coupon">Coupon</string>
+    <string name="personal_coupon_name">公让宝 Coupon</string>
+    <string name="personal_coupon_desc">Use when the amount reaches %s yuan</string>
+    <string name="personal_coupon_date">Term of validity：%s - %s</string>
+    <string name="personal_coupon_clear">empty</string>
+    <string name="activity_title_personal_equity">GRC Details</string>
+    <string name="activity_title_personal_evaluation">My evaluation</string>
+    <string name="personal_evaluation_level_1">Praise</string>
+    <string name="personal_evaluation_level_2">Medium</string>
+    <string name="personal_evaluation_level_3">Negative</string>
+    <string name="personal_grb_total_tip">Total number</string>
+    <string name="personal_grb_realtime_tip">Real-time reference value</string>
+    <string name="personal_grb_total_tip_1">Bumper harvest</string>
+    <string name="personal_grb_equity">Circulation Circular GRC</string>
+    <string name="personal_grb_circulation">Equity Notice GRB</string>
+    <string name="personal_grb_luck_draw_tip">Draw more and win more gifts</string>
+    <string name="personal_grb_transfer_public">Public Market Transfer</string>
+    <string name="personal_grb_transfer_public_tip">Third-party market transfer</string>
+    <string name="activity_title_personal_transfer_friends">Transfer of Friends</string>
+    <string name="personal_transfer_friends_tip_num">Please enter the number of negotiable documents transferred</string>
+    <string name="personal_transfer_friends_tip_num_1">Transfer portion</string>
+    <string name="personal_transfer_friends_tip_account">Please enter the account to be transferred</string>
+    <string name="personal_transfer_friends_tip_account_1">Account of the other party</string>
+    <string name="personal_transfer_sure">Confirm transfer</string>
+    <string name="personal_transfer_dialog_title">Do you need to give circulation passes to users?</string>
+    <string name="personal_grb_transfer_friends_tip">Close Friends GRB Interaction</string>
+    <string name="activity_title_personal_transfer_record">Transfer record</string>
+    <string name="personal_grb_transfer_record_tip">Record each transfer step</string>
+    <string name="personal_grb_transfer_record_tip_1">Total transfer\\n%sGRB</string>
+    <string name="activity_title_personal_wallet_address">Wallet address</string>
+    <string name="personal_wallet_address_tip_0">View Zhongwang Cloud Wallet Address</string>
+    <string name="personal_wallet_address_tip_1">View AOGEX Wallet Address</string>
+    <string name="personal_wallet_address_copy">Duplicate wallet address</string>
+    <string name="personal_grb_wallet_address_tip">Jump into a third-party Wallet</string>
+    <string name="activity_title_personal_income">Farm Players</string>
+    <string name="personal_grb_income_details_tip">Income details</string>
+    <string name="personal_grb_income_details_tip_1">Farmer Benefits</string>
+    <string name="activity_title_personal_income_record">Income record</string>
+    <string name="personal_income_record_tip">source %s</string>
+    <string name="personal_income_left_today_tip">Today\'s earnings</string>
+    <string name="personal_income_left_total_tip">%s Total revenue</string>
+    <string name="activity_title_personal_grb_transfer_public">Transfer to a third party</string>
+    <string name="personal_grb_transfer_public_0">Turn Out to China Networks Cloud</string>
+    <string name="personal_grb_transfer_public_1">Transfer out to AOGEX</string>
+    <string name="personal_grb_transfer_public_2">Transfer to Quant Broker</string>
+    <string name="transfer_public_second_num_tip">Exchange grb</string>
+    <string name="transfer_public_second_num_input">Please enter the number of copies transferred</string>
+    <string name="transfer_public_second_addr_title">Transfer address</string>
+    <string name="transfer_public_second_addr_tip">（Third Party Wallet Address）</string>
+    <string name="transfer_public_second_addr_input">Please enter the transfer address</string>
+    <string name="transfer_public_second_tip">*The receiving address must be the wallet address of gra. If the address is wrong, it shall be responsible for the loss.\\n Due to the delay of blockchain nodes, it takes 24 hours for gongrang Bao app store to arrive at the trading platform and transfer wallet to the trading platform. Please wait patiently.</string>
+    <string name="activity_title_personal_powder">My precious powder</string>
+    <string name="personal_promotion_tip">App registration download share code</string>
+    <string name="personal_promotion_share_title">@string/app_name</string>
+    <string name="personal_promotion_share_desc">好用的APP，分享出来，大家共享！</string>
+    <string name="personal_promotion_share_thumb"></string>
+    <string name="activity_title_personal_recharge">Account recharge</string>
+    <string name="personal_recharge_tip_0">Recharge amount</string>
+    <string name="personal_recharge_tip_1">Other amount</string>
+    <string name="personal_recharge_tip_11">Input recharge amount</string>
+    <string name="personal_recharge_payment">Choose payment method</string>
+    <string name="personal_recharge_sure">Immediate recharge</string>
+    <string name="activity_title_personal_recharge_record">Recharge record</string>
+    <string name="personal_recharge_record_title_0">time</string>
+    <string name="personal_recharge_record_title_1">Recharge amount</string>
+    <string name="personal_recharge_record_title_2">Amount of account</string>
+    <string name="personal_recharge_record_title_3">state</string>
+    <string name="personal_recharge_record_status_0">In processing</string>
+    <string name="personal_recharge_record_status_1">Success</string>
+    <string name="activity_title_personal_tracks">My Tracks</string>
+    <string name="product_details_coupon_tip">Full %d minus %d yuan coupon</string>
+    <string name="product_details_spec_tip">Please choose the product specifications!</string>
+    <string name="product_details_cart_add_error_tip">Commodity information is wrong, add failure!</string>
+    <string name="product_evaluate_anonymous">anonymous</string>
+    <string name="activity_title_publish_comments">Publish comments</string>
+    <string name="publish_comments_input_tip">Please enter your comments...</string>
+    <string name="publish_comments_pic_tip">Please add a comment picture...</string>
+    <string name="activity_title_rank_farm_agent">Rank of farm agent</string>
+    <string name="rank_farm_agent_title_0">Grade</string>
+    <string name="rank_farm_agent_title_1">Upgrade conditions</string>
+    <string name="rank_farm_agent_title_10">Buying Experience Player Seeds</string>
+    <string name="rank_farm_agent_title_11">Buy a Star Player Seed</string>
+    <string name="rank_farm_agent_title_12">Buy two-star player seeds</string>
+    <string name="rank_farm_agent_title_121">(Direct Membership can only be purchased if it generates performance twice the amount invested by a star player)</string>
+    <string name="rank_farm_agent_title_13">Buy Samsung Player Seeds</string>
+    <string name="rank_farm_agent_title_131">(Direct Members can only buy if their performance is twice the amount invested by two-star players.)</string>
+    <string name="rank_farm_agent_title_14">Buy Four Star Player Seeds</string>
+    <string name="rank_farm_agent_title_141">(Direct Membership can only be purchased if it generates performance twice the amount invested by Samsung players)</string>
+    <string name="rank_farm_agent_title_15">Purchase five star player seeds</string>
+    <string name="rank_farm_agent_title_151">(Direct Membership can only be purchased if it generates performance twice the amount invested by four-star players)</string>
+    <string name="rank_farm_agent_title_2">Benefits received</string>
+    <string name="rank_farm_agent_title_3">Badge display</string>
+    <string name="realname_first_cardid_front_tip">Please choose the front photo of your ID card.</string>
+    <string name="realname_first_cardid_back_tip">Please choose the negative photo of your ID card.</string>
+    <string name="realname_first_cardid_positive_tip">Please choose a positive photo of yourself with your ID card</string>
+    <string name="realname_first_cardid_require_tip">Requirements: Please upload correctly, do not cut and alter, ensure that the ID card photos are clear, otherwise it will not be able to audit.</string>
+    <string name="realname_first_cardid_next">Next step</string>
+    <string name="realname_second_cardid_tip">Please choose the photo of ID card correctly</string>
+    <string name="realname_second_realname_name_tip">Real name</string>
+    <string name="realname_second_realname_name_input_tip">Fill in the same name as your ID card</string>
+    <string name="realname_second_realname_cardid_tip">ID number</string>
+    <string name="realname_second_realname_cardid_input_tip">Enter your 18-digit ID number</string>
+    <string name="realname_second_realname_region_tip">Regional information</string>
+    <string name="realname_second_realname_region_input_tip">Select areas that are consistent with your identity</string>
+    <string name="realname_second_realname_phone_input_tip">Fill in the phone number you bind</string>
+    <string name="realname_second_realname_tip">Warm Tip: Data audit needs 1 working day. If you have any questions, please consult the platform for customer service processing.</string>
+    <string name="realname_second_realname_sure">Complete submission</string>
+    <string name="search_input_hint_index">Search for the goods you need</string>
+    <string name="search_input_hint_order">Commodity Name/Order Number</string>
+    <string name="search_input_hint_collect">Search for your collection</string>
+    <string name="search_cancel">cancel</string>
+    <string name="search_sure">search</string>
+    <string name="search_recent">Recent search</string>
+    <string name="activity_title_service_and_help">Customer Service and Help</string>
+    <string name="service_and_help_service">Contact customer service</string>
+    <string name="service_and_help_service_online">Online consultation</string>
+    <string name="service_and_help_service_telephone">Telephone consultation</string>
+    <string name="service_and_help_service_wechat">WeChat consulting</string>
+    <string name="service_and_help_help">Help manual</string>
+    <string name="service_and_help_help_intro_agree">Introduction and Agreement</string>
+    <string name="service_and_help_help_intro_agree_top">Disclaimer clause</string>
+    <string name="service_and_help_help_intro_agree_bottom">Privacy Protection Provisions</string>
+    <string name="service_and_help_help_after_sale">After-sale service</string>
+    <string name="service_and_help_help_after_sale_top">After-sales Policy Statement</string>
+    <string name="service_and_help_help_after_sale_bottom">Return Policy Statement</string>
+    <string name="service_and_help_help_order_logistics">Order Logistics</string>
+    <string name="service_and_help_help_order_logistics_top">Regional Freight Price Rules</string>
+    <string name="service_and_help_help_order_logistics_bottom">Cloud Warehouse Cargo Bill Rules</string>
+    <string name="service_and_help_help_agency_system">agency system</string>
+    <string name="service_and_help_help_agency_system_top">Farm Agent Area System</string>
+    <string name="service_and_help_help_agency_system_bottom">谷聚金 Agency Zone System</string>
+    <string name="service_and_help_help_notes">Novice tips</string>
+    <string name="service_and_help_help_notes_top">Introduction to digital pass</string>
+    <string name="service_and_help_help_notes_bottom">Shopping Procedure Guidelines for Malls</string>
+    <string name="activity_title_setting_about">bout Gongyingbao</string>
+    <string name="setting_about_tip_0">公让宝-Android version</string>
+    <string name="setting_about_tip_1">V%s version</string>
+    <string name="setting_about_tip_20">Version update</string>
+    <string name="setting_about_tip_3">Copyright  2018</string>
+    <string name="setting_about_tip_4">公让宝 Business Management Co., Ltd.</string>
+    <string name="settlement_error_tip">Commodity information is wrong, please check and buy!</string>
+    <string name="activity_title_special_provision">Agent area</string>
+
+    <string name="layout_loading_tv_text">Loading...</string>
+    <string name="layout_error_text">No network connection, please check your network...</string>
+    <string name="layout_error_retry_button">Load failed, click retry~~</string>
+
+    <string name="layout_empty_shop_cart">There is no merchandise in the shopping cart ~</string>
+    <string name="cart_shop_securities_text">Ticket Collection</string>
+    <string name="cart_shop_invalid_num_text">Total %d of invalid goods</string>
+    <string name="cart_shop_emptying_failure_text">Empty out invalid goods</string>
+    <string name="all_select_text">All</string>
+    <string name="total_left_text">Total：</string>
+    <string name="total_top_text">¥%s</string>
+    <string name="total_bottom_text">%s copies</string>
+    <string name="total_right_text">Settlement(%d)</string>
+    <string name="total_collect_text">Join in collection</string>
+    <string name="total_delete_text">Delete (%d)</string>
+    <string name="total_num_text">Number</string>
+    <string name="select_ok_tv_text">Confirm selection</string>
+    <string name="select_num_cut_text">Honey, don\'t be so hateful. Buy one...</string>
+    <string name="select_num_add_text">Pro, it\'s the biggest stock...</string>
+
+    <string name="collect_success_text">Successful collection, you can view it in my collection</string>
+    <string name="select_address_tip">Please fill in the receiving address first</string>
+    <string name="pay_now_text">Payment</string>
+    <string name="buy_now_text">Buy immediately</string>
+    <string name="add_to_cart_text">Add to cart</string>
+    <string name="store_in_cloud_text">Store in Cloud Warehouse</string>
+    <string name="commodity_information_text">Commodity Information</string>
+
+    <string name="settlement_dialog_title_text">Address and Freight Confirmation</string>
+    <string name="settlement_dialog_subtitle_0_text">Confirm address</string>
+    <string name="settlement_dialog_subtitle_1_text">Freight payable</string>
+    <string name="settlement_dialog_subtitle_2_text">Send to %s</string>
+    <string name="settlement_confirmation_address_desc_text">(After you confirm the address, we will deliver the goods to you as soon as possible. Address will not be changed after confirmation. If you do not receive the goods due to address errors or other problems, the platform will not be processed. Please be sure to confirm it. Thank you for your cooperation.）</string>
+    <string name="settlement_confirmation_address_text">I have confirmed my address and paid the freight</string>
+
+    <string name="payment_total_title_text">Order Amount</string>
+    <string name="payment_total_title_price_text">Total price:</string>
+    <string name="payment_total_title_num_text">Number:</string>
+    <string name="payment_total_title_freight_text">freight:</string>
+    <string name="payment_total_title_freight_short_text">freight</string>
+    <string name="payment_balance_title_text">Balance payment</string>
+    <string name="payment_balance_total_text">（Balance:¥%s）</string>
+    <string name="payment_grb_title_text">GRB payment</string>
+    <string name="payment_grb_total_text">（Balance:%s）</string>
+    <string name="payment_weixin_title_text">WeChat payment</string>
+    <string name="payment_offline_title_text">Offline payment</string>
+    <string name="payment_offline_tip_text">(More than 10,000 options only)</string>
+    <string name="payment_alipay_title_text">Alipay payment</string>
+    <string name="payment_cloud_flash_title_text">Cloud flash payment</string>
+    <string name="payment_pay_now_total_text">（¥%s+%sGRB）</string>
+
+    <string name="payment_now_dialog_title_text">Please enter the payment password</string>
+    <string name="payment_now_dialog_tip_text">Do not tell others your security password</string>
+    <string name="payment_finish_text">Successful payment, your goods have been deposited in cloud warehouse</string>
+
+    <string name="page_num_text">%d/%d</string>
+    <string name="countdown_status_text">There\'s only one left before the end</string>
+    <string name="monthly_sales_text">Monthly Sales:%d Parts</string>
+    <string name="select_specs_left_text">Choice</string>
+    <string name="select_specs_text">Select product specification</string>
+    <string name="place_of_origin_left_text">Place of Origin</string>
+    <string name="detaild_evaluation_text">Commodity evaluation (%d)</string>
+    <string name="detaild_evaluation_all_text">Look at all</string>
+
+    <string name="customer_service_text">Service</string>
+
+    <string name="centre_ready_begin_text">From the beginning of the meeting:</string>
+    <string name="centre_ready_end_text">At the end of the meeting:</string>
+    <string name="countdown_split_days_text">day</string>
+    <string name="centre_contents_title_text">Contents of the meeting</string>
+    <string name="centre_active_goods_title_text">Active Goods</string>
+    <string name="centre_active_goods_tip_text">(Purchase GRB at a discount price on the day of registration)</string>
+    <string name="centre_active_signup_title_text">Activity registration</string>
+    <string name="centre_active_signup_tip_text">(Enter your true information for registration)</string>
+    <string name="centre_active_signup_tip_name_text">Real name</string>
+    <string name="centre_active_signup_tip_name_hint_text">Enter your name</string>
+    <string name="centre_active_signup_tip_phone_text">Phone number</string>
+    <string name="centre_active_signup_tip_phone_hint_text">Enter your cell phone number</string>
+    <string name="centre_active_signup_tip_cardid_text">ID number</string>
+    <string name="centre_active_signup_tip_cardid_hint_text">Enter 18-digit ID number</string>
+    <string name="centre_active_signup_tip_gender_text">Selective sex</string>
+    <string name="centre_active_signup_tip_gender_female_text">female</string>
+    <string name="centre_active_signup_tip_gender_male_text">male</string>
+    <string name="centre_info_title_text">Meeting time, address, telephone number</string>
+    <string name="centre_dialog_title">Invitation letter for meeting</string>
+    <string name="centre_dialog_tip_0">Congratulations! Successful registration!</string>
+    <string name="centre_dialog_tip_1">No.</string>
+    <string name="centre_dialog_tip_3">Please check in the registration record</string>
+    <string name="centre_dialog_sure">I got it</string>
+
+    <string name="share_dialog_title_text">Choose the way to share</string>
+    <string name="share_dialog_wechat_circle_text">朋友圈</string>
+    <string name="share_dialog_wechat_text">微信</string>
+
+    <string name="setting_accounts_security_text">Accounts and Security</string>
+    <string name="setting_language_text">Language settings</string>
+    <string name="setting_feed_back_text">Feedback</string>
+    <string name="setting_clear_cache_text">Clear cache</string>
+    <string name="setting_about_text">About 公让宝</string>
+    <string name="setting_about_version_text">v %s</string>
+    <string name="setting_logout_text">Logout</string>
+    <string name="dialog_language_text">language</string>
+
+    <string name="setting_personal_head_text">Head portrait</string>
+    <string name="setting_personal_nick_text">Nickname</string>
+    <string name="setting_personal_realname_text">Full name</string>
+    <string name="setting_personal_id_text">ID</string>
+    <string name="setting_personal_recommender_text">Recommender</string>
+    <string name="setting_personal_regtime_text">Registration time</string>
+    <string name="setting_personal_days_added_text">Days added</string>
+    <string name="setting_personal_farm_grade_text">Farm grade</string>
+    <string name="setting_personal_gujujin_grade_text">谷聚金 Grade</string>
+
+    <string name="nick_inpute_hint">Enter nicknames</string>
+    <string name="nick_inpute_tip">Starting with Chinese or English letters, limited to 4-16 characters, one Chinese character for 2 characters</string>
+
+    <string name="button_submission_text">Determine</string>
+    <string name="button_cancel_text">Think again</string>
+
+    <string name="safety_center_login_password_text">Login password</string>
+    <string name="safety_center_payment_password_text">Payment password</string>
+    <string name="safety_center_mobile_binding_text">Mobile phone number change</string>
+    <string name="safety_center_wechat_binding_text">Microsignal binding</string>
+    <string name="safety_center_qq_binding_text">QQ binding</string>
+    <string name="safety_center_alipay_binding_text">Alipay binding</string>
+    <string name="safety_center_cloud_flash_binding_text">Cloud Flash Payment Binding</string>
+    <string name="safety_center_bank_card_binding_text">Bank Card Binding</string>
+    <string name="safety_center_real_name_binding_text">Real name authentication</string>
+    <string name="safety_center_real_name_unbinding_text">Unreal-name certification</string>
+    <string name="safety_center_real_name_unbinding_apply">Apply</string>
+    <string name="safety_center_binding_unbound_text">Unbound</string>
+    <string name="safety_center_binding_uncertified_text">Uncertified</string>
+    <string name="safety_center_binding_certification_text">Certification</string>
+
+    <string name="password_change_text">change</string>
+    <string name="password_retrieve_text">Retrieve</string>
+    <string name="password_change_submission_text">Confirm revision</string>
+    <string name="password_title_text">%s%s</string>
+    <string name="password_phone_number_text">Phone number</string>
+    <string name="password_phone_number_tip">Please enter your cell phone number</string>
+    <string name="password_verification_code_text">Verification Code</string>
+    <string name="password_verification_code_action">Get verification code</string>
+    <string name="binding_bank_cards_empty_tip">Get bank card information...</string>
+    <string name="password_verification_code_tip">Please enter the verification code</string>
+    <string name="password_new_text">New password</string>
+    <string name="password_new_tip">Please enter your new password</string>
+
+    <string name="mobile_binding_text">Binding mobile phone number</string>
+    <string name="binding_submission_text">Confirmation Binding</string>
+    <string name="login_submission_text">Confirm login</string>
+    <string name="password_forget_text">Forget the password?</string>
+    <string name="login_wechat_text">Wechat login</string>
+
+    <string name="login_setting_language_text">Language Settings</string>
+    <string name="login_welcome_text">Welcome to Gongyengbao</string>
+    <string name="login_register_text">register</string>
+    <string name="login_password_text">Password</string>
+    <string name="login_password_tip">Please enter your password</string>
+
+    <string name="register_title_text">New user registration</string>
+    <string name="register_referee_text">Recommender</string>
+    <string name="register_referee_sub_text">(Must fill)</string>
+    <string name="register_referee_tip">Please enter the recommender\'s account number</string>
+    <string name="register_password_text">Set password</string>
+    <string name="register_password_tip">6-14 Bit Password</string>
+    <string name="register_submission_text">Immediate registration</string>
+    <string name="register_terms_of_service_text">Continue to register to indicate that you have read and agree %s</string>
+    <string name="register_terms_of_service_tip">《公让宝 Exemption agreement》</string>
+    <string name="register_terms_of_service_abstract">Summary of User Disclaimer Protocol</string>
+    <string name="register_terms_of_service_abstract_text">Agree with %s</string>
+    <string name="register_terms_of_service_abstract_note">Dear user, before agreeing to this agreement, please carefully read and fully understand the rules and requirements of gongrang Bao platform, as well as the national laws and regulations on such Internet information services. If you have any objection to any term of this agreement, you can choose not to use it; using it means that you will agree to abide by all provisions of this agreement, and any subsequent modification made by us to the use agreement from time to time, and fully obey our unified management. The terms of this agreement that have or may have a significant relationship with your rights and interests, and the terms that have or may have exemption or limitation liability to gongrang Bao platform have been marked in bold type, please note and confirm.</string>
+    <string name="register_terms_of_service_abstract_disagree">Disagree</string>
+    <string name="register_terms_of_service_abstract_agree">agree</string>
+    <string name="index_scan_result">Scanning results were as follows:% s</string>
+
+    <string name="binding_bank_card_userinfo_text">Please enter your identity information</string>
+    <string name="binding_bank_card_realname_text">Real name</string>
+    <string name="binding_bank_card_realname_tip">Please enter your name</string>
+    <string name="binding_bank_card_cardid_text">ID number</string>
+    <string name="binding_bank_card_cardid_tip">Please enter your ID number</string>
+    <string name="binding_bank_card_info_text">Please enter bank card information</string>
+    <string name="binding_bank_card_num_text">Bank Card Number</string>
+    <string name="binding_bank_card_num_tip">Please enter the bank card number</string>
+    <string name="binding_bank_card_phone_text">Phone number</string>
+    <string name="binding_bank_card_code_text">Short Message Verification</string>
+    <string name="binding_bank_card_code_tip">Please fill in the verification code</string>
+
+    <array name="tab_order_management">
+        <item>全部</item>
+        <item>待付款</item>
+        <item>待发货</item>
+        <item>待收货</item>
+        <item>待评价</item>
+    </array>
+
+    <array name="tab_gujvjin_order_management">
+        <item>全部</item>
+        <item>待付款</item>
+        <item>待发货</item>
+        <item>待收货</item>
+        <item>已完成</item>
+    </array>
+
+    <array name="tab_product_evaluation">
+        <item>全部</item>
+        <item>最新</item>
+        <item>好评(%d)</item>
+        <item>中评(%d)</item>
+        <item>差评(%d)</item>
+    </array>
+
+    <array name="tab_order_management_refund_after_sale">
+        <item>售后中</item>
+        <item>已完成</item>
+        <item>申请失败</item>
+    </array>
+    <array name="tab_order_delivery">
+        <item>等待处理</item>
+        <item>操作完成</item>
+    </array>
+
+    <array name="refund_reasons">
+        <item>拍错/多拍/不想要</item>
+        <item>未按约定时间发货</item>
+        <item>快递无跟踪记录</item>
+        <item>其他</item>
+    </array>
+
+    <array name="after_refund_reasons">
+        <item>7天无理由退换货</item>
+        <item>未按约定时间发货</item>
+        <item>卖家发错货</item>
+        <item>其他</item>
+    </array>
+
+    <array name="after_exchange_reasons">
+        <item>7天无理由退换货</item>
+        <item>卖家发错货</item>
+        <item>货物有瑕疵</item>
+        <item>其他</item>
+    </array>
+
+    <array name="personal_coupon">
+        <item>未使用</item>
+        <item>已使用</item>
+    </array>
+
+    <array name="personal_equity">
+        <item>收入</item>
+        <item>支出</item>
+    </array>
+
+    <array name="personal_transfer">
+        <item>好友转让</item>
+        <item>公共市场转让</item>
+    </array>
+
+    <string name="after_exchange_total_max">Maximum replaceable%d parts</string>
+    <string name="personal_recharge_text">Click on immediate recharge to indicate that you have agreed to %s</string>
+    <string name="personal_recharge_tip">《公让宝Recharge agreement》</string>
+
+    <string name="personal_daili_level">Ranking system</string>
+    <string name="personal_daili_un">Please act as an agent!</string>
+    <string name="personal_daili_3">District/County Agent Operational!</string>
+    <string name="personal_daili_12">Provincial and municipal agents are not operational!</string>
+    <string name="personal_daili_level_1">You are already a personal agent!</string>
+    <string name="personal_daili_level_2">You are already the district/county agent!</string>
+    <string name="personal_daili_level_3">You are already the city agent!</string>
+    <string name="personal_daili_level_4">You are a provincial agent!</string>
+    <string name="gujvjin_index_00">Introduction to Gu Jujin</string>
+    <string name="gujvjin_index_01">Let farmers grow land without spending money and let people eat good food</string>
+    <string name="gujvjin_index_10">Become an agent</string>
+    <string name="gujvjin_index_11">Become an agent, develop subordinates to share friends and enjoy rights and interests freely</string>
+    <string name="gujvjin_index_20">Goujujin Purchase</string>
+    <string name="gujvjin_index_21">Click on the purchase of Gujujin, Gujujin second purchase 42 yuan</string>
+    <string name="gujvjin_index_30">My order</string>
+    <string name="gujvjin_index_31">Click to view all my orders to see the order status in detail</string>
+    <string name="gujvjin_index_40">I want to ship the goods</string>
+    <string name="gujvjin_index_41">Click to deliver goods to subordinates to earn money and reward</string>
+    <string name="gujvjin_index_50">Income Detail</string>
+    <string name="gujvjin_index_51">Acting as an agent for purchasing and selling goods, sharing rights and interests, earning incentives wildly</string>
+    <string name="gujujin_agent_level">Gujujin Agent Level</string>
+    <string name="gujujin_agent_level_title_0">Grade</string>
+    <string name="gujujin_agent_level_title_1">Benefits Enjoyed</string>
+    <string name="gujujin_agent_level_title_2">Emblem display</string>
+    <string name="activity_title_gujujin_become_agent">Application Agency</string>
+    <string name="gujujin_become_agent_phone_tip">Please enter your mobile phone number</string>
+    <string name="gujujin_become_agent_phone_sure">Identify mobile phone number</string>
+    <string name="gujujin_become_agent_step_0">Fill in agency information</string>
+    <string name="gujujin_become_agent_step_1">Audit of Agency Qualifications</string>
+    <string name="gujujin_become_agent_step_2">Do the first operation</string>
+    <string name="gujujin_become_agent_step_3">Formally become an agent</string>
+    <string name="activity_title_gujujin_become_agent_complete">Qualification Audit</string>
+    <string name="gujujin_become_agent_complete_tip_0">Congratulations! Your agency qualification has passed!</string>
+    <string name="gujujin_become_agent_complete_tip_1">Congratulations! Formally become an agent!</string>
+    <string name="gujujin_become_agent_complete_home">Huigu Jujin Home Page</string>
+    <string name="activity_title_gujujin_become_agent_first_operation">First operation</string>
+    <string name="gujujin_become_agent_no_level">Level of Selection Agent</string>
+    <string name="gujujin_become_agent_payment_tip">Being %s requires you to pay</string>
+    <string name="gujujin_become_agent_payment_default_tip">agent</string>
+    <string name="gujujin_become_agent_level_4">Provincial Agency</string>
+    <string name="gujujin_become_agent_level_3">Municipal Agent</string>
+    <string name="gujujin_become_agent_level_2">District and County Agents</string>
+    <string name="gujujin_become_agent_level_21">County-level agency</string>
+    <string name="gujujin_become_agent_level_1">Personal Agent</string>
+    <string name="gujujin_become_agent_sure_1">To pay</string>
+    <string name="gujujin_become_agent_sure_0">First Purchase</string>
+    <string name="gujujin_become_agent_product">Agent products of your choice</string>
+    <string name="gujujin_become_agent_product_tip">Choose the products you want to represent</string>
+    <string name="gujujin_become_agent_product_name">谷聚金</string>
+    <string name="gujujin_become_agent_level">Agent level of your choice</string>
+    <string name="activity_title_gujujin_become_agent_information">Fill in information</string>
+    <string name="gujujin_become_agent_information_tip">Please fill in the application carefully to ensure that the information is correct</string>
+    <string name="gujujin_become_agent_information_platform_tip">Confirm Platform Information</string>
+    <string name="gujujin_become_agent_information_please_enter">Please enter</string>
+    <string name="gujujin_become_agent_information_please_choose">Please choose</string>
+    <string name="gujujin_become_agent_information_name_tip">Full name</string>
+    <string name="gujujin_become_agent_information_wechat">Wechat number</string>
+    <string name="gujujin_become_agent_information_wechat_tip">Please enter the microsignal</string>
+    <string name="gujujin_become_agent_information_gender">Gender</string>
+    <string name="gujujin_become_agent_information_gender_tip">Please choose gender</string>
+    <string name="gujujin_become_agent_information_gender_tip_1">Choose your gender</string>
+    <string name="gujujin_become_agent_information_gender_male">male</string>
+    <string name="gujujin_become_agent_information_gender_female">female</string>
+    <string name="gujujin_become_agent_information_birth">Date of birth</string>
+    <string name="gujujin_become_agent_information_birth_tip">Please choose the year of birth</string>
+    <string name="gujujin_become_agent_information_region">region</string>
+    <string name="gujujin_become_agent_information_region_tip">Please choose the area</string>
+    <string name="gujujin_become_agent_region_exist">This area already has provincial agent!</string>
+    <string name="gujujin_become_agent_sure">Submit audit</string>
+    <string name="activity_title_gujujin_become_agent_payment">Payment method</string>
+    <string name="activity_title_gujujin_become_agent_selection_level">Selection level</string>
+    <string name="gujujin_become_agent_selection_level_tip">(One area only)</string>
+    <string name="activity_title_gujujin_become_agent_settlement">Settlement</string>
+    <string name="activity_title_gujujin_deliver_goods">Delivery order</string>
+    <string name="gujujin_order_platform">Platform orders</string>
+    <string name="gujujin_order_county">District and County Orders</string>
+    <string name="gujujin_purchase_monthly_sales">Monthly sales:%s pen</string>
+    <string name="gujujin_purchase_stock">Inventory:%s Parts</string>
+    <string name="activity_title_gujujin_purchase_settlement">Settlement</string>
+    <string name="gujujin_purchase_settlement_deliverer">Consignor</string>
+    <string name="gujujin_purchase_settlement_deliverer_headquarters">headquarters</string>
+    <string name="gujujin_agency_agreement">《Gujujin Agency Agreement》</string>
+    <string name="gujujin_agency_agreement_dialog_title">Gujujin Agency Agreement</string>
+    <string name="gujujin_agency_agreement_note">Welcome to the Golden Valley Gathering Module!\\nIn order to better and more effective cooperation between the two sides, in order to avoid later commercial disputes, you will need to sign the Golden Valley Agency Agreement before you can become the company\'s agent!\\nYou can click on the link below to view the latest proxy agreement. Reading and clicking \"I agree\" means that you have read, understood and agreed to sign this agency agreement.</string>
+    <string name="gujujin_agent_inviter_tip_1">If not, please apply at other inviters.</string>
+    <string name="gujujin_payment_offline_title">You also need to pay %s\\nPlease transfer the amount to our account</string>
+    <string name="gujujin_payment_offline_wechat">WeChat:</string>
+    <string name="gujujin_payment_offline_alipay">Alipay:</string>
+    <string name="gujujin_payment_offline_bankcard">Bank card:</string>
+    <string name="gujujin_payment_offline_tip">Please upload the vouchers in my order after the transfer is successful. We will review the delivery as soon as possible. If the transfer error is caused by the incorrect filling in your account, we will not bear any responsibility. If you have any questions, please consult customer service.</string>
+    <string name="gujujin_purchase_num_title">Input quantity</string>
+    <string name="gujujin_agent_inviter_tip_0">Make sure your inviter is</string>
+    <string name="gujujin_agent_inviter_title">Tips</string>
+    <string name="index_find_11">Click on the conference to sign up for public service Jean Bao National Conference</string>
+    <string name="payment_order_select_deliverer">Please select the shipper</string>
+    <string name="gujujin_purchase_settlement_freight">(%s freight)</string>
+    <string name="order_details_order_deliverer">Shipper:%s</string>
+    <string name="order_details_order_deliverer_1">Platform delivery</string>
+    <string name="order_details_order_deliverer_2">District and county shipments</string>
+    <string name="activity_title_gujujin_upload_credentials">Upload credentials</string>
+    <string name="order_view_num_short">Order number</string>
+    <string name="gujujin_uoload_credentials_payment_amount">Payment amount</string>
+    <string name="gujujin_payment_offline_alipay_short">Alipay</string>
+    <string name="gujujin_payment_offline_wechat_short">WeChat</string>
+    <string name="gujujin_payment_offline_bankcard_short">Bank card</string>
+    <string name="gujujin_payment_account">Payment account</string>
+    <string name="gujujin_payment_account_tip">Please enter a payment account</string>
+    <string name="gujujin_upload_credentials_sure">Confirm submission</string>
+    <string name="gujujin_upload_credentials_pic_tip">Please add the payment voucher picture...</string>
+    <string name="order_management_to_be_uploaded">To be uploaded</string>
+    <string name="gujujin_income_total">Total income\\n¥%s</string>
+    <string name="apply_result_tip_30">Businessmen have received your application for recharge</string>
+    <string name="apply_result_tip_40">Businessmen have received your vouchers for submission</string>
+    <string name="apply_result_tip_31">Businessmen will deal with your recharge as soon as possible. If it is not handled within one working day, please contact online customer service in time.</string>
+    <string name="apply_result_tip_41">Businessmen will process your payment as soon as possible. If it is not processed within 7 working days, please contact online customer service in time.</string>
+    <string name="gujujin_order_delivery_action">Click deliver</string>
+    <string name="gujujin_order_delivery_receiver_tip">Consignee:</string>
+    <string name="index_scan_text">Scan</string>
+    <string name="find_search_input_tip">Search content</string>
+    <string name="total_market_left_text">Market value:</string>
+    <string name="total_bottom_left_text">Deductible:</string>
+    <string name="personal_assets_4">GRA(part)</string>
+    <string name="transfer_public_second_num_max">*Your GRB balance is %s, and the number of convertible GRA copies is %s</string>
+    <string name="transfer_public_second_addr_input_tip">Please enter the correct transfer address</string>
+    <string name="settlement_leaving_message_title">Leaving a message</string>
+    <string name="settlement_leaving_message_input_hint">Pick a good one, boss</string>
+    <string name="settlement_leaving_message_input_tip">Please enter message information</string>
+    <string name="payment_grc_title_text">GRC payment</string>
+    <string name="not_yet_open_tip">Not yet open</string>
+    <string name="order_details_order_remark">Customer message：%s</string>
+    <string name="personal_assets_31">%s sheets</string>
+    <string name="personal_grb_income_details_low">You haven\'t reached your level yet</string>
+    <string name="register_username_text">Full name</string>
+    <string name="register_username_tip">Please enter your name</string>
+    <string name="personal_wallet_address_tip_2">Check GRA wallet recharge address</string>
+    <string name="setting_version_update_dialog_title">Version update</string>
+    <string name="setting_version_update_no">No new version detected!</string>
+    <string name="setting_version_update_no_network">No network available!</string>
+    <string name="setting_version_update_latest">It\'s the latest version!</string>
+    <string name="setting_version_update_load_error">File download error:%s</string>
+    <string name="setting_version_update_downloaded">File downloaded:%s</string>
+    <string name="setting_version_update_loading">Downloading updates...</string>
+    <string name="personal_quantbroker_title">QuantBroker</string>
+    <string name="safety_center_binding_certified_text">Authenticated real name</string>
+    <string name="personal_powder_title_0">Name</string>
+    <string name="personal_powder_title_1">Sales</string>
+    <string name="personal_powder_title_2">Phone</string>
+    <string name="main_notice_dialog_title">公告</string>
+    <string name="main_notice_dialog_sure">View details</string>
+    <string name="activity_title_convention_centre_record">Entry record</string>
+    <string name="transfer_friends_type_0">Cash</string>
+    <string name="transfer_friends_type_1">GRB</string>
+    <string name="transfer_friends_type_2">GRC</string>
+    <string name="personal_transfer_friends_tip_type">Please select transfer out type</string>
+    <string name="real_name_rejected">Real name rejected</string>
+    <string name="service_and_help_service_wechat_tip">Long press to send to wechat</string>
+    <string name="personal_income_farm">Total farms</string>
+    <string name="personal_income_sum">Total harvest(part)</string>
+    <string name="personal_income_profit">To harvest(part)</string>
+    <string name="transfer_to_type_0">Common turn</string>
+    <string name="transfer_to_type_1">Transfer to company</string>
+    <string name="meeting_payment_title">Pay registration fee</string>
+
+</resources>

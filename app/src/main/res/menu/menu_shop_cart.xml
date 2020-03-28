@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_editmode"
+        android:orderInCategory="80"
+        android:title="@string/shop_cart_top_right_0"
+        android:textSize="16sp"
+        app:showAsAction="always" />
+</menu>

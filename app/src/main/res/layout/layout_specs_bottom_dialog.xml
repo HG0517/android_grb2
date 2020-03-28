@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/dialog_close"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_close_circle_white" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:paddingTop="30dp">
+
+            <ImageView
+                android:id="@+id/cart_shop_iv"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@mipmap/ic_layout_empty_shop_cart" />
+
+            <TextView
+                android:id="@+id/cart_shop_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="15dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="稻香大米@ (5kg）预定中醇香浓 候吃出健康，稻香大米@ (5kg）预定中醇香浓 候吃出健康" />
+
+            <com.jgkj.grb.view.textview.BoldTextView
+                android:id="@+id/total_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#F74B70"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toRightOf="@+id/cart_shop_iv"
+                app:layout_constraintTop_toBottomOf="@+id/cart_shop_name"
+                tools:text="@string/total_top_text" />
+
+            <com.jgkj.grb.view.textview.BoldTextView
+                android:id="@+id/total_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#999999"
+                android:textSize="11sp"
+                tools:text="123456"
+                app:layout_constraintLeft_toRightOf="@+id/cart_shop_iv"
+                app:layout_constraintTop_toBottomOf="@+id/total_top" />
+
+            <LinearLayout
+                android:id="@+id/specs_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cart_shop_iv" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#EEEEEE"
+                app:layout_constraintTop_toBottomOf="@+id/specs_ll" />
+
+            <TextView
+                android:id="@+id/total_num_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="38dp"
+                android:text="@string/total_num_text"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/specs_ll" />
+
+            <FrameLayout
+                android:id="@+id/total_num_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/specs_ll">
+
+                <FrameLayout
+                    android:id="@+id/total_num_cut"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="93dp"
+                    android:background="@mipmap/ic_shop_cart_cut"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground" />
+
+                <TextView
+                    android:id="@+id/total_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="1"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <FrameLayout
+                    android:id="@+id/total_num_add"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:background="@mipmap/ic_shop_cart_add"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/select_ok"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="#F9567E"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:layout_constraintTop_toBottomOf="@+id/total_num_">
+
+                <TextView
+                    android:id="@+id/select_ok_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="@string/select_ok_tv_text"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp" />
+            </FrameLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    tools:context=".ui.activity.PersonalTransferFriendsActivity">
+
+    <include layout="@layout/widget_toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:descendantFocusability="blocksDescendants"
+        android:fillViewport="true"
+        android:focusableInTouchMode="true"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topPanel"
+        app:layout_constraintVertical_bias="0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/transfer_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@mipmap/ic_transfer_friends_top_bg"
+                android:minHeight="115dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0">
+
+                <TextView
+                    android:id="@+id/title_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="参考价值"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0" />
+
+                <ImageView
+                    android:id="@+id/line1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/ic_transfer_friends_top_line"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <TextView
+                    android:id="@+id/num_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:text="0.00"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/line1"
+                    app:layout_constraintTop_toBottomOf="@+id/title_0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:text="GRB"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/line1"
+                    app:layout_constraintTop_toBottomOf="@+id/num_0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <TextView
+                    android:id="@+id/num_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:text="0.00"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/line1"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:text="GRA"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/line1"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/num_1"
+                    app:layout_constraintVertical_bias="0" />
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/transfer_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/transfer_top"
+                app:layout_constraintVertical_bias="0">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="45dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_weight="1.3"
+                            android:text="兑换额度："
+                            android:textColor="#333333"
+                            android:textSize="14sp" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rg_3_0"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:button="@drawable/cb_selecter_x42"
+                                android:paddingLeft="5dp"
+                                android:text="510"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+
+                            <RadioButton
+                                android:id="@+id/rg_3_1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:button="@drawable/cb_selecter_x42"
+                                android:paddingLeft="5dp"
+                                android:text="1010"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+
+                            <RadioButton
+                                android:id="@+id/rg_3_2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:button="@drawable/cb_selecter_x42"
+                                android:paddingLeft="5dp"
+                                android:text="2510"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:minHeight="160dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:id="@+id/title_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="15dp"
+                            android:text="汇率:"
+                            android:textColor="#333333"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0" />
+
+                        <TextView
+                            android:id="@+id/title_1_grb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="1GRB"
+                            android:textColor="#333333"
+                            android:textSize="13sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/title_1"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintLeft_toRightOf="@+id/title_1"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/title_1"
+                            app:layout_constraintVertical_bias="1" />
+
+                        <TextView
+                            android:id="@+id/title_1_gra"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="0.198GRA"
+                            android:textColor="#333333"
+                            android:textSize="13sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/title_1"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintLeft_toRightOf="@+id/title_1_grb"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/title_1"
+                            app:layout_constraintVertical_bias="1" />
+
+                        <TextView
+                            android:id="@+id/title_1_fee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(手续费10GRB)"
+                            android:textColor="#666666"
+                            android:textSize="13sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/title_1"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintLeft_toRightOf="@+id/title_1_gra"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/title_1"
+                            app:layout_constraintVertical_bias="1" />
+
+                        <View
+                            android:id="@+id/line2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="14dp"
+                            android:background="#EEEEEE"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/title_1"
+                            app:layout_constraintVertical_bias="0" />
+
+                        <TextView
+                            android:id="@+id/title_2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="22dp"
+                            android:text="GRB份数"
+                            android:textColor="#666666"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintHorizontal_weight="1.5"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toLeftOf="@+id/num_2"
+                            app:layout_constraintTop_toBottomOf="@+id/line2"
+                            app:layout_constraintVertical_bias="0" />
+
+                        <EditText
+                            android:id="@+id/num_2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="35dp"
+                            android:background="@mipmap/ic_transfer_friends_edittext_bg"
+                            android:enabled="false"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="#666666"
+                            android:textSize="14sp"
+                            app:layout_constrainedWidth="true"
+                            app:layout_constraintBottom_toBottomOf="@+id/title_2"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintHorizontal_weight="4"
+                            app:layout_constraintLeft_toRightOf="@+id/title_2"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/title_2" />
+
+                        <TextView
+                            android:id="@+id/title_3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="30dp"
+                            android:text="转入账户"
+                            android:textColor="#666666"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintHorizontal_weight="1.5"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toLeftOf="@+id/num_3"
+                            app:layout_constraintTop_toBottomOf="@+id/title_2"
+                            app:layout_constraintVertical_bias="0" />
+
+                        <EditText
+                            android:id="@+id/num_3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="35dp"
+                            android:background="@mipmap/ic_transfer_friends_edittext_bg"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="#666666"
+                            android:textSize="14sp"
+                            app:layout_constrainedWidth="true"
+                            app:layout_constraintBottom_toBottomOf="@+id/title_3"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintHorizontal_weight="4"
+                            app:layout_constraintLeft_toRightOf="@+id/title_3"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/title_3" />
+                    </android.support.constraint.ConstraintLayout>
+                </android.support.v7.widget.CardView>
+
+                <Button
+                    android:id="@+id/sure_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/transfer_friends_button_bg"
+                    android:enabled="false"
+                    android:minHeight="45dp"
+                    android:text="确认"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/transfer_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/transfer_3"
+                app:layout_constraintVertical_bias="0">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="45dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_weight="1.3"
+                            android:text="兑换额度："
+                            android:textColor="#333333"
+                            android:textSize="14sp" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rg_6_0"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:button="@drawable/cb_selecter_x42"
+                                android:paddingLeft="5dp"
+                                android:text="510"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+
+                            <RadioButton
+                                android:id="@+id/rg_6_1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:button="@drawable/cb_selecter_x42"
+                                android:paddingLeft="5dp"
+                                android:text="1010"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+
+                            <RadioButton
+                                android:id="@+id/rg_6_2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:button="@drawable/cb_selecter_x42"
+                                android:paddingLeft="5dp"
+                                android:text="2510"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:minHeight="160dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:id="@+id/title_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="15dp"
+                            android:text="汇率:"
+                            android:textColor="#333333"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0" />
+
+                        <TextView
+                            android:id="@+id/title_10_grb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="1现金币"
+                            android:textColor="#333333"
+                            android:textSize="13sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/title_10"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintLeft_toRightOf="@+id/title_10"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/title_10"
+                            app:layout_constraintVertical_bias="1" />
+
+                        <TextView
+                            android:id="@+id/title_10_gra"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="0.198GRA"
+                            android:textColor="#333333"
+                            android:textSize="13sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/title_10"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintLeft_toRightOf="@+id/title_10_grb"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/title_10"
+                            app:layout_constraintVertical_bias="1" />
+
+                        <TextView
+                            android:id="@+id/title_10_fee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(手续费10GRB)"
+                            android:textColor="#666666"
+                            android:textSize="13sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/title_10"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintLeft_toRightOf="@+id/title_10_gra"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/title_10"
+                            app:layout_constraintVertical_bias="1" />
+
+                        <View
+                            android:id="@+id/line5"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="14dp"
+                            android:background="#EEEEEE"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/title_10"
+                            app:layout_constraintVertical_bias="0" />
+
+                        <TextView
+                            android:id="@+id/title_11"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="22dp"
+                            android:text="现金币"
+                            android:textColor="#666666"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintHorizontal_weight="1.5"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toLeftOf="@+id/num_9"
+                            app:layout_constraintTop_toBottomOf="@+id/line5"
+                            app:layout_constraintVertical_bias="0" />
+
+                        <EditText
+                            android:id="@+id/num_9"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="35dp"
+                            android:background="@mipmap/ic_transfer_friends_edittext_bg"
+                            android:enabled="false"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="#666666"
+                            android:textSize="14sp"
+                            app:layout_constrainedWidth="true"
+                            app:layout_constraintBottom_toBottomOf="@+id/title_11"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintHorizontal_weight="4"
+                            app:layout_constraintLeft_toRightOf="@+id/title_11"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/title_11" />
+
+                        <TextView
+                            android:id="@+id/title_12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="30dp"
+                            android:text="转入账户"
+                            android:textColor="#666666"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintHorizontal_weight="1.5"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toLeftOf="@+id/num_10"
+                            app:layout_constraintTop_toBottomOf="@+id/title_11"
+                            app:layout_constraintVertical_bias="0" />
+
+                        <EditText
+                            android:id="@+id/num_10"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="35dp"
+                            android:background="@mipmap/ic_transfer_friends_edittext_bg"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="#666666"
+                            android:textSize="14sp"
+                            app:layout_constrainedWidth="true"
+                            app:layout_constraintBottom_toBottomOf="@+id/title_12"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintHorizontal_weight="4"
+                            app:layout_constraintLeft_toRightOf="@+id/title_12"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/title_12" />
+                    </android.support.constraint.ConstraintLayout>
+                </android.support.v7.widget.CardView>
+
+                <Button
+                    android:id="@+id/sure_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/transfer_friends_button_bg"
+                    android:enabled="false"
+                    android:minHeight="45dp"
+                    android:text="确认"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/transfer_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/transfer_6"
+                app:layout_constraintVertical_bias="0">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="202dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/title_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="15dp"
+                            android:text="好友转让"
+                            android:textColor="#333333"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0" />
+
+                        <View
+                            android:id="@+id/line3"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="14dp"
+                            android:background="#EEEEEE"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/title_4"
+                            app:layout_constraintVertical_bias="0" />
+
+                        <TextView
+                            android:id="@+id/title_5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="22dp"
+                            android:text="转让份数"
+                            android:textColor="#666666"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintHorizontal_weight="1.5"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toLeftOf="@+id/num_5"
+                            app:layout_constraintTop_toBottomOf="@+id/line3"
+                            app:layout_constraintVertical_bias="0" />
+
+                        <EditText
+                            android:id="@+id/num_5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="35dp"
+                            android:background="@mipmap/ic_transfer_friends_edittext_bg"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="#666666"
+                            android:textSize="14sp"
+                            app:layout_constrainedWidth="true"
+                            app:layout_constraintBottom_toBottomOf="@+id/title_5"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintHorizontal_weight="4"
+                            app:layout_constraintLeft_toRightOf="@+id/title_5"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/title_5" />
+
+                        <TextView
+                            android:id="@+id/title_6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="30dp"
+                            android:text="转入账户"
+                            android:textColor="#666666"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintHorizontal_weight="1.5"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toLeftOf="@+id/num_6"
+                            app:layout_constraintTop_toBottomOf="@+id/title_5"
+                            app:layout_constraintVertical_bias="0" />
+
+                        <EditText
+                            android:id="@+id/num_6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="35dp"
+                            android:background="@mipmap/ic_transfer_friends_edittext_bg"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="#666666"
+                            android:textSize="14sp"
+                            app:layout_constrainedWidth="true"
+                            app:layout_constraintBottom_toBottomOf="@+id/title_6"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintHorizontal_weight="4"
+                            app:layout_constraintLeft_toRightOf="@+id/title_6"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/title_6" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/title_6"
+                            app:layout_constraintVertical_bias="0">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_weight="1.3"
+                                android:text="通证类别："
+                                android:textColor="#666666"
+                                android:textSize="14sp" />
+
+                            <RadioGroup
+                                android:id="@+id/rg_4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rg_4_0"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/cb_selecter_x42"
+                                    android:paddingLeft="5dp"
+                                    android:text="GRA"
+                                    android:textColor="#333333"
+                                    android:textSize="13sp" />
+
+                                <RadioButton
+                                    android:id="@+id/rg_4_1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/cb_selecter_x42"
+                                    android:paddingLeft="5dp"
+                                    android:text="GRB"
+                                    android:textColor="#333333"
+                                    android:textSize="13sp" />
+
+                                <RadioButton
+                                    android:id="@+id/rg_4_2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/cb_selecter_x42"
+                                    android:paddingLeft="5dp"
+                                    android:text="GRC"
+                                    android:textColor="#333333"
+                                    android:textSize="13sp" />
+                            </RadioGroup>
+                        </LinearLayout>
+
+                    </android.support.constraint.ConstraintLayout>
+                </android.support.v7.widget.CardView>
+
+                <Button
+                    android:id="@+id/sure_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/transfer_friends_button_bg"
+                    android:enabled="false"
+                    android:minHeight="45dp"
+                    android:text="确认"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/transfer_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/transfer_4"
+                app:layout_constraintVertical_bias="0">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="202dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/title_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="15dp"
+                            android:text="转给总部"
+                            android:textColor="#333333"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0" />
+
+                        <View
+                            android:id="@+id/line4"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="14dp"
+                            android:background="#EEEEEE"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/title_7"
+                            app:layout_constraintVertical_bias="0" />
+
+                        <TextView
+                            android:id="@+id/title_8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="22dp"
+                            android:text="转让份数"
+                            android:textColor="#666666"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintHorizontal_weight="1.5"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toLeftOf="@+id/num_7"
+                            app:layout_constraintTop_toBottomOf="@+id/line4"
+                            app:layout_constraintVertical_bias="0" />
+
+                        <EditText
+                            android:id="@+id/num_7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="35dp"
+                            android:background="@mipmap/ic_transfer_friends_edittext_bg"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="#666666"
+                            android:textSize="14sp"
+                            app:layout_constrainedWidth="true"
+                            app:layout_constraintBottom_toBottomOf="@+id/title_8"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintHorizontal_weight="4"
+                            app:layout_constraintLeft_toRightOf="@+id/title_8"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/title_8" />
+
+                        <TextView
+                            android:id="@+id/title_9"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="30dp"
+                            android:text="转入账户"
+                            android:textColor="#666666"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintHorizontal_weight="1.5"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toLeftOf="@+id/num_8"
+                            app:layout_constraintTop_toBottomOf="@+id/title_8"
+                            app:layout_constraintVertical_bias="0" />
+
+                        <EditText
+                            android:id="@+id/num_8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="35dp"
+                            android:background="@mipmap/ic_transfer_friends_edittext_bg"
+                            android:enabled="false"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:text="11166668888"
+                            android:textColor="#666666"
+                            android:textSize="14sp"
+                            app:layout_constrainedWidth="true"
+                            app:layout_constraintBottom_toBottomOf="@+id/title_9"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintHorizontal_weight="4"
+                            app:layout_constraintLeft_toRightOf="@+id/title_9"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/title_9" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/title_9"
+                            app:layout_constraintVertical_bias="0">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_weight="1.3"
+                                android:text="通证类别："
+                                android:textColor="#666666"
+                                android:textSize="14sp" />
+
+                            <RadioGroup
+                                android:id="@+id/rg_5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rg_5_0"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/cb_selecter_x42"
+                                    android:paddingLeft="5dp"
+                                    android:text="GRA"
+                                    android:textColor="#333333"
+                                    android:textSize="13sp" />
+
+                                <RadioButton
+                                    android:id="@+id/rg_5_1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/cb_selecter_x42"
+                                    android:paddingLeft="5dp"
+                                    android:text="GRB"
+                                    android:textColor="#333333"
+                                    android:textSize="13sp" />
+
+                                <RadioButton
+                                    android:id="@+id/rg_5_2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/cb_selecter_x42"
+                                    android:paddingLeft="5dp"
+                                    android:text="GRC"
+                                    android:textColor="#333333"
+                                    android:textSize="13sp" />
+                            </RadioGroup>
+                        </LinearLayout>
+
+                    </android.support.constraint.ConstraintLayout>
+                </android.support.v7.widget.CardView>
+
+                <Button
+                    android:id="@+id/sure_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/transfer_friends_button_bg"
+                    android:enabled="false"
+                    android:minHeight="45dp"
+                    android:text="确认"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

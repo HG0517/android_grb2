@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:orientation="vertical"
+    tools:context=".ui.gujujin.activity.GujujinBecomeAgentInformationActivity">
+
+    <include layout="@layout/widget_toolbar" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/become_agent_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_unbound_gray"
+            android:drawablePadding="9dp"
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/gujujin_become_agent_information_tip"
+            android:textColor="#999999"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/become_agent_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:minHeight="95dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/become_agent_tip"
+            app:layout_constraintVertical_bias="0">
+
+            <TextView
+                android:id="@+id/become_agent_speed_tv_0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/gujujin_become_agent_step_0"
+                android:textColor="@drawable/become_agent_speed_text_color"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/become_agent_speed_tv_1"
+                app:layout_constraintTop_toBottomOf="@+id/become_agent_speed_iv_0"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/become_agent_speed_tv_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/gujujin_become_agent_step_1"
+                android:textColor="@drawable/become_agent_speed_text_color"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/become_agent_speed_tv_0"
+                app:layout_constraintRight_toLeftOf="@+id/become_agent_speed_tv_2"
+                app:layout_constraintTop_toTopOf="@+id/become_agent_speed_tv_0"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/become_agent_speed_tv_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/gujujin_become_agent_step_2"
+                android:textColor="@drawable/become_agent_speed_text_color"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/become_agent_speed_tv_1"
+                app:layout_constraintRight_toLeftOf="@+id/become_agent_speed_tv_3"
+                app:layout_constraintTop_toTopOf="@+id/become_agent_speed_tv_0"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/become_agent_speed_tv_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/gujujin_become_agent_step_3"
+                android:textColor="@drawable/become_agent_speed_text_color"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/become_agent_speed_tv_2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/become_agent_speed_tv_0"
+                app:layout_constraintVertical_bias="0" />
+
+            <View
+                android:id="@+id/become_agent_speed_line_0"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#E8E6E6"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="@+id/become_agent_speed_iv_0"
+                app:layout_constraintLeft_toLeftOf="@+id/become_agent_speed_iv_0"
+                app:layout_constraintRight_toRightOf="@+id/become_agent_speed_iv_1"
+                app:layout_constraintTop_toTopOf="@+id/become_agent_speed_iv_0" />
+
+            <View
+                android:id="@+id/become_agent_speed_line_1"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#E8E6E6"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="@+id/become_agent_speed_iv_0"
+                app:layout_constraintLeft_toLeftOf="@+id/become_agent_speed_iv_1"
+                app:layout_constraintRight_toRightOf="@+id/become_agent_speed_iv_2"
+                app:layout_constraintTop_toTopOf="@+id/become_agent_speed_iv_0" />
+
+            <View
+                android:id="@+id/become_agent_speed_line_2"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#E8E6E6"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="@+id/become_agent_speed_iv_0"
+                app:layout_constraintLeft_toLeftOf="@+id/become_agent_speed_iv_2"
+                app:layout_constraintRight_toRightOf="@+id/become_agent_speed_iv_3"
+                app:layout_constraintTop_toTopOf="@+id/become_agent_speed_iv_0" />
+
+            <ImageView
+                android:id="@+id/become_agent_speed_iv_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/become_agent_speed_select_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@+id/become_agent_speed_tv_0"
+                app:layout_constraintRight_toRightOf="@+id/become_agent_speed_tv_0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0" />
+
+            <ImageView
+                android:id="@+id/become_agent_speed_iv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/become_agent_speed_select_2"
+                app:layout_constraintBottom_toBottomOf="@+id/become_agent_speed_iv_0"
+                app:layout_constraintLeft_toLeftOf="@+id/become_agent_speed_tv_1"
+                app:layout_constraintRight_toRightOf="@+id/become_agent_speed_tv_1"
+                app:layout_constraintTop_toTopOf="@+id/become_agent_speed_iv_0" />
+
+            <ImageView
+                android:id="@+id/become_agent_speed_iv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/become_agent_speed_select_3"
+                app:layout_constraintBottom_toBottomOf="@+id/become_agent_speed_iv_0"
+                app:layout_constraintLeft_toLeftOf="@+id/become_agent_speed_tv_2"
+                app:layout_constraintRight_toRightOf="@+id/become_agent_speed_tv_2"
+                app:layout_constraintTop_toTopOf="@+id/become_agent_speed_iv_0" />
+
+            <ImageView
+                android:id="@+id/become_agent_speed_iv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/become_agent_speed_select_4"
+                app:layout_constraintBottom_toBottomOf="@+id/become_agent_speed_iv_0"
+                app:layout_constraintLeft_toLeftOf="@+id/become_agent_speed_tv_3"
+                app:layout_constraintRight_toRightOf="@+id/become_agent_speed_tv_3"
+                app:layout_constraintTop_toTopOf="@+id/become_agent_speed_iv_0" />
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F8F8F8"
+            app:layout_constraintBottom_toBottomOf="@+id/become_agent_speed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/become_agent_platform"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/become_agent_platform_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/gujujin_become_agent_information_platform_tip"
+                    android:textColor="#333333"
+                    android:textSize="17sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0" />
+
+                <TextView
+                    android:id="@+id/become_agent_platform_phone_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/binding_bank_card_phone_text"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/become_agent_platform_tip"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/phone_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:background="@android:color/transparent"
+                    android:digits="0123456789"
+                    android:gravity="right"
+                    android:hint="@string/gujujin_become_agent_information_please_enter"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:textColor="#666666"
+                    android:textColorHint="#999999"
+                    android:textSize="14sp"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/become_agent_platform_phone_tip"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintLeft_toRightOf="@+id/become_agent_platform_phone_tip"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/become_agent_platform_phone_tip" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#EEEEEE"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/become_agent_platform_phone_tip"
+                    app:layout_constraintVertical_bias="0" />
+
+                <TextView
+                    android:id="@+id/become_agent_platform_phone_tip_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/password_verification_code_text"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line1"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/phone_input_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/transparent"
+                    android:digits="0123456789"
+                    android:gravity="right"
+                    android:hint="@string/gujujin_become_agent_information_please_enter"
+                    android:inputType="number"
+                    android:textColor="#666666"
+                    android:textColorHint="#999999"
+                    android:textSize="14sp"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/become_agent_platform_phone_tip_"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintLeft_toRightOf="@+id/become_agent_platform_phone_tip_"
+                    app:layout_constraintRight_toLeftOf="@+id/line2"
+                    app:layout_constraintTop_toTopOf="@+id/become_agent_platform_phone_tip_" />
+
+                <FrameLayout
+                    android:id="@+id/verification_code_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:layout_constraintBottom_toBottomOf="@+id/become_agent_platform_phone_tip_"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/become_agent_platform_phone_tip_">
+
+                    <TextView
+                        android:id="@+id/verification_code_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:padding="8dp"
+                        android:text="@string/password_verification_code_action"
+                        android:textColor="#F53C5E"
+                        android:textSize="13sp" />
+                </FrameLayout>
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="1dp"
+                    android:layout_height="17dp"
+                    android:layout_marginRight="2dp"
+                    android:background="#EEEEEE"
+                    app:layout_constraintBottom_toBottomOf="@+id/verification_code_right"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/verification_code_right"
+                    app:layout_constraintTop_toTopOf="@+id/verification_code_right" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/become_agent_basic_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:id="@+id/become_agent_basic_data_name_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/gujujin_become_agent_information_name_tip"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/name_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="right"
+                    android:hint="@string/gujujin_become_agent_information_please_enter"
+                    android:inputType="text"
+                    android:textColor="#666666"
+                    android:textColorHint="#999999"
+                    android:textSize="14sp"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/become_agent_basic_data_name_tip"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintLeft_toRightOf="@+id/become_agent_basic_data_name_tip"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/become_agent_basic_data_name_tip" />
+
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#EEEEEE"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/become_agent_basic_data_name_tip"
+                    app:layout_constraintVertical_bias="0" />
+
+                <TextView
+                    android:id="@+id/become_agent_basic_data_cardid_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/realname_second_realname_cardid_tip"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line3"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/cardid_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/transparent"
+                    android:digits="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                    android:gravity="right"
+                    android:hint="@string/gujujin_become_agent_information_please_enter"
+                    android:inputType="number"
+                    android:maxLength="18"
+                    android:textColor="#666666"
+                    android:textColorHint="#999999"
+                    android:textSize="14sp"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/become_agent_basic_data_cardid_tip"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintLeft_toRightOf="@+id/become_agent_basic_data_cardid_tip"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/become_agent_basic_data_cardid_tip" />
+
+                <View
+                    android:id="@+id/line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#EEEEEE"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/become_agent_basic_data_cardid_tip"
+                    app:layout_constraintVertical_bias="0" />
+
+                <TextView
+                    android:id="@+id/become_agent_basic_data_wechat_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/gujujin_become_agent_information_wechat"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line4"
+                    app:layout_constraintVertical_bias="0" />
+
+                <EditText
+                    android:id="@+id/wechat_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="right"
+                    android:hint="@string/gujujin_become_agent_information_please_enter"
+                    android:inputType="text"
+                    android:textColor="#666666"
+                    android:textColorHint="#999999"
+                    android:textSize="14sp"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/become_agent_basic_data_wechat_tip"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintLeft_toRightOf="@+id/become_agent_basic_data_wechat_tip"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/become_agent_basic_data_wechat_tip" />
+
+                <View
+                    android:id="@+id/line5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#EEEEEE"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/become_agent_basic_data_wechat_tip"
+                    app:layout_constraintVertical_bias="0" />
+
+                <FrameLayout
+                    android:id="@+id/become_agent_basic_data_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:padding="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line5"
+                    app:layout_constraintVertical_bias="0">
+
+                    <TextView
+                        android:id="@+id/become_agent_basic_data_gender_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="false"
+                        android:text="@string/gujujin_become_agent_information_gender"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/gender_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:clickable="false"
+                        android:drawableRight="@mipmap/ic_arrow_right_black"
+                        android:drawablePadding="7dp"
+                        android:gravity="right"
+                        android:hint="@string/gujujin_become_agent_information_please_choose"
+                        android:textColor="#333333"
+                        android:textColorHint="#666666"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <View
+                    android:id="@+id/line6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#EEEEEE"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/become_agent_basic_data_gender"
+                    app:layout_constraintVertical_bias="0" />
+
+                <FrameLayout
+                    android:id="@+id/become_agent_basic_data_birth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:padding="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line6"
+                    app:layout_constraintVertical_bias="0">
+
+                    <TextView
+                        android:id="@+id/become_agent_basic_data_birth_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="false"
+                        android:text="@string/gujujin_become_agent_information_birth"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/birth_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:clickable="false"
+                        android:drawableRight="@mipmap/ic_arrow_right_black"
+                        android:drawablePadding="7dp"
+                        android:gravity="right"
+                        android:hint="@string/gujujin_become_agent_information_please_choose"
+                        android:textColor="#333333"
+                        android:textColorHint="#666666"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <View
+                    android:id="@+id/line7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#EEEEEE"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/become_agent_basic_data_birth"
+                    app:layout_constraintVertical_bias="0" />
+
+                <FrameLayout
+                    android:id="@+id/become_agent_basic_data_region"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:padding="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line7"
+                    app:layout_constraintVertical_bias="0">
+
+                    <TextView
+                        android:id="@+id/become_agent_basic_data_region_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="false"
+                        android:text="@string/gujujin_become_agent_information_region"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/region_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:clickable="false"
+                        android:drawableRight="@mipmap/ic_arrow_right_black"
+                        android:drawablePadding="7dp"
+                        android:gravity="right"
+                        android:hint="@string/gujujin_become_agent_information_please_choose"
+                        android:textColor="#333333"
+                        android:textColorHint="#666666"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/become_agent_already_exist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/ic_become_agent_already_exist"
+                    android:gravity="bottom|right"
+                    android:maxWidth="200dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/gujujin_become_agent_region_exist"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp"
+                    android:visibility="gone"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/become_agent_basic_data_region"
+                    app:layout_constraintVertical_bias="0"
+                    tools:visibility="visible" />
+
+                <View
+                    android:id="@+id/line8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#EEEEEE"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/become_agent_basic_data_region"
+                    app:layout_constraintVertical_bias="0" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/submission"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="35dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#F53C5E"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/become_agent_already_exist"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_goneMarginTop="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:text="@string/gujujin_become_agent_sure"
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp" />
+                </android.support.v7.widget.CardView>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    tools:context=".ui.activity.ApplyRefundDetailsActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/details_top_0"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:background="#FC4C8D"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/details_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0"
+                tools:text="退货退款中..." />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/details_status_speed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:minHeight="95dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_top_0"
+                app:layout_constraintVertical_bias="0">
+
+                <TextView
+                    android:id="@+id/details_status_speed_tv_0"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/apply_after_status_0"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/details_status_speed_tv_1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0" />
+
+                <TextView
+                    android:id="@+id/details_status_speed_tv_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/apply_after_status_1"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/details_status_speed_tv_0"
+                    app:layout_constraintRight_toLeftOf="@+id/details_status_speed_tv_2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0" />
+
+                <TextView
+                    android:id="@+id/details_status_speed_tv_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/apply_after_status_21"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/details_status_speed_tv_1"
+                    app:layout_constraintRight_toLeftOf="@+id/details_status_speed_tv_3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0" />
+
+                <TextView
+                    android:id="@+id/details_status_speed_tv_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/apply_after_status_3"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/details_status_speed_tv_2"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0" />
+
+                <View
+                    android:id="@+id/details_status_speed_line_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:alpha="0.3"
+                    android:background="#FC4C8D"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/details_status_speed_iv_0"
+                    app:layout_constraintLeft_toLeftOf="@+id/details_status_speed_iv_0"
+                    app:layout_constraintRight_toRightOf="@+id/details_status_speed_iv_1"
+                    app:layout_constraintTop_toTopOf="@+id/details_status_speed_iv_0" />
+
+                <View
+                    android:id="@+id/details_status_speed_line_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:alpha="0.3"
+                    android:background="#FC4C8D"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/details_status_speed_iv_0"
+                    app:layout_constraintLeft_toLeftOf="@+id/details_status_speed_iv_1"
+                    app:layout_constraintRight_toRightOf="@+id/details_status_speed_iv_2"
+                    app:layout_constraintTop_toTopOf="@+id/details_status_speed_iv_0" />
+
+                <View
+                    android:id="@+id/details_status_speed_line_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:alpha="0.3"
+                    android:background="#FC4C8D"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/details_status_speed_iv_0"
+                    app:layout_constraintLeft_toLeftOf="@+id/details_status_speed_iv_2"
+                    app:layout_constraintRight_toRightOf="@+id/details_status_speed_iv_3"
+                    app:layout_constraintTop_toTopOf="@+id/details_status_speed_iv_0" />
+
+                <ImageView
+                    android:id="@+id/details_status_speed_iv_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/refund_details_status_speed_select"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@+id/details_status_speed_tv_0"
+                    app:layout_constraintRight_toRightOf="@+id/details_status_speed_tv_0"
+                    app:layout_constraintTop_toBottomOf="@+id/details_status_speed_tv_0"
+                    app:layout_constraintVertical_bias="0" />
+
+                <ImageView
+                    android:id="@+id/details_status_speed_iv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/refund_details_status_speed_select"
+                    app:layout_constraintBottom_toBottomOf="@+id/details_status_speed_iv_0"
+                    app:layout_constraintLeft_toLeftOf="@+id/details_status_speed_tv_1"
+                    app:layout_constraintRight_toRightOf="@+id/details_status_speed_tv_1"
+                    app:layout_constraintTop_toTopOf="@+id/details_status_speed_iv_0" />
+
+                <ImageView
+                    android:id="@+id/details_status_speed_iv_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/refund_details_status_speed_select"
+                    app:layout_constraintBottom_toBottomOf="@+id/details_status_speed_iv_0"
+                    app:layout_constraintLeft_toLeftOf="@+id/details_status_speed_tv_2"
+                    app:layout_constraintRight_toRightOf="@+id/details_status_speed_tv_2"
+                    app:layout_constraintTop_toTopOf="@+id/details_status_speed_iv_0" />
+
+                <ImageView
+                    android:id="@+id/details_status_speed_iv_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/refund_details_status_finish_select"
+                    app:layout_constraintBottom_toBottomOf="@+id/details_status_speed_iv_0"
+                    app:layout_constraintLeft_toLeftOf="@+id/details_status_speed_tv_3"
+                    app:layout_constraintRight_toRightOf="@+id/details_status_speed_tv_3"
+                    app:layout_constraintTop_toTopOf="@+id/details_status_speed_iv_0" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/details_shop_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_status_speed"
+                app:layout_constraintVertical_bias="0">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="11dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#FF4646"
+                    app:layout_constraintBottom_toBottomOf="@+id/details_shop_title"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/details_shop_title"
+                    app:layout_constraintTop_toTopOf="@+id/details_shop_title" />
+
+                <TextView
+                    android:id="@+id/details_shop_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/commodity_information_text"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#EEEEEE"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/details_shop_title"
+                    app:layout_constraintVertical_bias="0" />
+
+                <ImageView
+                    android:id="@+id/shop_iv"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/details_shop_title"
+                    app:layout_constraintVertical_bias="0"
+                    tools:src="@mipmap/ic_layout_empty_shop_cart" />
+
+                <TextView
+                    android:id="@+id/shop_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="#333333"
+                    android:textSize="13sp"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toRightOf="@+id/shop_iv"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/shop_iv"
+                    app:layout_constraintVertical_bias="0"
+                    tools:text="稻香大米@ (5kg）预定中醇香浓 候吃出健康" />
+
+                <TextView
+                    android:id="@+id/shop_specs"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="#969696"
+                    android:textSize="13sp"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toRightOf="@+id/shop_iv"
+                    app:layout_constraintRight_toLeftOf="@+id/total_num"
+                    app:layout_constraintTop_toBottomOf="@+id/shop_name"
+                    app:layout_constraintVertical_bias="0"
+                    tools:text="稻香大米@5kg袋装" />
+
+                <TextView
+                    android:id="@+id/total_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="X 1"
+                    android:textColor="#969696"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/shop_specs"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintLeft_toRightOf="@+id/shop_specs"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1" />
+            </android.support.constraint.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/refund_reasons"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:textColor="#666666"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_shop_info"
+                app:layout_constraintVertical_bias="0"
+                tools:text="退款原因：" />
+
+            <TextView
+                android:id="@+id/after_sales_number"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:textColor="#666666"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/refund_reasons"
+                app:layout_constraintVertical_bias="0"
+                tools:text="售后编号：" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/after_sales_total"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/after_sales_number"
+                app:layout_constraintVertical_bias="0">
+
+                <TextView
+                    android:id="@+id/after_sales_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:text="@string/apply_after_refund_refund_amount_tip"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.jgkj.grb.view.textview.BoldTextView
+                    android:id="@+id/total_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="9dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:text="@string/total_top_text"
+                    android:textColor="#F74B70"
+                    android:textSize="17sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toRightOf="@+id/after_sales_money"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.jgkj.grb.view.textview.BoldTextView
+                    android:id="@+id/total_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="9dp"
+                    android:background="@android:color/white"
+                    android:drawableLeft="@mipmap/ic_grb"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/total_bottom_text"
+                    android:visibility="gone"
+                    android:textColor="#F74B70"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toRightOf="@+id/total_top"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/widget_toolbar" />
+
+</android.support.constraint.ConstraintLayout>

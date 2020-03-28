@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/bank_card_nametype_iv"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:adjustViewBounds="true"
+        android:clickable="false"
+        tools:src="@mipmap/ic_default_head" />
+
+    <TextView
+        android:id="@+id/bank_card_nametype_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="15dp"
+        android:clickable="false"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        tools:text="中国农业银行" />
+
+    <ImageView
+        android:id="@+id/bank_card_nametype_right"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="15dp"
+        android:adjustViewBounds="true"
+        android:clickable="false"
+        android:src="@mipmap/ic_selected_34" />
+</FrameLayout>

@@ -1,0 +1,127 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jgkj.share.library">
+
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-feature android:name="android.hardware.nfc.hce" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+
+    <application>
+        <!-- 分享 ：微信 -->
+        <activity
+            android:name="com.umeng.soexample.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity-alias
+            android:name="${applicationId}.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:targetActivity="com.umeng.soexample.wxapi.WXEntryActivity" />
+        <!-- 分享 ：支付宝 -->
+        <activity
+            android:name="com.umeng.soexample.apshare.ShareEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity-alias
+            android:name="${applicationId}.apshare.ShareEntryActivity"
+            android:exported="true"
+            android:targetActivity="com.umeng.soexample.apshare.ShareEntryActivity" />
+        <!-- 分享 ：钉钉 -->
+        <activity
+            android:name="com.umeng.soexample.ddshare.DDShareActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity-alias
+            android:name="${applicationId}.ddshare.DDShareActivity"
+            android:exported="true"
+            android:targetActivity="com.umeng.soexample.ddshare.DDShareActivity" />
+        <!-- 分享 ：易信 -->
+        <activity
+            android:name="com.umeng.soexample.yxapi.YXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity-alias
+            android:name="${applicationId}.yxapi.YXEntryActivity"
+            android:exported="true"
+            android:targetActivity="com.umeng.soexample.yxapi.YXEntryActivity" />
+        <!-- 分享 和 授权：新浪 -->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 分享 和 授权：QQ(请注意将 qq appkey替换成您自己的 qq appkey) -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--分享编辑页(只有豆瓣，人人，腾讯微博，领英，twitter需要)-->
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 分享 ：facebook 需要配置 appkey -->
+        <activity android:name="com.umeng.facebook.FacebookActivity" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <!-- 分享 ：twitter 分享回调结果 (分享模块v6.9.4 修改配置) -->
+        <receiver
+            android:name="com.umeng.soexample.twitterapi.TwitterShareReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.twitter.sdk.android.tweetcomposer.UPLOAD_SUCCESS" />
+                <action android:name="com.twitter.sdk.android.tweetcomposer.UPLOAD_FAILURE" />
+                <action android:name="com.twitter.sdk.android.tweetcomposer.TWEET_COMPOSE_CANCEL" />
+            </intent-filter>
+        </receiver>
+        <!-- 分享 ：Kakao 需要配置 appkey -->
+        <activity android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity" />
+        <!-- 分享 ：豆瓣、人人、腾讯微博：这个三个平台不需要在代码中设置 appkey，jar 包放进去就可以使用，但是需要将 appkey 填写在友盟的后台 -->
+
+
+        <!--银联支付  添加跳转 app 与网页的类等-->
+        <uses-library
+            android:name="org.simalliance.openmobileapi"
+            android:required="false" />
+    </application>
+</manifest>

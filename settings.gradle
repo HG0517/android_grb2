@@ -1,0 +1,13 @@
+include ':app',
+        ':component:basic',
+        ':component:citypicker',
+        ':component:kefu-easeui',
+        ':component:language',
+        ':component:matisse',
+        ':component:share',
+        ':component:tokenutils',
+        ':component:xbanner',
+		':easypay:basepay',
+        ':easypay:alipay',
+        ':easypay:unionpay',
+        ':easypay:wechatpay'

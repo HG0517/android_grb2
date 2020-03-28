@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    tools:context=".ui.activity.ApplyResultActivity">
+
+    <include layout="@layout/widget_toolbar" />
+
+    <ImageView
+        android:id="@+id/apply_result_icon"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="87dp"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/ic_selected_big"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topPanel"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/apply_result_tip_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apply_result_icon"
+        app:layout_constraintVertical_bias="0"
+        tools:text="商家已收到您的退款申请" />
+
+    <TextView
+        android:id="@+id/apply_result_tip_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:lineSpacingExtra="2dp"
+        android:textColor="#0C0C0C"
+        android:textSize="14sp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apply_result_tip_top"
+        app:layout_constraintVertical_bias="0"
+        tools:text="商家会尽快处理您的退款，如在7个工作日内未进行处理，款项将自动退还至您的付款账户" />
+
+</android.support.constraint.ConstraintLayout>

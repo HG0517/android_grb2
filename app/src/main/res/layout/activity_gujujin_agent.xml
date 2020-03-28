@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gujujin.activity.GujujinAgentActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_gujvjin_index_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userhead"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="68dp"
+                android:src="@mipmap/ic_default_head"
+                app:civ_border_color="#80FFFFFF"
+                app:civ_border_width="3dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#494430"
+                android:textSize="16sp"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toRightOf="@+id/userhead"
+                app:layout_constraintRight_toLeftOf="@+id/user_daili_level_"
+                app:layout_constraintTop_toTopOf="@+id/userhead"
+                app:layout_constraintVertical_bias="0"
+                tools:text="公让宝公让宝公让宝公让宝公让宝" />
+
+            <ImageView
+                android:id="@+id/user_daili_type"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/userhead"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toRightOf="@+id/userhead"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/username"
+                app:layout_constraintVertical_bias="1"
+                tools:src="@mipmap/ic_gujvjin_daili_0" />
+
+            <ImageView
+                android:id="@+id/user_daili_level"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_marginLeft="7dp"
+                app:layout_constraintBottom_toBottomOf="@+id/user_daili_type"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toRightOf="@+id/user_daili_type"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/user_daili_type"
+                tools:src="@mipmap/ic_gujvjin_daili_level_1" />
+
+            <ImageView
+                android:id="@+id/user_daili_level_"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_marginTop="79dp"
+                android:src="@mipmap/ic_gujvjin_daili_level_0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0" />
+
+            <com.jgkj.grb.view.textview.BoldTextView
+                android:id="@+id/user_daili_level_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="@string/personal_daili_level"
+                android:textColor="#0E543A"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/user_daili_level_"
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintLeft_toLeftOf="@+id/user_daili_level_"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/user_daili_level_" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:overScrollMode="never"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userhead"
+                app:layout_constraintVertical_bias="0" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/widget_toolbar" />
+
+</android.support.constraint.ConstraintLayout>

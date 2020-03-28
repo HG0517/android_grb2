@@ -1,0 +1,1059 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/personal_top_bg"
+                android:layout_width="match_parent"
+                android:layout_height="195dp"
+                android:background="@mipmap/ic_personal_bg_top"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0" />
+
+            <ImageView
+                android:id="@+id/personal_top_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@mipmap/ic_user_agent_level"
+                app:layout_constraintBottom_toBottomOf="@+id/personal_top_bg"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@+id/personal_top_bg"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userhead"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="67dp"
+                android:src="@mipmap/ic_default_head"
+                app:civ_border_color="#80F8F8F8"
+                app:civ_border_width="3dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0" />
+
+            <ImageView
+                android:id="@+id/userout"
+                android:layout_width="35dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="50dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_personal_userout"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@+id/userhead"
+                app:layout_constraintRight_toRightOf="@+id/userhead"
+                app:layout_constraintTop_toTopOf="@+id/userhead"
+                app:layout_constraintVertical_bias="0"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toRightOf="@+id/userhead"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/userhead"
+                app:layout_constraintVertical_bias="0"
+                tools:text="公让宝" />
+
+            <ImageView
+                android:id="@+id/user_agent_level"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="6dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="@+id/userhead"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toRightOf="@+id/userhead"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/userhead"
+                app:layout_constraintVertical_bias="1"
+                tools:src="@mipmap/ic_user_agent_level_0" />
+
+            <ImageView
+                android:id="@+id/user_identity"
+                android:layout_width="70dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_grb"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/userhead"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toRightOf="@+id/user_agent_level"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/userhead"
+                app:layout_constraintVertical_bias="1" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/personal_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="15dp"
+                android:clickable="false"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userhead"
+                app:layout_constraintVertical_bias="0">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.jgkj.grb.view.textview.BoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/personal_order"
+                        android:textColor="#333333"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <TextView
+                        android:id="@+id/personal_order_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginRight="18dp"
+                        android:drawableRight="@mipmap/ic_arrow_right"
+                        android:drawablePadding="5dp"
+                        android:text="@string/personal_order_all"
+                        android:textColor="#999999"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0">
+
+                        <FrameLayout
+                            android:id="@+id/personal_order_obligations"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:clickable="false"
+                                android:drawableTop="@mipmap/ic_personal_order_obligations"
+                                android:drawablePadding="10dp"
+                                android:gravity="center"
+                                android:text="@string/personal_order_0"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/personal_order_tobe_shipped"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:clickable="false"
+                                android:drawableTop="@mipmap/ic_personal_order_tobe_shipped"
+                                android:drawablePadding="10dp"
+                                android:gravity="center"
+                                android:text="@string/personal_order_1"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/personal_order_tobe_received"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:clickable="false"
+                                android:drawableTop="@mipmap/ic_personal_order_tobe_received"
+                                android:drawablePadding="10dp"
+                                android:gravity="center"
+                                android:text="@string/personal_order_2"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/personal_order_tobe_evaluated"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:clickable="false"
+                                android:drawableTop="@mipmap/ic_personal_order_tobe_evaluated"
+                                android:drawablePadding="10dp"
+                                android:gravity="center"
+                                android:text="@string/personal_order_3"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/personal_order_refund_after_sale"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:clickable="false"
+                                android:drawableTop="@mipmap/ic_personal_order_refund_after_sale"
+                                android:drawablePadding="10dp"
+                                android:gravity="center"
+                                android:text="@string/personal_order_4"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/personal_assets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/personal_order"
+                app:layout_constraintVertical_bias="0">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.jgkj.grb.view.textview.BoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="16dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/personal_assets"
+                        android:textColor="#333333"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <View
+                        android:id="@+id/line3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="35dp"
+                        android:background="#EEEEEE"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/personal_balance"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="14dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:minHeight="60dp"
+                        app:cardBackgroundColor="#FAFAFA"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/personal_coupon"
+                        app:layout_constraintTop_toBottomOf="@+id/line3"
+                        app:layout_constraintVertical_bias="0">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="9dp"
+                            android:drawableLeft="@mipmap/ic_personal_assets_011"
+                            android:drawableRight="@mipmap/ic_arrow_right"
+                            android:drawablePadding="5dp"
+                            android:gravity="center|right"
+                            android:text="@string/personal_assets_0"
+                            android:textColor="#666666"
+                            android:textSize="13sp" />
+
+                        <com.jgkj.grb.view.textview.BoldTextView
+                            android:id="@+id/personal_balance_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="35dp"
+                            android:layout_marginBottom="12dp"
+                            android:clickable="false"
+                            android:text="@string/total_top_text"
+                            android:textColor="#333333"
+                            android:textSize="14sp" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/personal_coupon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginRight="12dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:minHeight="60dp"
+                        app:cardBackgroundColor="#FAFAFA"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="1"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintLeft_toRightOf="@+id/personal_balance"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/personal_balance"
+                        app:layout_constraintVertical_bias="0">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="9dp"
+                            android:drawableLeft="@mipmap/ic_personal_assets_012"
+                            android:drawableRight="@mipmap/ic_arrow_right"
+                            android:drawablePadding="5dp"
+                            android:gravity="center|right"
+                            android:text="@string/personal_assets_3"
+                            android:textColor="#666666"
+                            android:textSize="13sp" />
+
+                        <com.jgkj.grb.view.textview.BoldTextView
+                            android:id="@+id/personal_coupon_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="35dp"
+                            android:layout_marginBottom="12dp"
+                            android:clickable="false"
+                            android:text="@string/personal_assets_31"
+                            android:textColor="#333333"
+                            android:textSize="14sp" />
+                    </android.support.v7.widget.CardView>
+
+                    <LinearLayout
+                        android:id="@+id/personal_assets_"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/personal_balance"
+                        app:layout_constraintVertical_bias="0">
+
+                        <FrameLayout
+                            android:id="@+id/personal_gra"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <com.jgkj.grb.view.textview.BoldTextView
+                                android:id="@+id/personal_gra_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="15dp"
+                                android:clickable="false"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="0.00"
+                                android:textColor="#333333"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="50dp"
+                                android:layout_marginBottom="24dp"
+                                android:clickable="false"
+                                android:text="@string/personal_assets_4"
+                                android:textColor="#666666"
+                                android:textSize="14sp" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/personal_grb"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <com.jgkj.grb.view.textview.BoldTextView
+                                android:id="@+id/personal_grb_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="15dp"
+                                android:clickable="false"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="0.00"
+                                android:textColor="#333333"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="50dp"
+                                android:layout_marginBottom="24dp"
+                                android:clickable="false"
+                                android:text="@string/personal_assets_1"
+                                android:textColor="#666666"
+                                android:textSize="14sp" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/personal_grc"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <com.jgkj.grb.view.textview.BoldTextView
+                                android:id="@+id/personal_grc_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="15dp"
+                                android:clickable="false"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="0.00"
+                                android:textColor="#333333"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="50dp"
+                                android:layout_marginBottom="24dp"
+                                android:clickable="false"
+                                android:text="@string/personal_assets_2"
+                                android:textColor="#666666"
+                                android:textSize="14sp" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#EEEEEE"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/personal_assets_"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <View
+                        android:id="@+id/line2"
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#EEEEEE"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/line1"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <FrameLayout
+                        android:id="@+id/personal_assets_recharge"
+                        android:layout_width="0dp"
+                        android:layout_height="57dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/line2"
+                        app:layout_constraintTop_toBottomOf="@+id/line1"
+                        app:layout_constraintVertical_bias="0">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:clickable="false"
+                            android:drawableLeft="@mipmap/ic_personal_assets_recharge"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:text="@string/activity_title_personal_recharge"
+                            android:textColor="#333333"
+                            android:textSize="15sp" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/personal_assets_transfer"
+                        android:layout_width="0dp"
+                        android:layout_height="57dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="1"
+                        app:layout_constraintLeft_toRightOf="@+id/line2"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/line1"
+                        app:layout_constraintVertical_bias="0">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:clickable="false"
+                            android:drawableLeft="@mipmap/ic_personal_assets_transfer"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:text="@string/activity_title_personal_transfer_friends"
+                            android:textColor="#333333"
+                            android:textSize="15sp" />
+                    </FrameLayout>
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/personal_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                app:contentPaddingBottom="24dp"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/personal_assets"
+                app:layout_constraintVertical_bias="0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.jgkj.grb.view.textview.BoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/personal_service"
+                        android:textColor="#333333"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#EEEEEE" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:id="@+id/personal_service_cloud_warehouse"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:clickable="false"
+                                android:drawableTop="@mipmap/ic_personal_service_cloud_warehouse"
+                                android:drawablePadding="6dp"
+                                android:gravity="center"
+                                android:text="@string/activity_title_cloud_warehouse"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/personal_service_my_collect"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:clickable="false"
+                                android:drawableTop="@mipmap/ic_personal_service_my_collect"
+                                android:drawablePadding="6dp"
+                                android:gravity="center"
+                                android:text="@string/activity_title_personal_collect"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/personal_service_my_tracks"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:clickable="false"
+                                android:drawableTop="@mipmap/ic_personal_service_my_tracks"
+                                android:drawablePadding="6dp"
+                                android:gravity="center"
+                                android:text="@string/activity_title_personal_tracks"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/personal_service_my_evaluation"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:clickable="false"
+                                android:drawableTop="@mipmap/ic_personal_service_my_evaluation"
+                                android:drawablePadding="6dp"
+                                android:gravity="center"
+                                android:text="@string/activity_title_personal_evaluation"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:id="@+id/personal_service_my_precious_powder"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:clickable="false"
+                                android:drawableTop="@mipmap/ic_personal_service_my_precious_powder"
+                                android:drawablePadding="6dp"
+                                android:gravity="center"
+                                android:text="@string/activity_title_personal_powder"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/personal_service_address_management"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:clickable="false"
+                                android:drawableTop="@mipmap/ic_personal_service_address_management"
+                                android:drawablePadding="6dp"
+                                android:gravity="center"
+                                android:text="@string/activity_title_address_manager"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/personal_service_my_promotion"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:clickable="false"
+                                android:drawableTop="@mipmap/ic_personal_service_my_promotion"
+                                android:drawablePadding="6dp"
+                                android:gravity="center"
+                                android:text="@string/personal_service_promotion"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/personal_service_help"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:clickable="false"
+                                android:drawableTop="@mipmap/ic_personal_service_help"
+                                android:drawablePadding="6dp"
+                                android:gravity="center"
+                                android:text="@string/activity_title_service_and_help"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:id="@+id/personal_service_quantbroker"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:clickable="false"
+                                android:drawableTop="@mipmap/ic_personal_service_quantbroker"
+                                android:drawablePadding="6dp"
+                                android:gravity="center"
+                                android:text="@string/personal_quantbroker_title"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground"></FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground"></FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground"></FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/bottomPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/personal_service"
+                app:layout_constraintVertical_bias="0">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@mipmap/ic_hot"
+                    android:drawablePadding="7dp"
+                    android:gravity="center"
+                    android:text="@string/popular_hot"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:overScrollMode="never" />
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/topPanelMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:minHeight="44dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0">
+
+            <FrameLayout
+                android:id="@+id/actionSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:minWidth="44dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/actionMsg"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:src="@mipmap/ic_personal_setting" />
+            </FrameLayout>
+
+            <cn.bingoogolapple.badgeview.BGABadgeFrameLayout
+                android:id="@+id/actionMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:minWidth="44dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:src="@mipmap/ic_personal_message" />
+            </cn.bingoogolapple.badgeview.BGABadgeFrameLayout>
+        </android.support.constraint.ConstraintLayout>
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

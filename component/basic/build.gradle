@@ -1,0 +1,103 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        ndk {
+            abiFilters "armeabi"
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    // JavaVersion
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    //support
+    api "com.android.support:appcompat-v7:${rootProject.ext.supportVersion}"
+    api "com.android.support:cardview-v7:${rootProject.ext.supportVersion}"
+    api "com.android.support:design:${rootProject.ext.supportVersion}"
+    api "com.android.support:support-v4:${rootProject.ext.supportVersion}"
+    api "com.android.support:recyclerview-v7:${rootProject.ext.supportVersion}"
+    api "com.android.support.constraint:constraint-layout:${rootProject.ext.constraintLayoutVersion}"
+    //multidex
+    api "com.android.support:multidex:${rootProject.ext.multidexVersion}"
+
+    //com.jgkj.grb.eventbus
+    api "org.greenrobot:eventbus:${rootProject.ext.eventbusVersion}"
+
+    //butterknife
+    api "com.jakewharton:butterknife:${rootProject.ext.butterknifeVersion}"  // 10.1.0 需 androidx
+    annotationProcessor "com.jakewharton:butterknife-compiler:${rootProject.ext.butterknifeVersion}"  // 10.1.0 需 androidx
+
+    //swipeback
+    //api "com.from.view.swipeback:view_module_swipeback:1.0.2"
+
+    //glide
+    api "com.github.bumptech.glide:glide:${rootProject.ext.glideVersion}"
+    api "com.github.bumptech.glide:annotations:${rootProject.ext.glideVersion}"
+    api "com.github.bumptech.glide:okhttp3-integration:${rootProject.ext.glideVersion}"
+    annotationProcessor "com.github.bumptech.glide:compiler:${rootProject.ext.glideVersion}"
+
+    //okhttp3
+    api "com.squareup.okhttp3:okhttp:${rootProject.ext.okhttp3Version}"
+    api "com.squareup.okhttp3:logging-interceptor:${rootProject.ext.okhttp3Version}"
+    api("com.zhy:okhttputils:${rootProject.ext.okhttputilsVersion}") {
+        exclude group: "com.squareup.okhttp3"
+    }
+    //retrofit 2.0
+    api "com.squareup.retrofit2:retrofit:${rootProject.ext.retrofit2Version}"
+    api "com.squareup.retrofit2:converter-gson:${rootProject.ext.retrofit2Version}"
+    api "com.squareup.retrofit2:converter-scalars:${rootProject.ext.retrofit2Version}"
+    api "com.squareup.retrofit2:adapter-rxjava2:${rootProject.ext.retrofit2Version}"
+    //rxjava2 rxandroid
+    api "io.reactivex.rxjava2:rxjava:${rootProject.ext.rxjavaVersion}"
+    api "io.reactivex.rxjava2:rxandroid:${rootProject.ext.rxandroidVersion}"
+
+    //google gson
+    api "com.google.code.gson:gson:${rootProject.ext.gsonVersion}"
+
+    //zxing
+    api "com.github.yuzhiqiang1993:zxing:${rootProject.ext.zxingVersion}"
+
+    //smartrefresh
+    api "com.scwang.smartrefresh:SmartRefreshLayout:${rootProject.ext.smartrefreshVersion}"
+//    api "com.scwang.smartrefresh:SmartRefreshHeader:${rootProject.ext.smartrefreshVersion}" // 没有使用特殊Header，可以不加这行
+
+    //tinypinyin
+    api "com.github.promeg:tinypinyin:${rootProject.ext.tinypinyinVersion}" // ~80KB
+
+    //运行时权限 support：permission for using the android support library
+    api "com.yanzhenjie.permission:support:${rootProject.ext.permissionVersion}"
+    //运行时权限 AndroidX：permission for using the android x library
+    //api "com.yanzhenjie:permission:2.0.3"
+
+    //CircleImageView
+    api "de.hdodenhof:circleimageview:${rootProject.ext.circleimageviewVersion}"
+
+    //Luban 图片压缩
+    api "top.zibin:Luban:${rootProject.ext.lubanVersion}"
+
+    //badgeview
+    api "cn.bingoogolapple:bga-badgeview-api:${rootProject.ext.badgeviewVersion}"
+    annotationProcessor "cn.bingoogolapple:bga-badgeview-compiler:${rootProject.ext.badgeviewVersion}"
+
+    // wechat
+    api "com.tencent.mm.opensdk:wechat-sdk-android-without-mta:${rootProject.ext.wechatVersion}"
+
+    // https://github.com/qstumn/VerticalTabLayout
+    api 'q.rorbin:VerticalTabLayout:1.2.9'
+}

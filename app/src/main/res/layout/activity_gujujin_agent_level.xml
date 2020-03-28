@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gujujin.activity.GujujinAgentLevelActivity">
+
+    <View
+        android:id="@+id/agent_level_top_bg"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:background="@mipmap/ic_agent_top_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userhead"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        tools:src="@mipmap/ic_default_head" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toRightOf="@+id/userhead"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/userhead"
+        app:layout_constraintVertical_bias="0"
+        tools:text="公让宝" />
+
+    <ImageView
+        android:id="@+id/user_daili_type"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/userhead"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toRightOf="@+id/userhead"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/userhead"
+        app:layout_constraintVertical_bias="1"
+        tools:src="@mipmap/ic_gujvjin_daili_0" />
+
+    <ImageView
+        android:id="@+id/user_daili_level"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/user_daili_type"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toRightOf="@+id/user_daili_type"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/user_daili_type"
+        tools:src="@mipmap/ic_gujvjin_daili_level_1" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agent_level_top_bg"
+        app:layout_constraintVertical_bias="0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:text="@string/gujujin_agent_level"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0" />
+
+            <LinearLayout
+                android:id="@+id/agent_level_title"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="47dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="@string/gujujin_agent_level_title_0"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="@string/gujujin_agent_level_title_1"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/gujujin_agent_level_title_2"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/agent_level_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/agent_level_title"
+                app:layout_constraintVertical_bias="0">
+
+                <TextView
+                    android:id="@+id/benefits_received_left_0"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="省代理" />
+
+                <TextView
+                    android:id="@+id/benefits_received_0"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="1+1销售分红\n在本代理区域每销售一瓶2元分红,非区域人员到本区域销售分红1元\n可推荐市代理,享受推荐代理区域每瓶0.4元分红\n可推荐区县代理，享受推荐区域每瓶0.6元分红" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_gujvjin_daili_3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/agent_level_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/agent_level_0"
+                app:layout_constraintVertical_bias="0">
+
+                <TextView
+                    android:id="@+id/benefits_received_left_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="市代理" />
+
+                <TextView
+                    android:id="@+id/benefits_received_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="2+2销售分红\n在本代理区域每销售一瓶4元分红,非区域人员到本区域销售分红2元\n可推荐市代理,享受推荐代理区域每瓶0.4元分红\n可推荐区县代理，享受推荐区域每瓶0.6元分红" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_gujvjin_daili_2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/agent_level_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/agent_level_1"
+                app:layout_constraintVertical_bias="0">
+
+                <TextView
+                    android:id="@+id/benefits_received_left_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="区县代理" />
+
+                <TextView
+                    android:id="@+id/benefits_received_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="在本代理区域每销售一瓶分红10元，非本区域人员到本区域或本人跨区域销售分红5元\n可推荐市代理,享受推荐代理区域每瓶0.4元分红\n可推荐区县代理，享受推荐区域每瓶0.6元分红" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_gujvjin_daili_1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/agent_level_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/agent_level_2"
+                app:layout_constraintVertical_bias="0">
+
+                <TextView
+                    android:id="@+id/benefits_received_left_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="个人代理" />
+
+                <TextView
+                    android:id="@+id/benefits_received_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="在本代理区域每销售一瓶分红10元，非本区域人员到本区域或本人跨区域销售分红5元\n可推荐市代理,享受推荐代理区域每瓶0.4元分红\n可推荐区县代理，享受推荐区域每瓶0.6元分红" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_gujvjin_daili_0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/agent_level_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/agent_level_3"
+                app:layout_constraintVertical_bias="0">
+
+                <TextView
+                    android:id="@+id/benefits_received_left_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="一星代理" />
+
+                <TextView
+                    android:id="@+id/benefits_received_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="推荐5名个人代理和销售业绩达到600瓶，晋升为一星代理，可享受团队个人代理新培业绩每瓶一元的分红" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_gujvjin_daili_level_1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/agent_level_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/agent_level_4"
+                app:layout_constraintVertical_bias="0">
+
+                <TextView
+                    android:id="@+id/benefits_received_left_5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="二星代理" />
+
+                <TextView
+                    android:id="@+id/benefits_received_5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="团队产生4个一星和销售业绩达到2400瓶，晋升为二星代理，可享受团队个人代理新增业绩每瓶一元的分红" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_gujvjin_daili_level_2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/agent_level_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/agent_level_5"
+                app:layout_constraintVertical_bias="0">
+
+                <TextView
+                    android:id="@+id/benefits_received_left_6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="三星代理" />
+
+                <TextView
+                    android:id="@+id/benefits_received_6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="团队产生3个二星和销售业绩达到7200瓶，晋升为三星代理，可享受团队个人代理新培业绩每瓶一元的分红" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_gujvjin_daili_level_3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/agent_level_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/agent_level_6"
+                app:layout_constraintVertical_bias="0">
+
+                <TextView
+                    android:id="@+id/benefits_received_left_7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="四星代理" />
+
+                <TextView
+                    android:id="@+id/benefits_received_7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="团队产生3个三星和销售业绩达21600瓶，晋升为四星代理，可享受团队个人代理新增业绩每瓶一元的分红" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_gujvjin_daili_level_4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/agent_level_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/agent_level_7"
+                app:layout_constraintVertical_bias="0">
+
+                <TextView
+                    android:id="@+id/benefits_received_left_8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="五星代理" />
+
+                <TextView
+                    android:id="@+id/benefits_received_8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    tools:text="团队产生3个四星和业绩达到64800瓶，晋升为五星代理，可享受团队个人代理新增业绩每瓶一元的分红\n享受全球新增业绩每瓶一元的加权平均分红" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_gujvjin_daili_level_5" />
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/widget_toolbar" />
+
+</android.support.constraint.ConstraintLayout>

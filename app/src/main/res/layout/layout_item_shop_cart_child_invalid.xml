@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp"
+    app:contentPaddingBottom="15dp"
+    app:contentPaddingTop="20dp">
+
+    <ImageView
+        android:id="@+id/cart_shop_invalid"
+        android:layout_width="20dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="13dp"
+        android:src="@mipmap/ic_cart_shop_invalid" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="41dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:id="@+id/cart_shop_iv"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:adjustViewBounds="true"
+            tools:src="@mipmap/ic_layout_empty_shop_cart" />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/cart_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="139dp"
+        android:layout_marginRight="15dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="2dp"
+        android:maxLines="2"
+        android:textColor="#333333"
+        android:textSize="13sp"
+        tools:text="稻香大米@ (5kg）预定中醇香浓 候吃出健康，稻香大米@ (5kg）预定中醇香浓 候吃出健康" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cart_shop_invalid_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="139dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="30dp"
+        android:clickable="false"
+        app:cardBackgroundColor="#F8F8F8"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="0dp"
+        app:contentPaddingBottom="6dp"
+        app:contentPaddingLeft="8dp"
+        app:contentPaddingRight="8dp"
+        app:contentPaddingTop="6dp">
+
+        <TextView
+            android:id="@+id/cart_shop_invalid_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:ellipsize="end"
+            android:lineSpacingExtra="2dp"
+            android:maxLines="2"
+            android:textColor="#999999"
+            android:textSize="13sp"
+            tools:text="抢购时间已过，商品已经 不能购买，抢购时间已过，商品已经 不能购买" />
+    </android.support.v7.widget.CardView>
+
+</android.support.v7.widget.CardView>

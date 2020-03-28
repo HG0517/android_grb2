@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/shop_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="35dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        tools:src="@mipmap/ic_layout_empty_shop_cart" />
+
+    <TextView
+        android:id="@+id/shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toRightOf="@+id/shop_iv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        tools:text="大米 苏软香10kg 中粮出品 苏北粳 米 非东北大米" />
+
+    <com.jgkj.grb.view.textview.BoldTextView
+        android:id="@+id/total_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#F74B70"
+        android:textSize="15sp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toRightOf="@+id/shop_iv"
+        app:layout_constraintTop_toBottomOf="@+id/shop_name"
+        app:layout_constraintVertical_bias="0"
+        tools:text="@string/total_top_text" />
+
+    <com.jgkj.grb.view.textview.BoldTextView
+        android:id="@+id/total_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:drawableLeft="@mipmap/ic_grb"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:textColor="#F74B70"
+        android:textSize="14sp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toRightOf="@+id/shop_iv"
+        app:layout_constraintTop_toBottomOf="@+id/total_top"
+        app:layout_constraintVertical_bias="0"
+        tools:text="@string/total_bottom_text" />
+
+    <ImageView
+        android:id="@+id/buy_now"
+        android:layout_width="84dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="9dp"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/ic_convention_center_buy_now"
+        app:layout_constraintBottom_toBottomOf="@+id/shop_iv"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="99dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="5dp"
+        android:background="#EEEEEE"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shop_iv"
+        app:layout_constraintVertical_bias="1" />
+
+</android.support.constraint.ConstraintLayout>

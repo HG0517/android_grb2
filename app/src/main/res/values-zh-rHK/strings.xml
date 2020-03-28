@@ -1,0 +1,825 @@
+<resources>
+
+
+    <string name="activity_title_address_add">地址添加</string>
+    <string name="activity_title_address_edit">地址編輯</string>
+    <string name="address_username_left">收貨人</string>
+    <string name="address_username_input_tip">輸入收貨人姓名</string>
+    <string name="address_userphone_left">手機號</string>
+    <string name="address_userphone_input_tip">輸入收貨人手機號</string>
+    <string name="address_userarea_left">選擇地區</string>
+    <string name="address_userarea_tip">選擇收貨人所在地區</string>
+    <string name="address_userarea_input_tip">省市縣</string>
+    <string name="address_useraddress_left">詳細地址</string>
+    <string name="address_useraddress_tip">輸入收貨人詳細地址</string>
+    <string name="address_useraddress_input_tip">地址請精確到門牌號</string>
+    <string name="address_useraddress_default_left">設為默認地址</string>
+    <string name="address_useraddress_default_tip">每次購物時會優先選定該地址，方便您輕鬆購物</string>
+    <string name="address_useraddress_add_sure">確認添加</string>
+    <string name="address_useraddress_edit_sure">確認修改</string>
+    <string name="address_useraddress_delete_sure">删除地址</string>
+
+    <string name="activity_title_address_manager">地址管理</string>
+    <string name="activity_title_address_manager_menu">添加</string>
+    <string name="activity_title_address_manager_edit">編輯</string>
+
+    <string name="activity_title_advance_sale">公讓寶預售</string>
+    <string name="activity_title_advance_sale_start">MM月dd日開售</string>
+
+    <string name="activity_title_apply_after_exchange">換貨</string>
+    <string name="activity_title_apply_after_refund">退貨退款</string>
+    <string name="activity_title_apply_refund">申請退款</string>
+    <string name="activity_title_apply_result">申請提交</string>
+    <string name="apply_result_tip_00">商家已收到您的退款申請</string>
+    <string name="apply_result_tip_01">商家會儘快處理您的退款，如在7個工作日內未進行處理，款項將自動退還至您的付款帳戶</string>
+    <string name="apply_result_tip_10">商家已收到您的退貨退款申請</string>
+    <string name="apply_result_tip_11">商家會儘快處理您的申請，如在7個工作日內未進行處理，請您及時聯系線上客服</string>
+    <string name="apply_result_tip_20">商家已收到您的資料已提交</string>
+    <string name="apply_result_tip_21">商家會儘快稽核您的資料，我們將在1個工作日內提稽核您的資料，期間如有任何問題請聯系客服處理</string>
+    <string name="activity_title_apply_after_sale">申請方式</string>
+    <string name="apply_after_sale_choose_refund">我要退貨退款</string>
+    <string name="apply_after_sale_choose_refund_tip">已收到貨，需要退還已收到的貨物</string>
+    <string name="apply_after_sale_choose_exchange">我要換貨</string>
+    <string name="apply_after_sale_choose_exchange_tip">已收到貨，需要更換已收到的貨物</string>
+    <string name="apply_after_exchange_title">換貨原因</string>
+    <string name="apply_after_exchange_specs">規格</string>
+    <string name="apply_after_refund_reason">售後原因</string>
+    <string name="apply_after_refund_reason_choose_tip">退款原因</string>
+    <string name="apply_after_refund_reason_choose">請選擇</string>
+    <string name="apply_after_refund_refund_amount">退款金額</string>
+    <string name="apply_after_refund_refund_amount_tip">退款金額：</string>
+    <string name="apply_after_refund_reason_tip">請選擇退款原因...</string>
+    <string name="apply_after_refund_note">退款說明</string>
+    <string name="apply_after_refund_note_0">(必填)</string>
+    <string name="apply_after_refund_note_tip">請填寫退款說明...</string>
+    <string name="apply_after_refund_sure">確認申請</string>
+    <string name="apply_after_refund_details_status_1">退貨退款稽核中...</string>
+    <string name="apply_after_refund_details_status_2">退貨退款已稽核，等待退款...</string>
+    <string name="apply_after_refund_details_status_3">退貨退款中...</string>
+    <string name="apply_after_refund_details_status_5">退貨退款已完成</string>
+
+    <string name="apply_after_exchange_details_reason">退款原因：%s</string>
+    <string name="apply_after_exchange_details_notpass">您的售後申請稽核未通過</string>
+    <string name="apply_after_exchange_details_notpass_tip">·申請原因描述不符，有疑問請諮詢客服</string>
+    <string name="apply_after_sales_number">售後編號：%s</string>
+    <string name="apply_after_exchange_details_status_1">換貨稽核中...</string>
+    <string name="apply_after_exchange_details_status_2">換貨已稽核，等待換貨...</string>
+    <string name="apply_after_exchange_details_status_4">換貨中...</string>
+    <string name="apply_after_exchange_details_status_5">換貨已完成</string>
+    <string name="apply_after_exchange_details_info">換貨資訊</string>
+    <string name="apply_after_exchange_details_specs">原有：%s</string>
+    <string name="apply_after_exchange_details_specs_ex">換成：%s</string>
+    <string name="apply_after_exchange_details_num">換貨數量：%d件</string>
+    <string name="apply_after_exchange_details_reason_ex">換貨原因：%s</string>
+    <string name="apply_after_exchange_details_audit_time">稽核時間：%s</string>
+
+    <string name="apply_refund_details_status_1">您已發起退款申請，請耐心等待平臺處理…</string>
+    <string name="apply_refund_details_status_2">您發起的退款申請已稽核，請耐心等待平臺處理…</string>
+    <string name="apply_refund_details_status_3">平臺退款中，請注意您的支付帳戶…</string>
+    <string name="apply_refund_details_status_5">平臺退款成功，退款受理結束</string>
+    <string name="apply_refund_details_status_11">·平臺在7日之內未對進行稽核，請及時聯系客服處理</string>
+    <string name="apply_refund_details_status_21">·若平臺拒絕您的申請，您可聯系客服諮詢</string>
+    <string name="apply_refund_details_status_31">·平臺退款至您的原支付帳戶，請注意您的支付帳戶</string>
+    <string name="apply_refund_details_status_51">·款項已退至您的付款帳戶，請注意查收</string>
+    <string name="apply_refund_details_apply_time">申請時間：%s</string>
+    <string name="apply_refund_details_completion_time">完成時間：%s</string>
+
+    <string name="permission_ondenied">請授予應用使用許可權！</string>
+    <string name="permission_location_ondenied">尚未開啟位置定位服務</string>
+    <string name="open_activity_error_option">參數錯誤，查看失敗！</string>
+    <string name="open_activity_apply_after_error_option">參數錯誤，申請退款失敗！</string>
+    <string name="open_activity_payment_order_error_option">支付訂單參數錯誤，請重試…</string>
+    <string name="payment_order_error_payment">請選擇支付方式…</string>
+    <string name="payment_order_error_addr">請選擇收貨地址…</string>
+    <string name="open_activity_apply_after_exchange_">換貨功能暫未開放，敬請期待…</string>
+    <string name="search_input_empty">什麼都沒有^^^請先輸入！</string>
+    <string name="order_view_empty">您還沒有訂單哦</string>
+    <string name="apply_after_status_0">待稽核</string>
+    <string name="apply_after_status_1">已稽核</string>
+    <string name="apply_after_status_2">換貨中</string>
+    <string name="apply_after_status_21">退款中</string>
+    <string name="apply_after_status_3">已完成</string>
+
+    <string name="activity_title_binding_alipay">綁定支付寶</string>
+    <string name="binding_alipay_tip">支付寶帳號</string>
+    <string name="binding_alipay_tip_input">請輸入您的支付寶帳號</string>
+    <string name="activity_title_binding_cloud_flash">綁定雲閃付</string>
+    <string name="binding_cloud_flash_tip">雲閃付帳號</string>
+    <string name="binding_cloud_flash_tip_input">請輸入您的雲閃付帳號</string>
+    <string name="activity_title_cloud_warehouse">雲倉庫</string>
+    <string name="activity_title_cloud_warehouse_record">提貨記錄</string>
+    <string name="order_view_num">訂單號：%s</string>
+    <string name="cloud_warehouse_record_num">提貨數量：%d</string>
+    <string name="cloud_warehouse_record_num_tip">提貨數量：</string>
+    <string name="cloud_warehouse_dialog_title">選擇提貨數量</string>
+    <string name="cloud_warehouse_record_freight_tip">提貨運費：</string>
+    <string name="cloud_warehouse_record_status_0">待提貨</string>
+    <string name="cloud_warehouse_record_status_1">提貨成功</string>
+
+    <string name="activity_title_flash_sale">限時搶購</string>
+    <string name="activity_title_payment_orders">支付訂單</string>
+    <string name="activity_title_settlement">結算</string>
+    <string name="activity_title_product_evaluation">評估</string>
+    <string name="activity_title_product_evaluate_details">評估詳情</string>
+    <string name="activity_title_convention_centre">會議中心</string>
+    <string name="convention_centre_time">活動時間：%s</string>
+    <string name="convention_centre_addr">地址：%s</string>
+    <string name="convention_centre_tel">電話：%s</string>
+    <string name="activity_title_setting">設定</string>
+    <string name="activity_title_setting_personal">個人資料</string>
+    <string name="activity_title_setting_personal_nick">修改昵稱</string>
+    <string name="activity_title_setting_accounts_security">安全中心</string>
+    <string name="activity_title_binding_bank_cards">綁定銀行卡</string>
+    <string name="activity_title_choose_bank_card">選擇銀行卡</string>
+    <string name="flash_sale_tip">好價！好貨！限時搶！</string>
+
+    <string name="activity_title_luck_draw">GRB抽獎</string>
+    <string name="activity_title_luck_draw_mine">我的獎品</string>
+    <string name="luck_draw_chance">您還有%d次抽獎機會</string>
+    <string name="luck_draw_tip">%dGRB一次</string>
+    <string name="luck_draw_regret_tip">很遺憾~您沒有中獎哦~</string>
+    <string name="luck_draw_chance_buy_tip">是否花費%dGRB抽取一次大獎？</string>
+    <string name="luck_draw_chance_outof_tip">抽獎次數用完了…</string>
+    <string name="luck_draw_mine_received">已領取</string>
+    <string name="luck_draw_mine_provided">已發放</string>
+    <string name="luck_draw_mine_receive_success">領取成功！我們將儘快給您發貨！</string>
+    <string name="luck_draw_mine_receive_dialog_title">請添加您的收貨地址</string>
+    <string name="luck_draw_mine_receive_dialog_name_tip">請輸入姓名</string>
+    <string name="luck_draw_mine_receive_dialog_phone_tip">手機</string>
+    <string name="luck_draw_mine_receive_dialog_addr_tip">地址</string>
+    <string name="luck_draw_mine_receive_dialog_addr_tip_1">請輸入詳細收貨地址精准到門牌號</string>
+    <string name="luck_draw_mine_receive_dialog_addr_tip_2">（請您務必填寫正確的地址，並保證準確無誤，若因地址錯誤等問題出現您未收到貨物等情况，平臺將不予處理。謝謝您的合作。）</string>
+    <string name="luck_draw_mine_receive_dialog_addr_sure">確認收貨地址</string>
+
+    <string name="index_find_00">資訊</string>
+    <string name="index_find_01">點擊諮詢查看公讓寶實时諮詢</string>
+    <string name="index_find_10">會議</string>
+    <string name="index_find_11">點擊會議報名參加公讓寶全國會議</string>
+    <string name="index_find_20">消息</string>
+    <string name="index_find_21">點擊消息查看公讓寶官方通知與公告</string>
+    <string name="find_details_author">原創：%s</string>
+    <string name="find_details_read">閱讀：%d</string>
+    <string name="flash_sale_status_0">已結束</string>
+    <string name="flash_sale_status_1">距結束</string>
+    <string name="flash_sale_status_2">即將開始</string>
+
+    <string name="main_navi_0">首頁</string>
+    <string name="main_navi_1">發現</string>
+    <string name="main_navi_2">遊戲</string>
+    <string name="main_navi_3">購物車</string>
+    <string name="main_navi_4">我的</string>
+    <string name="main_exit_app_tip">再按一次退出%s</string>
+
+    <string name="activity_title_message_management">消息</string>
+    <string name="message_management_systom">系統通知</string>
+    <string name="message_management_mall">商城活動</string>
+    <string name="message_management_proxy">代理公告</string>
+    <string name="order_details_status_0">等待買家付款</string>
+    <string name="order_details_status_3">等待賣家發貨</string>
+    <string name="order_details_status_4">等待買家收貨</string>
+    <string name="order_details_status_5">交易成功</string>
+    <string name="order_details_status_31">您的商品已經整裝待發~</string>
+    <string name="order_details_status_41">您的商品正在向您迎來~</string>
+    <string name="order_details_status_51">感謝您的信任與支持！</string>
+    <string name="order_details_delivery_time">發貨時間：%s</string>
+    <string name="order_details_order_time">下單時間：%s</string>
+    <string name="content_copy">複製</string>
+    <string name="popular_hot">熱門推薦</string>
+    <string name="activity_title_order_management_mall">商城訂單</string>
+    <string name="activity_title_order_management_cloud">雲倉庫訂單</string>
+    <string name="activity_title_order_management_rushbuy">搶購訂單</string>
+    <string name="activity_title_order_management_refund_after_sale">退款/售後</string>
+    <string name="order_management_mall_status_0">待付款</string>
+    <string name="order_management_mall_status_3">待發貨</string>
+    <string name="order_management_mall_status_4">待收貨</string>
+    <string name="order_management_mall_status_5">已完成</string>
+    <string name="order_management_after_sale_status_1">售後中</string>
+    <string name="order_management_after_sale_status_11">仅退款 退款中</string>
+    <string name="order_management_after_sale_status_12">退貨退款 售後中</string>
+    <string name="order_management_after_sale_status_13">換貨 換貨中</string>
+    <string name="order_management_after_sale_status_51">僅退款 退款完成</string>
+    <string name="order_management_after_sale_status_52">退貨退款 售後完成</string>
+    <string name="order_management_after_sale_status_53">換貨 換貨完成</string>
+    <string name="order_management_after_sale_status_61">僅退款 退款關閉</string>
+    <string name="order_management_after_sale_status_62">退貨退款 售後關閉</string>
+    <string name="order_management_after_sale_status_63">換貨 換貨關閉</string>
+    <string name="order_management_after_sale_status_5">售後完成</string>
+    <string name="order_management_after_sale_status_6">申請失敗</string>
+    <string name="order_management_cloud_status">待提貨</string>
+    <string name="order_management_cancel">取消訂單</string>
+    <string name="order_management_contact_service">聯系客服</string>
+    <string name="order_management_view_logistics">查看物流</string>
+    <string name="order_management_confirm_receipt">確認收貨</string>
+    <string name="order_management_apply_after_sale">申請售後</string>
+    <string name="order_management_evaluation">立即評估</string>
+    <string name="order_management_view_details">查看詳情</string>
+    <string name="order_management_fillin_logistics">填寫物流</string>
+    <string name="order_management_fillin_logistics_dialog_title">填寫換回單號</string>
+    <string name="order_management_fillin_logistics_dialog_company">快遞公司</string>
+    <string name="order_management_fillin_logistics_dialog_number">快遞單號</string>
+    <string name="order_management_prompt_delivery">立即提貨</string>
+    <string name="order_management_apply_refund">申請退款</string>
+    <string name="order_management_flash_sale_tip">若搶購結束，訂單將會自動取消</string>
+
+    <string name="shop_cart_top_right_0">編輯</string>
+    <string name="shop_cart_top_right_1">完成</string>
+    <string name="coupon_dialog_title">優惠券領取</string>
+    <string name="confirm_address">確定地址</string>
+    <string name="confirm_shop_info">提貨資訊</string>
+
+    <string name="activity_title_personal_balance">帳戶餘額</string>
+    <string name="personal_order">我的訂單</string>
+    <string name="personal_order_all">查看全部訂單</string>
+    <string name="personal_order_0">待付款</string>
+    <string name="personal_order_1">待發貨</string>
+    <string name="personal_order_2">待收貨</string>
+    <string name="personal_order_3">待評估</string>
+    <string name="personal_order_4">退款/售後</string>
+    <string name="personal_assets">我的資產</string>
+    <string name="personal_assets_0">帳戶餘額</string>
+    <string name="personal_assets_1">GRB(份)</string>
+    <string name="personal_assets_2">GRC(份)</string>
+    <string name="personal_assets_3">優惠券</string>
+    <string name="personal_service">我的服務</string>
+    <string name="personal_service_promotion">我的推廣</string>
+    <string name="personal_balance_total">總餘額</string>
+    <string name="personal_balance_bill_details">帳單明細</string>
+    <string name="personal_balance_month">%s月</string>
+    <string name="personal_balance_year_month">%s年%s月</string>
+    <string name="activity_title_personal_gra">GRA明細</string>
+    <string name="activity_title_personal_circulation">GRB明細</string>
+    <string name="personal_circulation_total_gra">%s總額\\n%sGRA</string>
+    <string name="personal_circulation_total_grb">%s總額\\n%sGRB</string>
+    <string name="personal_circulation_total_grc">%s總額\\n%sGRC</string>
+    <string name="personal_circulation_type_0">支出</string>
+    <string name="personal_circulation_type_1">收入</string>
+
+    <string name="activity_title_personal_collect">我的收藏</string>
+    <string name="personal_collect_num">%d人收藏</string>
+    <string name="activity_title_personal_coupon">優惠券</string>
+    <string name="personal_coupon_name">公讓寶優惠券</string>
+    <string name="personal_coupon_desc">金額滿%s元使用</string>
+    <string name="personal_coupon_date">有效期：%s - %s</string>
+    <string name="personal_coupon_clear">清空</string>
+    <string name="activity_title_personal_equity">GRC明細</string>
+    <string name="activity_title_personal_evaluation">我的評估</string>
+    <string name="personal_evaluation_level_1">好評</string>
+    <string name="personal_evaluation_level_2">中評</string>
+    <string name="personal_evaluation_level_3">差評</string>
+    <string name="personal_grb_total_tip">總份數</string>
+    <string name="personal_grb_realtime_tip">實时參攷價值</string>
+    <string name="personal_grb_total_tip_1">總豐收</string>
+    <string name="personal_grb_equity">流通通證GRC</string>
+    <string name="personal_grb_circulation">權益通證GRB</string>
+    <string name="personal_grb_luck_draw_tip">多多抽取，贏大禮</string>
+    <string name="personal_grb_transfer_public">公共市場轉讓</string>
+    <string name="personal_grb_transfer_public_tip">協力廠商市場轉讓</string>
+    <string name="activity_title_personal_transfer_friends">好友轉讓</string>
+    <string name="personal_transfer_friends_tip_num">請輸入轉讓的流通通證份數</string>
+    <string name="personal_transfer_friends_tip_num_1">轉讓份數</string>
+    <string name="personal_transfer_friends_tip_account">請輸入要轉帳的帳號</string>
+    <string name="personal_transfer_friends_tip_account_1">對方帳號</string>
+    <string name="personal_transfer_sure">確認轉帳</string>
+    <string name="personal_transfer_dialog_title">是否需要轉贈流通通證給用戶？</string>
+    <string name="personal_grb_transfer_friends_tip">親密好友GRB互動</string>
+    <string name="activity_title_personal_transfer_record">轉讓記錄</string>
+    <string name="personal_grb_transfer_record_tip">記錄每一步轉讓</string>
+    <string name="activity_title_personal_wallet_address">錢包地址</string>
+    <string name="personal_wallet_address_tip_0">查看中網雲錢包地址</string>
+    <string name="personal_wallet_address_tip_1">查看AOGEX錢包地址</string>
+    <string name="personal_wallet_address_copy">複製錢包地址</string>
+    <string name="personal_grb_wallet_address_tip">跳轉協力廠商錢包</string>
+    <string name="activity_title_personal_income">農場玩家</string>
+    <string name="personal_grb_income_details_tip">收益明細</string>
+    <string name="personal_grb_income_details_tip_1">農場玩家收益</string>
+    <string name="activity_title_personal_income_record">收益記錄</string>
+    <string name="personal_income_record_tip">來源 %s</string>
+    <string name="personal_income_left_today_tip">今日收益</string>
+    <string name="personal_income_left_total_tip">%s總收益</string>
+    <string name="activity_title_personal_grb_transfer_public">轉出到協力廠商</string>
+    <string name="personal_grb_transfer_public_0">轉出到中網雲</string>
+    <string name="personal_grb_transfer_public_1">轉出到AOGEX</string>
+    <string name="personal_grb_transfer_public_2">轉出至Quant Broker</string>
+    <string name="transfer_public_second_num_tip">兌換GRB份數</string>
+    <string name="transfer_public_second_num_input">請輸入轉讓份數</string>
+    <string name="transfer_public_second_addr_title">轉帳地址</string>
+    <string name="transfer_public_second_addr_tip">（協力廠商錢包地址）</string>
+    <string name="transfer_public_second_addr_input">請輸入轉帳地址</string>
+    <string name="transfer_public_second_tip">*接收地址必須是GRA的錢包地址，如果是地址錯誤造成損失，自行負責。\\n因為區塊鏈節點延時，公讓寶APP商城到交易平臺，轉入錢包需要24小時內到交易平臺，請大家耐心等待。</string>
+    <string name="activity_title_personal_powder">我的寶粉</string>
+    <string name="personal_promotion_tip">App注册下載分享碼</string>
+    <string name="personal_promotion_share_title">@string/app_name</string>
+    <string name="personal_promotion_share_desc">好用的APP，分享出来，大家共享！</string>
+    <string name="personal_promotion_share_thumb"></string>
+    <string name="activity_title_personal_recharge">帳戶充值</string>
+    <string name="personal_recharge_tip_0">充值金額</string>
+    <string name="personal_recharge_tip_1">其他金額</string>
+    <string name="personal_recharge_tip_11">輸入充值金額</string>
+    <string name="personal_recharge_payment">選擇支付方式</string>
+    <string name="personal_recharge_sure">立即充值</string>
+    <string name="activity_title_personal_recharge_record">充值記錄</string>
+    <string name="personal_recharge_record_title_0">時間</string>
+    <string name="personal_recharge_record_title_1">充值金額</string>
+    <string name="personal_recharge_record_title_2">入帳金額</string>
+    <string name="personal_recharge_record_title_3">狀態</string>
+    <string name="personal_recharge_record_status_0">處理中</string>
+    <string name="personal_recharge_record_status_1">成功</string>
+    <string name="activity_title_personal_tracks">我的足迹</string>
+    <string name="product_details_coupon_tip">滿%d减%d元優惠券</string>
+    <string name="product_details_spec_tip">請選擇商品規格！</string>
+    <string name="product_details_cart_add_error_tip">商品資訊有誤，添加失敗！</string>
+    <string name="product_evaluate_anonymous">匿名</string>
+    <string name="activity_title_publish_comments">發表評估</string>
+    <string name="publish_comments_input_tip">請輸入您的評估內容…</string>
+    <string name="publish_comments_pic_tip">請添加評估圖片…</string>
+    <string name="activity_title_rank_farm_agent">農場代理等級</string>
+    <string name="rank_farm_agent_title_0">等級</string>
+    <string name="rank_farm_agent_title_1">陞級條件</string>
+    <string name="rank_farm_agent_title_10">購買體驗玩家種子</string>
+    <string name="rank_farm_agent_title_11">購買一星玩家種子</string>
+    <string name="rank_farm_agent_title_12">購買二星玩家種子</string>
+    <string name="rank_farm_agent_title_121">（直推會員產生業績達到一星玩家投資金額的兩倍才可購買）</string>
+    <string name="rank_farm_agent_title_13">購買三星玩家種子</string>
+    <string name="rank_farm_agent_title_131">（直推會員產生業績達到二星玩家投資金額的兩倍才可購買）</string>
+    <string name="rank_farm_agent_title_14">購買四星玩家種子</string>
+    <string name="rank_farm_agent_title_141">（直推會員產生業績達到三星玩家投資金額的兩倍才可購買）</string>
+    <string name="rank_farm_agent_title_15">購買五星玩家種子</string>
+    <string name="rank_farm_agent_title_151">（直推會員產生業績達到四星玩家投資金額的兩倍才可購買）</string>
+    <string name="rank_farm_agent_title_2">所享收益</string>
+    <string name="rank_farm_agent_title_3">徽章展示</string>
+    <string name="realname_first_cardid_front_tip">請選擇身份證正面照</string>
+    <string name="realname_first_cardid_back_tip">請選擇身份證反面照</string>
+    <string name="realname_first_cardid_positive_tip">請選擇本人手持身份證正面合照</string>
+    <string name="realname_first_cardid_require_tip">要求：請正確上傳，請勿剪裁塗改，保證身份證照片清晰，否則將無法進行稽核。</string>
+    <string name="realname_first_cardid_next">下一步</string>
+    <string name="realname_second_cardid_tip">請正確選擇身份證照片</string>
+    <string name="realname_second_realname_name_tip">真實姓名</string>
+    <string name="realname_second_realname_name_input_tip">填寫與身份證一致的姓名</string>
+    <string name="realname_second_realname_cardid_tip">身份證號</string>
+    <string name="realname_second_realname_cardid_input_tip">輸入您的18比特身份證號</string>
+    <string name="realname_second_realname_region_tip">區域資訊</string>
+    <string name="realname_second_realname_region_input_tip">選擇與您身份一致的區域</string>
+    <string name="realname_second_realname_phone_input_tip">填寫您綁定的手機號碼</string>
+    <string name="realname_second_realname_tip">溫馨提示：資料稽核需要1個工作日，如有疑問請諮詢平臺客服處理。</string>
+    <string name="realname_second_realname_sure">完成提交</string>
+    <string name="search_input_hint_index">蒐索您需要的商品</string>
+    <string name="search_input_hint_order">商品名稱/訂單編號</string>
+    <string name="search_input_hint_collect">蒐索您收藏的商品</string>
+    <string name="search_cancel">取消</string>
+    <string name="search_sure">蒐索</string>
+    <string name="search_recent">最近蒐索</string>
+    <string name="activity_title_service_and_help">客服與幫助</string>
+    <string name="service_and_help_service">聯系客服</string>
+    <string name="service_and_help_service_online">線上諮詢</string>
+    <string name="service_and_help_service_telephone">電話諮詢</string>
+    <string name="service_and_help_service_wechat">微信諮詢</string>
+    <string name="service_and_help_help">幫助手冊</string>
+    <string name="service_and_help_help_intro_agree">介紹與協定</string>
+    <string name="service_and_help_help_intro_agree_top">免責聲明條款</string>
+    <string name="service_and_help_help_intro_agree_bottom">隱私保護條款</string>
+    <string name="service_and_help_help_after_sale">售後服務</string>
+    <string name="service_and_help_help_after_sale_top">售後政策說明</string>
+    <string name="service_and_help_help_after_sale_bottom">退貨政策說明</string>
+    <string name="service_and_help_help_order_logistics">訂單物流</string>
+    <string name="service_and_help_help_order_logistics_top">各區運費價格規則</string>
+    <string name="service_and_help_help_order_logistics_bottom">雲倉庫提貨運費規則</string>
+    <string name="service_and_help_help_agency_system">代理制度</string>
+    <string name="service_and_help_help_agency_system_top">農場代理區制度</string>
+    <string name="service_and_help_help_agency_system_bottom">穀聚金代理區制度</string>
+    <string name="service_and_help_help_notes">新手須知</string>
+    <string name="service_and_help_help_notes_top">數位通證介紹須知</string>
+    <string name="service_and_help_help_notes_bottom">商城購物流程須知</string>
+    <string name="activity_title_setting_about">關於公讓寶</string>
+    <string name="setting_about_tip_0">公讓寶-Android版</string>
+    <string name="setting_about_tip_1">V%s版</string>
+    <string name="setting_about_tip_20">版本更新</string>
+    <string name="setting_about_tip_3">Copyright  2018</string>
+    <string name="setting_about_tip_4">公讓寶商業管理股份有限公司</string>
+    <string name="settlement_error_tip">商品資訊有誤，請核對後購買！</string>
+    <string name="activity_title_special_provision">代理專區</string>
+
+    <string name="layout_loading_tv_text">加載中…</string>
+    <string name="layout_error_text">無網絡連接，請檢查您的網絡…</string>
+    <string name="layout_error_retry_button">加載失敗，點擊重試~~</string>
+
+    <string name="layout_empty_shop_cart">購物車裏沒有商品哦~</string>
+    <string name="cart_shop_securities_text">領券</string>
+    <string name="cart_shop_invalid_num_text">失效商品共%d件</string>
+    <string name="cart_shop_emptying_failure_text">清空失效商品</string>
+    <string name="all_select_text">全選</string>
+    <string name="total_left_text">總計：</string>
+    <string name="total_top_text">¥%s</string>
+    <string name="total_bottom_text">%s份</string>
+    <string name="total_right_text">結算(%d)</string>
+    <string name="total_collect_text">加入收藏</string>
+    <string name="total_delete_text">删除(%d)</string>
+    <string name="total_num_text">數量</string>
+    <string name="select_ok_tv_text">確認選擇</string>
+    <string name="select_num_cut_text">親，不要這麼恨心，購買一件吧…</string>
+    <string name="select_num_add_text">親，已是最大庫存了…</string>
+
+    <string name="collect_success_text">收藏成功，您可在我的收藏中查看</string>
+    <string name="select_address_tip">請先填寫收貨地址</string>
+    <string name="pay_now_text">立即支付</string>
+    <string name="buy_now_text">立即購買</string>
+    <string name="add_to_cart_text">加入購物車</string>
+    <string name="store_in_cloud_text">存入雲倉庫</string>
+    <string name="commodity_information_text">商品資訊</string>
+
+    <string name="settlement_dialog_title_text">地址、運費確認</string>
+    <string name="settlement_dialog_subtitle_0_text">確認地址</string>
+    <string name="settlement_dialog_subtitle_1_text">需付運費</string>
+    <string name="settlement_dialog_subtitle_2_text">發至%s</string>
+    <string name="settlement_confirmation_address_desc_text">(您確認地址之後，我們將儘快給您發貨。地址確認後將不可更改，若因地址錯誤等問題出現您未收到貨物等情况，平臺將不予處理。請您務必確認無誤，謝謝您的合作。）</string>
+    <string name="settlement_confirmation_address_text">我已確認地址並支付運費</string>
+
+    <string name="payment_total_title_text">訂單總計</string>
+    <string name="payment_total_title_price_text">總價：</string>
+    <string name="payment_total_title_num_text">數量：</string>
+    <string name="payment_total_title_freight_text">運費：</string>
+    <string name="payment_total_title_freight_short_text">運費</string>
+    <string name="payment_balance_title_text">餘額支付</string>
+    <string name="payment_balance_total_text">（餘額:¥%s）</string>
+    <string name="payment_grb_title_text">GRB支付</string>
+    <string name="payment_grb_total_text">（餘額:%s份）</string>
+    <string name="payment_weixin_title_text">微信支付</string>
+    <string name="payment_offline_title_text">線下支付</string>
+    <string name="payment_offline_tip_text">（僅限1萬以上可選擇）</string>
+    <string name="payment_alipay_title_text">支付寶支付</string>
+    <string name="payment_cloud_flash_title_text">雲閃付支付</string>
+    <string name="payment_pay_now_total_text">（¥%s+%s份GRB）</string>
+
+    <string name="payment_now_dialog_title_text">請輸入支付密碼</string>
+    <string name="payment_now_dialog_tip_text">請勿將安全密碼告訴其他人</string>
+    <string name="payment_finish_text">支付成功，您的貨物已存入雲倉庫</string>
+
+    <string name="page_num_text">%d/%d</string>
+    <string name="countdown_status_text">距結束僅剩</string>
+    <string name="monthly_sales_text">月銷：%d件</string>
+    <string name="select_specs_left_text">選擇</string>
+    <string name="select_specs_text">選擇商品規格</string>
+    <string name="place_of_origin_left_text">產地</string>
+    <string name="detaild_evaluation_text">商品評估(%d)</string>
+    <string name="detaild_evaluation_all_text">查看全部</string>
+
+    <string name="customer_service_text">客服</string>
+
+    <string name="centre_ready_begin_text">距會議開始還有：</string>
+    <string name="centre_ready_end_text">距會議結束還有：</string>
+    <string name="countdown_split_days_text">天</string>
+    <string name="centre_contents_title_text">會議內容</string>
+    <string name="centre_active_goods_title_text">活動商品</string>
+    <string name="centre_active_goods_tip_text">(報名簽到當天購買享優惠價贈GRB)</string>
+    <string name="centre_active_signup_title_text">活動報名</string>
+    <string name="centre_active_signup_tip_text">(輸入您的真實資訊進行報名)</string>
+    <string name="centre_active_signup_tip_name_text">真實姓名</string>
+    <string name="centre_active_signup_tip_name_hint_text">輸入您的姓名</string>
+    <string name="centre_active_signup_tip_phone_text">手機號碼</string>
+    <string name="centre_active_signup_tip_phone_hint_text">輸入您的手機號碼</string>
+    <string name="centre_active_signup_tip_cardid_text">身份證號</string>
+    <string name="centre_active_signup_tip_cardid_hint_text">輸入18比特身份證號</string>
+    <string name="centre_active_signup_tip_gender_text">選擇性別</string>
+    <string name="centre_active_signup_tip_gender_female_text">女</string>
+    <string name="centre_active_signup_tip_gender_male_text">男</string>
+    <string name="centre_info_title_text">會議時間、地址、電話</string>
+    <string name="centre_dialog_title">會議邀請函</string>
+    <string name="centre_dialog_tip_0">恭喜您！報名成功！</string>
+    <string name="centre_dialog_tip_1">編號為</string>
+    <string name="centre_dialog_tip_3">請到報名記錄裏查看</string>
+    <string name="centre_dialog_sure">我知道了</string>
+
+    <string name="share_dialog_title_text">選擇分享管道</string>
+    <string name="share_dialog_wechat_circle_text">朋友圈</string>
+    <string name="share_dialog_wechat_text">微信</string>
+
+    <string name="setting_accounts_security_text">帳戶與安全</string>
+    <string name="setting_language_text">語言設定</string>
+    <string name="setting_feed_back_text">意見回饋</string>
+    <string name="setting_clear_cache_text">清除緩存</string>
+    <string name="setting_about_text">關於公讓寶</string>
+    <string name="setting_about_version_text">v %s</string>
+    <string name="setting_logout_text">退出登錄</string>
+    <string name="dialog_language_text">語言</string>
+
+    <string name="setting_personal_head_text">頭像</string>
+    <string name="setting_personal_nick_text">昵稱</string>
+    <string name="setting_personal_realname_text">姓名</string>
+    <string name="setting_personal_id_text">ID</string>
+    <string name="setting_personal_recommender_text">推薦人</string>
+    <string name="setting_personal_regtime_text">註冊時間</string>
+    <string name="setting_personal_days_added_text">加入天數</string>
+    <string name="setting_personal_farm_grade_text">農場等級</string>
+    <string name="setting_personal_gujujin_grade_text">穀聚金等級</string>
+
+    <string name="nick_inpute_hint">輸入昵稱</string>
+    <string name="nick_inpute_tip">以中文或英文字母開頭，限4-16個字元，一個漢字為2個字元</string>
+
+    <string name="button_submission_text">確定</string>
+    <string name="button_cancel_text">再想想</string>
+
+    <string name="safety_center_login_password_text">登入密碼</string>
+    <string name="safety_center_payment_password_text">支付密碼</string>
+    <string name="safety_center_mobile_binding_text">手機號換綁</string>
+    <string name="safety_center_wechat_binding_text">微訊號綁定</string>
+    <string name="safety_center_qq_binding_text">QQ綁定</string>
+    <string name="safety_center_alipay_binding_text">支付寶綁定</string>
+    <string name="safety_center_cloud_flash_binding_text">雲閃付綁定</string>
+    <string name="safety_center_bank_card_binding_text">銀行卡綁定</string>
+    <string name="safety_center_real_name_binding_text">實名認證</string>
+    <string name="safety_center_real_name_unbinding_text">未實名認證</string>
+    <string name="safety_center_real_name_unbinding_apply">申請</string>
+    <string name="safety_center_binding_unbound_text">未綁定</string>
+    <string name="safety_center_binding_uncertified_text">未認證</string>
+    <string name="safety_center_binding_certification_text">認證中</string>
+
+    <string name="password_change_text">更改</string>
+    <string name="password_retrieve_text">找回</string>
+    <string name="password_change_submission_text">確定修改</string>
+    <string name="password_title_text">%s%s</string>
+    <string name="password_phone_number_text">手機號碼</string>
+    <string name="password_phone_number_tip">請輸入手機號碼</string>
+    <string name="password_verification_code_text">驗證碼</string>
+    <string name="password_verification_code_action">獲取驗證碼</string>
+    <string name="binding_bank_cards_empty_tip">獲取銀行卡資訊…</string>
+    <string name="password_verification_code_tip">請輸入驗證碼</string>
+    <string name="password_new_text">新密碼</string>
+    <string name="password_new_tip">請輸入您的新密碼</string>
+
+    <string name="mobile_binding_text">綁定手機號碼</string>
+    <string name="binding_submission_text">確認綁定</string>
+    <string name="login_submission_text">確認登入</string>
+    <string name="password_forget_text">忘記密碼？</string>
+    <string name="login_wechat_text">微信登录</string>
+
+    <string name="login_setting_language_text">語言設定</string>
+    <string name="login_welcome_text">歡迎登錄公讓寶</string>
+    <string name="login_register_text">注册</string>
+    <string name="login_password_text">密碼</string>
+    <string name="login_password_tip">請輸入您的密碼</string>
+
+    <string name="register_title_text">新用戶註冊</string>
+    <string name="register_referee_text">推薦人</string>
+    <string name="register_referee_sub_text">(選填)</string>
+    <string name="register_referee_tip">請輸入推薦人帳號</string>
+    <string name="register_password_text">設置密碼</string>
+    <string name="register_password_tip">6-14比特密碼</string>
+    <string name="register_submission_text">立即注册</string>
+    <string name="register_terms_of_service_text">繼續注册表示已經閱讀並同意%s</string>
+    <string name="register_terms_of_service_tip">《公让宝免責協議書》</string>
+    <string name="register_terms_of_service_abstract">用戶免責協定概要</string>
+    <string name="register_terms_of_service_abstract_text">同意%s</string>
+    <string name="register_terms_of_service_abstract_note">尊敬的用戶您好，在同意本協定前，請您認真閱讀並充分知悉、理解公讓寶平臺的各項規則及要求，以及國家關於該類互聯網資訊服務的法律法規等。如果您對本協定的任何條款表示抗告，您可以選擇不使用；使用則意味著您將同意遵守本協定下全部規定，以及我們後續對使用協定隨時所作的任何修改，並完全服從於我們的統一管理。本協定已對與您的權益有或可能具有重大關係的條款，及對公讓寶平臺具有或可能具有免責或限制責任的條款用粗體字予以標注，請您注意，並確認。</string>
+    <string name="register_terms_of_service_abstract_disagree">不同意</string>
+    <string name="register_terms_of_service_abstract_agree">我同意</string>
+    <string name="index_scan_result">掃描結果為：%s</string>
+
+    <string name="binding_bank_card_userinfo_text">請輸入您的身份資訊</string>
+    <string name="binding_bank_card_realname_text">真實姓名</string>
+    <string name="binding_bank_card_realname_tip">請輸入您的姓名</string>
+    <string name="binding_bank_card_cardid_text">身份證號</string>
+    <string name="binding_bank_card_cardid_tip">請輸入身份證號</string>
+    <string name="binding_bank_card_info_text">請輸入銀行卡資訊</string>
+    <string name="binding_bank_card_num_text">銀行卡號</string>
+    <string name="binding_bank_card_num_tip">請輸入銀行卡號</string>
+    <string name="binding_bank_card_phone_text">手機號碼</string>
+    <string name="binding_bank_card_code_text">簡訊驗證</string>
+    <string name="binding_bank_card_code_tip">請填寫驗證驗證碼</string>
+
+    <array name="tab_order_management">
+        <item>全部</item>
+        <item>待付款</item>
+        <item>待发货</item>
+        <item>待收货</item>
+        <item>待评价</item>
+    </array>
+
+    <array name="tab_gujvjin_order_management">
+        <item>全部</item>
+        <item>待付款</item>
+        <item>待发货</item>
+        <item>待收货</item>
+        <item>已完成</item>
+    </array>
+
+    <array name="tab_product_evaluation">
+        <item>全部</item>
+        <item>最新</item>
+        <item>好评(%d)</item>
+        <item>中评(%d)</item>
+        <item>差评(%d)</item>
+    </array>
+
+    <array name="tab_order_management_refund_after_sale">
+        <item>售后中</item>
+        <item>已完成</item>
+        <item>申请失败</item>
+    </array>
+    <array name="tab_order_delivery">
+        <item>等待处理</item>
+        <item>操作完成</item>
+    </array>
+
+    <array name="refund_reasons">
+        <item>拍错/多拍/不想要</item>
+        <item>未按约定时间发货</item>
+        <item>快递无跟踪记录</item>
+        <item>其他</item>
+    </array>
+
+    <array name="after_refund_reasons">
+        <item>7天无理由退换货</item>
+        <item>未按约定时间发货</item>
+        <item>卖家发错货</item>
+        <item>其他</item>
+    </array>
+
+    <array name="after_exchange_reasons">
+        <item>7天无理由退换货</item>
+        <item>卖家发错货</item>
+        <item>货物有瑕疵</item>
+        <item>其他</item>
+    </array>
+
+    <array name="personal_coupon">
+        <item>未使用</item>
+        <item>已使用</item>
+    </array>
+
+    <array name="personal_equity">
+        <item>收入</item>
+        <item>支出</item>
+    </array>
+
+    <array name="personal_transfer">
+        <item>好友转让</item>
+        <item>公共市场转让</item>
+    </array>
+
+    <string name="after_exchange_total_max">最多可換%d件</string>
+    <string name="personal_recharge_text">點擊立即充值，即表示您已經同意%s</string>
+    <string name="personal_recharge_tip">《公讓寶充值協議》</string>
+
+    <string name="personal_daili_level">等級制度</string>
+    <string name="personal_daili_un">請成為代理後操作！</string>
+    <string name="personal_daili_3">區/縣代理可操作！</string>
+    <string name="personal_daili_12">省、市代理不可操作！</string>
+    <string name="personal_daili_level_1">您已經是個人代理！</string>
+    <string name="personal_daili_level_2">您已經是區/縣代理代理！</string>
+    <string name="personal_daili_level_3">您已經是市代理！</string>
+    <string name="personal_daili_level_4">您已經是省代理！</string>
+    <string name="gujvjin_index_00">穀聚金介紹</string>
+    <string name="gujvjin_index_01">讓農民種地不花錢，讓人民吃上好食材</string>
+    <string name="gujvjin_index_10">成為代理商</string>
+    <string name="gujvjin_index_11">成為代理，發展下級分享好友，暢享權益</string>
+    <string name="gujvjin_index_20">穀聚金進貨</string>
+    <string name="gujvjin_index_21">點擊進行穀聚金採購，穀聚金二次進貨42元</string>
+    <string name="gujvjin_index_30">我的訂單</string>
+    <string name="gujvjin_index_31">點擊查看我的所有訂單，可詳細查看訂單狀態</string>
+    <string name="gujvjin_index_40">我要發貨</string>
+    <string name="gujvjin_index_41">點擊給下級發貨，賺貨款賺獎勵</string>
+    <string name="gujvjin_index_50">獎金明細</string>
+    <string name="gujvjin_index_51">成為代理進貨銷貨，分享權益，狂賺獎勵</string>
+    <string name="gujujin_agent_level">穀聚金代理等級</string>
+    <string name="gujujin_agent_level_title_0">等級</string>
+    <string name="gujujin_agent_level_title_1">所享收益</string>
+    <string name="gujujin_agent_level_title_2">徽章展示</string>
+    <string name="activity_title_gujujin_become_agent">申請代理</string>
+    <string name="gujujin_become_agent_phone_tip">請輸入您的手機號碼</string>
+    <string name="gujujin_become_agent_phone_sure">確定手機號</string>
+    <string name="gujujin_become_agent_step_0">填寫代理資料</string>
+    <string name="gujujin_become_agent_step_1">代理資質稽核</string>
+    <string name="gujujin_become_agent_step_2">進行首次操作</string>
+    <string name="gujujin_become_agent_step_3">正式成為代理商</string>
+    <string name="activity_title_gujujin_become_agent_complete">資質稽核</string>
+    <string name="gujujin_become_agent_complete_tip_0">恭喜您！您的代理資質已通過！</string>
+    <string name="gujujin_become_agent_complete_tip_1">恭喜您！正式成為代理商！</string>
+    <string name="gujujin_become_agent_complete_home">回穀聚金首頁</string>
+    <string name="activity_title_gujujin_become_agent_first_operation">首次操作</string>
+    <string name="gujujin_become_agent_no_level">選擇代理商的級別</string>
+    <string name="gujujin_become_agent_payment_tip">成為%s需要您支付</string>
+    <string name="gujujin_become_agent_payment_default_tip">代理</string>
+    <string name="gujujin_become_agent_level_4">省級代理</string>
+    <string name="gujujin_become_agent_level_3">市級代理</string>
+    <string name="gujujin_become_agent_level_2">區縣代理</string>
+    <string name="gujujin_become_agent_level_21">縣級代理</string>
+    <string name="gujujin_become_agent_level_1">個人代理</string>
+    <string name="gujujin_become_agent_sure_1">去支付</string>
+    <string name="gujujin_become_agent_sure_0">首次進貨</string>
+    <string name="gujujin_become_agent_product">您選擇的代理產品</string>
+    <string name="gujujin_become_agent_product_tip">選擇您想代理的產品</string>
+    <string name="gujujin_become_agent_product_name">穀聚金</string>
+    <string name="gujujin_become_agent_level">您選擇的代理級別</string>
+    <string name="activity_title_gujujin_become_agent_information">填寫資料</string>
+    <string name="gujujin_become_agent_information_tip">請仔細填寫申請，確保資訊正確無誤</string>
+    <string name="gujujin_become_agent_information_platform_tip">確認平臺資訊</string>
+    <string name="gujujin_become_agent_information_please_enter">請輸入</string>
+    <string name="gujujin_become_agent_information_please_choose">請選擇</string>
+    <string name="gujujin_become_agent_information_name_tip">姓名</string>
+    <string name="gujujin_become_agent_information_wechat">微訊號</string>
+    <string name="gujujin_become_agent_information_wechat_tip">請輸入微訊號</string>
+    <string name="gujujin_become_agent_information_gender">性别</string>
+    <string name="gujujin_become_agent_information_gender_tip">請選擇性別</string>
+    <string name="gujujin_become_agent_information_gender_tip_1">選擇您的性別</string>
+    <string name="gujujin_become_agent_information_gender_male">男</string>
+    <string name="gujujin_become_agent_information_gender_female">女</string>
+    <string name="gujujin_become_agent_information_birth">出生年月</string>
+    <string name="gujujin_become_agent_information_birth_tip">請選擇出生年月</string>
+    <string name="gujujin_become_agent_information_region">地區</string>
+    <string name="gujujin_become_agent_information_region_tip">請選擇地區</string>
+    <string name="gujujin_become_agent_region_exist">此區域已經有省代理！</string>
+    <string name="gujujin_become_agent_sure">提交稽核</string>
+    <string name="activity_title_gujujin_become_agent_payment">支付方式</string>
+    <string name="activity_title_gujujin_become_agent_selection_level">選擇級別</string>
+    <string name="gujujin_become_agent_selection_level_tip">（一個區域僅限一名）</string>
+    <string name="activity_title_gujujin_become_agent_settlement">結算</string>
+    <string name="activity_title_gujujin_deliver_goods">發貨訂單</string>
+    <string name="gujujin_order_platform">平臺訂單</string>
+    <string name="gujujin_order_county">區縣訂單</string>
+    <string name="gujujin_purchase_monthly_sales">月銷：%s筆</string>
+    <string name="gujujin_purchase_stock">庫存：%s件</string>
+    <string name="activity_title_gujujin_purchase_settlement">結算</string>
+    <string name="gujujin_purchase_settlement_deliverer">發貨人</string>
+    <string name="gujujin_purchase_settlement_deliverer_headquarters">總部</string>
+    <string name="gujujin_agency_agreement">《穀聚金代理協議書》</string>
+    <string name="gujujin_agency_agreement_dialog_title">谷聚金代理协议书</string>
+    <string name="gujujin_agency_agreement_note">歡迎進入公讓寶穀聚金模塊！\\n為了能够更好的，更有效的開展雙方的合作，為了避免後期商業上的糾紛，您將需要簽署穀聚金代理協定後，才可成為本公司代理商！\\n您可以點擊下方連結查看最新的代理協議書。閱讀並點擊“我同意”即表示您已經閱讀、理解並同意本此代理協定的簽訂。</string>
+    <string name="gujujin_agent_inviter_title">提示</string>
+    <string name="gujujin_agent_inviter_tip_0">請確定您的邀請人是</string>
+    <string name="gujujin_agent_inviter_tip_1">如果不是請在其他邀請人處申請</string>
+    <string name="gujujin_payment_offline_title">您還需要付%s\\n請將金額轉至本公司帳戶</string>
+    <string name="gujujin_payment_offline_alipay">支付寶：</string>
+    <string name="gujujin_payment_offline_bankcard">銀行卡：</string>
+    <string name="gujujin_payment_offline_tip">（以上管道任選其一，轉帳成功後請您在我的訂單中上傳憑證，我們將儘快稽核發貨。如因為您的帳戶填寫錯誤導致轉帳錯誤，我們將不承擔任何責任，如有疑問請您諮詢客服聯系）</string>
+    <string name="gujujin_purchase_num_title">輸入進貨數量</string>
+    <string name="gujujin_payment_offline_wechat">微信：</string>
+    <string name="payment_order_select_deliverer">請選擇發貨人</string>
+    <string name="gujujin_purchase_settlement_freight">(¥%s運費)</string>
+    <string name="order_details_order_deliverer">發貨人：%s</string>
+    <string name="order_details_order_deliverer_1">平臺發貨</string>
+    <string name="order_details_order_deliverer_2">區縣發貨</string>
+    <string name="activity_title_gujujin_upload_credentials">上傳憑證</string>
+    <string name="order_view_num_short">訂單號</string>
+    <string name="gujujin_uoload_credentials_payment_amount">支付金額</string>
+    <string name="gujujin_payment_offline_alipay_short">支付寶</string>
+    <string name="gujujin_payment_offline_wechat_short">微信</string>
+    <string name="gujujin_payment_offline_bankcard_short">銀行卡</string>
+    <string name="gujujin_payment_account">支付帳號</string>
+    <string name="gujujin_payment_account_tip">請輸入支付帳號</string>
+    <string name="gujujin_upload_credentials_sure">確定提交</string>
+    <string name="gujujin_upload_credentials_pic_tip">請添加支付憑證圖片…</string>
+    <string name="order_management_to_be_uploaded">待上傳</string>
+    <string name="personal_grb_transfer_record_tip_1">轉讓總額\\n%sGRB</string>
+    <string name="gujujin_income_total">收益總額\\n¥%s</string>
+    <string name="apply_result_tip_30">商家已收到您的充值申請</string>
+    <string name="apply_result_tip_40">商家已收到您的憑證提交</string>
+    <string name="apply_result_tip_31">商家會儘快處理您的充值，如在1個工作日內未進行處理，請您及時聯系線上客服</string>
+    <string name="apply_result_tip_41">商家會儘快處理您的支付，如在7個工作日內未進行處理，請您及時聯系線上客服。</string>
+    <string name="gujujin_order_delivery_action">點擊發貨</string>
+    <string name="gujujin_order_delivery_receiver_tip">收貨人：</string>
+    <string name="index_scan_text">掃一掃</string>
+    <string name="find_search_input_tip">蒐索內容</string>
+    <string name="total_market_left_text">市場價：</string>
+    <string name="total_bottom_left_text">可抵扣：</string>
+    <string name="personal_assets_4">GRA(份)</string>
+    <string name="transfer_public_second_num_max">*您的¥餘額為%s份，可兌換¥份數為%s份</string>
+    <string name="transfer_public_second_addr_input_tip">請輸入正確的轉帳地址</string>
+    <string name="settlement_leaving_message_title">留言</string>
+    <string name="settlement_leaving_message_input_hint">挑個好的，老闆</string>
+    <string name="settlement_leaving_message_input_tip">請輸入留言資訊</string>
+    <string name="payment_grc_title_text">GRC支付</string>
+    <string name="not_yet_open_tip">暫未開放</string>
+    <string name="order_details_order_remark">客戶留言：%s</string>
+    <string name="personal_assets_31">%s 張</string>
+    <string name="personal_grb_income_details_low">你的等級還沒達到</string>
+    <string name="register_username_text">姓名</string>
+    <string name="register_username_tip">請輸入您的姓名</string>
+    <string name="personal_wallet_address_tip_2">查看GRA錢包充值地址</string>
+    <string name="setting_version_update_dialog_title">版本更新</string>
+    <string name="setting_version_update_no">未檢測到新版本！</string>
+    <string name="setting_version_update_no_network">無可用網絡！</string>
+    <string name="setting_version_update_latest">已是最新版本！</string>
+    <string name="setting_version_update_load_error">文件下載錯誤：%s</string>
+    <string name="setting_version_update_downloaded">檔案已下載：%s</string>
+    <string name="setting_version_update_loading">正在下載更新...</string>
+    <string name="personal_quantbroker_title">QuantBroker</string>
+    <string name="safety_center_binding_certified_text">已認證</string>
+    <string name="personal_powder_title_0">寶粉姓名</string>
+    <string name="personal_powder_title_1">銷售業績</string>
+    <string name="personal_powder_title_2">手機號碼</string>
+    <string name="main_notice_dialog_title">Notice</string>
+    <string name="main_notice_dialog_sure">查看詳情</string>
+    <string name="activity_title_convention_centre_record">報名記錄</string>
+    <string name="transfer_friends_type_0">現金幣</string>
+    <string name="transfer_friends_type_1">GRB</string>
+    <string name="transfer_friends_type_2">GRC</string>
+    <string name="personal_transfer_friends_tip_type">請選擇轉出類型</string>
+    <string name="real_name_rejected">實名被駁回</string>
+    <string name="service_and_help_service_wechat_tip">長按發送到微信</string>
+    <string name="personal_income_farm">農場總數</string>
+    <string name="personal_income_sum">總豐收(份)</string>
+    <string name="personal_income_profit">待豐收(份)</string>
+    <string name="transfer_to_type_0">普通互轉</string>
+    <string name="transfer_to_type_1">轉帳給公司</string>
+    <string name="meeting_payment_title">支付報名費</string>
+
+</resources>

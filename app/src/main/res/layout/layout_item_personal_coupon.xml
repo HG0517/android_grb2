@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <ImageView
+        android:id="@+id/coupon_bg"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/ic_shop_cart_coupon_normal" />
+
+    <ImageView
+        android:id="@+id/coupon_tip"
+        android:layout_width="23dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@mipmap/ic_personal_coupon_tip" />
+
+    <com.jgkj.grb.view.textview.BoldTextView
+        android:id="@+id/coupon_price"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        tools:text="@string/total_top_text" />
+
+    <TextView
+        android:id="@+id/coupon_desc"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="13dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="11sp"
+        tools:text="@string/personal_coupon_desc" />
+
+    <TextView
+        android:id="@+id/coupon_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="23dp"
+        android:maxLines="1"
+        android:text="@string/personal_coupon_name"
+        android:textColor="#666666"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/coupon_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="17dp"
+        android:textColor="#999999"
+        android:textSize="10sp"
+        tools:text="@string/personal_coupon_date" />
+
+
+</FrameLayout>

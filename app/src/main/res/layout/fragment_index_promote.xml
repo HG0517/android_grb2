@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/smart_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    app:srlEnableAutoLoadMore="false"
+    app:srlEnableLoadMore="false"
+    app:srlEnablePreviewInEditMode="true"
+    app:srlEnablePureScrollMode="false"
+    app:srlEnableRefresh="false">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.stx.xhb.xbanner.XBanner
+                    android:id="@+id/mXBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/transparent"
+                    app:AutoPlayTime="3000"
+                    app:isAutoPlay="true"
+                    app:isShowIndicatorOnlyOne="false"
+                    app:isShowNumberIndicator="false"
+                    app:isShowTips="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0"
+                    app:pageChangeDuration="1000"
+                    app:pointNormal="@mipmap/ic_xbanner_point_normal"
+                    app:pointSelect="@mipmap/ic_xbanner_point_select"
+                    app:pointsVisibility="true" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F8F8F8"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <ImageView
+                        android:id="@+id/convention_centre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/white"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="10dp"
+                        android:src="@mipmap/ic_home_center"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/recycler_view_top"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/flash_sale"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/white"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/convention_centre"
+                        app:layout_constraintVertical_bias="0">
+
+                        <ImageView
+                            android:id="@+id/flash_sale_iv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:clickable="false"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0" />
+
+                        <TextView
+                            android:id="@+id/flash_sale_hour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="168dp"
+                            android:layout_marginTop="15dp"
+                            android:clickable="false"
+                            android:text="00"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0" />
+
+                        <TextView
+                            android:id="@+id/flash_sale_minutes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="191dp"
+                            android:layout_marginTop="15dp"
+                            android:clickable="false"
+                            android:text="00"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0" />
+
+                        <TextView
+                            android:id="@+id/flash_sale_seconds"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="216dp"
+                            android:layout_marginTop="15dp"
+                            android:clickable="false"
+                            android:text="00"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0" />
+
+                        <ImageView
+                            android:id="@+id/flash_sale_iv_0"
+                            android:layout_width="0dp"
+                            android:layout_height="190dp"
+                            android:layout_marginLeft="22dp"
+                            android:layout_marginBottom="30dp"
+                            android:adjustViewBounds="true"
+                            android:clickable="false"
+                            app:layout_constrainedWidth="true"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_weight="1"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toLeftOf="@+id/flash_sale_iv_1"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1" />
+
+                        <ImageView
+                            android:id="@+id/flash_sale_iv_1"
+                            android:layout_width="0dp"
+                            android:layout_height="88dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="22dp"
+                            android:adjustViewBounds="true"
+                            android:clickable="false"
+                            app:layout_constrainedWidth="true"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_weight="1"
+                            app:layout_constraintLeft_toRightOf="@+id/flash_sale_iv_0"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/flash_sale_iv_0"
+                            app:layout_constraintVertical_bias="0" />
+
+                        <ImageView
+                            android:id="@+id/flash_sale_iv_2"
+                            android:layout_width="0dp"
+                            android:layout_height="88dp"
+                            android:adjustViewBounds="true"
+                            android:clickable="false"
+                            app:layout_constraintBottom_toBottomOf="@+id/flash_sale_iv_0"
+                            app:layout_constraintLeft_toLeftOf="@+id/flash_sale_iv_1"
+                            app:layout_constraintRight_toRightOf="@+id/flash_sale_iv_1"
+                            app:layout_constraintTop_toTopOf="@+id/flash_sale_iv_0"
+                            app:layout_constraintVertical_bias="1" />
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/index_hot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/flash_sale"
+                        app:layout_constraintVertical_bias="0">
+
+                        <TextView
+                            android:id="@+id/recycler_view_content_top"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:layout_marginBottom="14dp"
+                            android:drawableLeft="@mipmap/ic_content_top_point"
+                            android:drawableRight="@mipmap/ic_content_top_point"
+                            android:drawablePadding="5dp"
+                            android:text="@string/popular_hot"
+                            android:textColor="#FA607C"
+                            android:textSize="17sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0" />
+
+                        <View
+                            android:layout_width="62dp"
+                            android:layout_height="1dp"
+                            android:layout_marginRight="5dp"
+                            android:background="#FA607C"
+                            app:layout_constraintBottom_toBottomOf="@+id/recycler_view_content_top"
+                            app:layout_constraintHorizontal_bias="1"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toLeftOf="@+id/recycler_view_content_top"
+                            app:layout_constraintTop_toTopOf="@+id/recycler_view_content_top" />
+
+                        <View
+                            android:layout_width="62dp"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="#FA607C"
+                            app:layout_constraintBottom_toBottomOf="@+id/recycler_view_content_top"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintLeft_toRightOf="@+id/recycler_view_content_top"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/recycler_view_content_top" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_view_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:layout_marginBottom="5dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/recycler_view_content_top"
+                            app:layout_constraintVertical_bias="0" />
+                    </android.support.constraint.ConstraintLayout>
+
+                </android.support.constraint.ConstraintLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <ImageView
+            android:id="@+id/luck_draw"
+            android:layout_width="61dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="80dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/ic_luck_draw"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1" />
+
+    </android.support.constraint.ConstraintLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

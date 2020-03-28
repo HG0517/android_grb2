@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.ProductDetailsActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/contentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomPanel"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/details_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:overScrollMode="never"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/page_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="#33000000"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="0dp"
+                app:contentPaddingBottom="3dp"
+                app:contentPaddingLeft="5dp"
+                app:contentPaddingRight="5dp"
+                app:contentPaddingTop="3dp"
+                app:layout_constraintBottom_toBottomOf="@+id/details_viewpager"
+                app:layout_constraintRight_toRightOf="@+id/details_viewpager">
+
+                <TextView
+                    android:id="@+id/page_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/page_num_text"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/countdown"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#F53C5E"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_viewpager"
+                tools:visibility="visible">
+
+                <com.jgkj.grb.view.textview.BoldTextView
+                    android:id="@+id/countdown_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:minWidth="80dp"
+                    android:text="@string/activity_title_flash_sale"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/countdown_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@+id/countdown_hour"
+                    android:text="@string/countdown_status_text"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/countdown_hour"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/countdown_split_left"
+                    android:clickable="false"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        android:id="@+id/countdown_hour_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:text="00"
+                        android:textColor="#FF5C6C"
+                        android:textSize="12sp" />
+                </android.support.v7.widget.CardView>
+
+                <com.jgkj.grb.view.textview.BoldTextView
+                    android:id="@+id/countdown_split_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/countdown_min"
+                    android:text=":"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/countdown_min"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/countdown_split_right"
+                    android:clickable="false"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        android:id="@+id/countdown_min_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:text="00"
+                        android:textColor="#FF5C6C"
+                        android:textSize="12sp" />
+                </android.support.v7.widget.CardView>
+
+                <com.jgkj.grb.view.textview.BoldTextView
+                    android:id="@+id/countdown_split_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/countdown_second"
+                    android:text=":"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/countdown_second"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:clickable="false"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        android:id="@+id/countdown_second_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:text="00"
+                        android:textColor="#FF5C6C"
+                        android:textSize="12sp" />
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/details_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/countdown">
+
+                <TextView
+                    android:id="@+id/shop_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:lineSpacingExtra="2dp"
+                    android:textColor="#323232"
+                    android:textSize="16sp"
+                    tools:text="稻香大米@（5kg）预定中醇香浓厚 吃出健 康  营养好吃" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/shop_name"
+                    android:layout_marginTop="15dp"
+                    android:background="#F23C62">
+
+                    <com.jgkj.grb.view.textview.CustomTextView
+                        android:id="@+id/total_top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/total_top_text"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <com.jgkj.grb.view.textview.CustomTextView
+                        android:id="@+id/total_market_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:text="@string/total_market_left_text"
+                        android:textColor="#EFA7AD"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/total_top"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintLeft_toRightOf="@+id/total_top"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1" />
+
+                    <com.jgkj.grb.view.textview.CustomTextView
+                        android:id="@+id/total_market"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_top_text"
+                        android:textColor="#EFA7AD"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/total_market_left"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintLeft_toRightOf="@+id/total_market_left"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1" />
+
+                    <com.jgkj.grb.view.textview.CustomTextView
+                        android:id="@+id/monthly_sales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/monthly_sales_text"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toTopOf="@+id/total_bottom"
+                        app:layout_constraintHorizontal_bias="1"
+                        app:layout_constraintLeft_toRightOf="@+id/total_market"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/total_top"
+                        app:layout_constraintVertical_bias="1" />
+
+                    <com.jgkj.grb.view.textview.CustomTextView
+                        android:id="@+id/total_bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginBottom="10dp"
+                        android:drawablePadding="3dp"
+                        android:text="¥123"
+                        android:textColor="#FFA358"
+                        android:textSize="12sp"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/total_top"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <com.jgkj.grb.view.textview.CustomTextView
+                        android:id="@+id/total_bottom1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:drawablePadding="3dp"
+                        android:text="GRB123"
+                        android:textColor="#FFA358"
+                        android:textSize="12sp"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintBottom_toBottomOf="@+id/total_bottom"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintLeft_toRightOf="@+id/total_bottom"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/total_bottom"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <com.jgkj.grb.view.textview.CustomTextView
+                        android:id="@+id/total_bottom2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:drawablePadding="3dp"
+                        android:text="GRC123"
+                        android:textColor="#FFA358"
+                        android:textSize="12sp"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintBottom_toBottomOf="@+id/total_bottom"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintLeft_toRightOf="@+id/total_bottom1"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/total_bottom"
+                        app:layout_constraintVertical_bias="0" />
+                </android.support.constraint.ConstraintLayout>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/details_securities"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_info">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    app:cardBackgroundColor="#FEEEF2"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="0dp"
+                    app:contentPaddingLeft="15dp"
+                    app:contentPaddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/details_securities_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:textColor="#F9567E"
+                        android:textSize="13sp"
+                        tools:text="满68减5元优惠券" />
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:clickable="false"
+                    android:drawableRight="@mipmap/ic_arrow_right"
+                    android:drawablePadding="9dp"
+                    android:text="@string/cart_shop_securities_text"
+                    android:textColor="#333333"
+                    android:textSize="13dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/detaild_select_specs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_securities">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="false">
+
+                    <TextView
+                        android:id="@+id/detaild_select_specs_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:clickable="false"
+                        android:maxWidth="100dp"
+                        android:text="@string/select_specs_left_text"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <TextView
+                        android:id="@+id/detaild_select_specs_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="30dp"
+                        android:clickable="false"
+                        android:hint="@string/select_specs_text"
+                        android:textColor="#666666"
+                        android:textColorHint="#999999"
+                        android:textSize="12sp"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintLeft_toRightOf="@+id/detaild_select_specs_left"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:adjustViewBounds="true"
+                        android:clickable="false"
+                        android:src="@mipmap/ic_arrow_right"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/detaild_place_of_origin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detaild_select_specs"
+                tools:visibility="visible">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="false">
+
+                    <TextView
+                        android:id="@+id/detaild_place_of_origin_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:maxWidth="100dp"
+                        android:text="@string/place_of_origin_left_text"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <TextView
+                        android:id="@+id/detaild_place_of_origin_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:lineSpacingExtra="2dp"
+                        android:textColor="#666666"
+                        android:textSize="12sp"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintLeft_toRightOf="@+id/detaild_place_of_origin_left"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0"
+                        tools:text="河南省郑州市中原区陇海西路与桐柏路交叉口升龙金中环B座2211" />
+                </android.support.constraint.ConstraintLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/detaild_evaluation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detaild_place_of_origin">
+
+                <FrameLayout
+                    android:id="@+id/detaild_evaluation_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:color/white"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground">
+
+                    <TextView
+                        android:id="@+id/detaild_evaluation_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:clickable="false"
+                        android:text="@string/detaild_evaluation_text"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/detaild_evaluation_all_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="10dp"
+                        android:clickable="false"
+                        android:drawableRight="@mipmap/ic_arrow_right_red"
+                        android:drawablePadding="9dp"
+                        android:maxLines="1"
+                        android:text="@string/detaild_evaluation_all_text"
+                        android:textColor="#FE1D3F"
+                        android:textSize="12sp" />
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:id="@+id/detaild_evaluation_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@android:color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="6dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/detaild_evaluation_userhead"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:id="@+id/detaild_evaluation_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/detaild_evaluation_userhead"
+                        android:textColor="#999999"
+                        android:textSize="10sp"
+                        tools:text="公让宝" />
+
+                    <TextView
+                        android:id="@+id/detaild_evaluation_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/detaild_evaluation_userhead"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="2dp"
+                        android:maxLines="2"
+                        android:textColor="#333333"
+                        android:textSize="12sp"
+                        tools:text="物有所值，买了两套，妹妹已经拿去用了， 另外一套送人了，就是我那 想要的那个样子，面料是那种很光滑的面料，夏天用会比较清凉,用" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detaild_evaluation">
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginBottom="19dp"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/ic_product_details_title" />
+
+                <ImageView
+                    android:layout_width="58dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/ic_product_details_title_div" />
+
+                <com.tencent.smtt.sdk.WebView
+                    android:id="@+id/product_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottomHot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details"
+                app:layout_constraintVertical_bias="0">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@mipmap/ic_hot"
+                    android:drawablePadding="7dp"
+                    android:gravity="center"
+                    android:text="@string/popular_hot"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:overScrollMode="never" />
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/widget_toolbar" />
+
+    <include layout="@layout/layout_product_bottom_panel" />
+
+</RelativeLayout>

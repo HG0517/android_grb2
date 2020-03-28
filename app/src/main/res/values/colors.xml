@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="bnbActiveColor">@color/colorAccent</color>
+    <color name="bnbInactiveColor">#666666</color>
+    <color name="bnbBackgroundColor">@android:color/white</color>
+
+    <color name="contentBackgroundColor">#F7F7F7</color>
+
+    <color name="srlPrimaryColor">@android:color/transparent</color>
+    <color name="srlAccentColor">@color/colorAccent</color>
+
+    <color name="datePickerTextLight">@color/colorPrimary</color>
+    <color name="datePickerTextDark">#333333</color>
+</resources>

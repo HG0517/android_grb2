@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/bottom_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <cn.bingoogolapple.badgeview.BGABadgeRadioButton
+            android:id="@+id/bottom_navigation_0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_navi_selecter_0"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            android:text="@string/main_navi_0"
+            android:textColor="@drawable/main_navi_textcolor"
+            android:textSize="10sp" />
+
+        <cn.bingoogolapple.badgeview.BGABadgeRadioButton
+            android:id="@+id/bottom_navigation_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_navi_selecter_1"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            android:text="@string/main_navi_1"
+            android:textColor="@drawable/main_navi_textcolor"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/bottom_navigation_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:clickable="true"
+            android:drawableTop="@drawable/main_navi_selecter_2"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            android:text="@string/main_navi_2"
+            android:textColor="@drawable/main_navi_textcolor"
+            android:textSize="10sp" />
+
+        <cn.bingoogolapple.badgeview.BGABadgeRadioButton
+            android:id="@+id/bottom_navigation_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_navi_selecter_3"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            android:text="@string/main_navi_3"
+            android:textColor="@drawable/main_navi_textcolor"
+            android:textSize="10sp" />
+
+        <cn.bingoogolapple.badgeview.BGABadgeRadioButton
+            android:id="@+id/bottom_navigation_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_navi_selecter_4"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            android:text="@string/main_navi_4"
+            android:textColor="@drawable/main_navi_textcolor"
+            android:textSize="10sp" />
+    </RadioGroup>
+</LinearLayout>

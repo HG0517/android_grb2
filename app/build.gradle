@@ -1,0 +1,185 @@
+apply plugin: 'com.android.application'
+
+ext.majorNumber = 1
+ext.minorNumber = 0
+ext.revisionNumber = 0
+ext.revisionNumberCMD = 'git rev-list HEAD --count'
+ext.revisionNumberStr = revisionNumberCMD.execute().getText()
+ext.revisionNumberGit = revisionNumberCMD.execute().getText().trim().toInteger()
+ext.revisionDescriptionCMD = 'git describe --always'
+ext.tempRevisionDescription = revisionDescriptionCMD.execute().getText().trim()
+ext.revisionDescription = (tempRevisionDescription == null || (tempRevisionDescription).size() == 0) ? new Date().format("yyMMdd") : (tempRevisionDescription).substring((tempRevisionDescription).size() - 7)
+
+def getVersionCode(boolean isRelease) { // Math.pow(2, 31) – 1 = 2147483647
+    if (isRelease) { // 正式环境
+        revisionNumberGit
+    } else { // debug环境
+        revisionNumberGit // Integer.parseInt(new Date().format("yyMMddHHmm"))
+    }
+}
+
+def getVersionName(boolean isRelease) {
+    String today = new Date().format("yyMMdd")
+    if (isRelease) { // 正式环境
+        "$majorNumber.$minorNumber.$revisionNumber" + "_$revisionDescription" + "_$today"
+    } else { // debug环境
+        String time = new Date().format("HHmmss")
+        "$majorNumber.$minorNumber.$revisionNumberGit" + "_$revisionDescription" + "_$today" + "_$time"
+    }
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        multiDexEnabled true
+        flavorDimensions "versionCode"
+        applicationId rootProject.ext.applicationId
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "a3251053279d5b236318e04f",
+                JPUSH_CHANNEL : "developer-default",
+        ]
+        ndk {
+            abiFilters "armeabi"
+        }
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    // 自定义打包时apk名称
+    android.applicationVariants.all { variant ->
+        def versionCode
+        def versionName
+        variant.outputs.each { output ->
+            versionCode = getVersionCode(variant.buildType.name == "release")
+            versionName = getVersionName(variant.buildType.name == "release")
+            output.versionCodeOverride = versionCode
+            output.versionNameOverride = versionName
+        }
+        variant.outputs.all {
+            def appId = variant.applicationId.subSequence(variant.applicationId.lastIndexOf(".") + 1, variant.applicationId.length())
+            outputFileName = "${appId}-${versionCode}-${versionName}.apk"
+            //outputFileName = "${appId}-${versionCode}-${versionName}-${variant.buildType.name}.apk"
+        }
+    }
+    // 渠道包
+    productFlavors {
+        // 上线版本
+        verGRB {
+            resValue "string", "app_name", "公让宝"
+            buildConfigField 'String', 'API_SERVER_URL', '"http://admin.hngrb.com"'
+            buildConfigField 'String', 'API_SERVER_URL_GAME', '"http://www.hngrb.com"'
+            buildConfigField 'String', 'API_SERVER_URL_SHARE', '"http://www.hngrb.com/download/"'
+            buildConfigField 'boolean', 'KEFU_CHANNEL_DEBUG', 'false'
+            manifestPlaceholders = [APP_CHANNEL_VALUE: "ver_grb"]
+            versionCode 1
+            versionName "1.0.0"
+        }
+        // 测试版本
+        verTEST {
+            resValue "string", "app_name", "公让宝&测试"
+            buildConfigField 'String', 'API_SERVER_URL', '"http://47.92.88.214:8006"'
+            buildConfigField 'String', 'API_SERVER_URL_GAME', '"http://47.92.88.214:5347"'
+            buildConfigField 'String', 'API_SERVER_URL_SHARE', '"http://47.92.88.214:5347/download/"'
+            buildConfigField 'boolean', 'KEFU_CHANNEL_DEBUG', 'true'
+            manifestPlaceholders = [APP_CHANNEL_VALUE: "ver_test"]
+            versionCode 1
+            versionName "1.0.0"
+        }
+        // 开发版本
+        verDEV {
+            resValue "string", "app_name", "公让宝&开发"
+            buildConfigField 'String', 'API_SERVER_URL', '"http://192.168.1.103:8004"'
+            buildConfigField 'String', 'API_SERVER_URL_GAME', '"http://47.92.88.214:5347"'
+            buildConfigField 'String', 'API_SERVER_URL_SHARE', '"http://47.92.88.214:5347/download/"'
+            buildConfigField 'boolean', 'KEFU_CHANNEL_DEBUG', 'true'
+            manifestPlaceholders = [APP_CHANNEL_VALUE: "ver_dev"]
+            versionCode 1
+            versionName "1.0.0"
+        }
+    }
+    // 设置签名文件
+    signingConfigs {
+        keyStore {
+            storeFile file("grb.jks")
+            keyAlias 'grb'
+            storePassword '000000'
+            keyPassword '000000'
+        }
+    }
+    // buildType
+    buildTypes {
+        release {
+            minifyEnabled true   // 是否代码混淆
+            shrinkResources true  // 是否资源压缩
+            zipAlignEnabled true  // 是否 Zipalign 优化
+            signingConfig signingConfigs.keyStore // 设置签名文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            crunchPngs false // 关闭crunchPng优化, 以加快构建
+            signingConfig signingConfigs.keyStore // 设置签名文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    // jniLibs
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    // 打开dex增量编译
+    dexOptions {
+        dexInProcess true
+        preDexLibraries true
+        javaMaxHeapSize "2g"
+    }
+    // 程序在编译的时候会检查lint，有任何错误提示会停止build，我们可以关闭这个开关
+    lintOptions {
+        abortOnError false //即使报错也不会停止打包
+        checkReleaseBuilds false  //打包release版本的时候进行检测
+    }
+    // JavaVersion
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation project(':component:basic')
+    implementation project(':component:citypicker')
+    implementation project(':component:kefu-easeui')
+    implementation project(':component:language')
+    implementation project(':component:matisse')
+    implementation project(':component:share')
+    implementation project(':component:tokenutils')
+    implementation project(':component:xbanner')
+    implementation project(':easypay:basepay')
+    implementation project(':easypay:alipay')
+    implementation project(':easypay:unionpay')
+    implementation project(':easypay:wechatpay')
+
+    annotationProcessor "com.github.bumptech.glide:compiler:${rootProject.ext.glideVersion}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${rootProject.ext.butterknifeVersion}"
+    // 10.1.0 需 androidx
+    annotationProcessor "cn.bingoogolapple:bga-badgeview-compiler:${rootProject.ext.badgeviewVersion}"
+
+    // 添加 Bugout SDK 基础库依赖，例如 5.1.2
+    implementation 'cn.testin.analysis:testin-data:5.1.2'
+    // 添加 Bugout SDK 依赖，例如 1.0.7
+    implementation 'cn.testin.analysis:bugout:1.0.7'
+    // 添加 Bugout NDK 依赖，例如 1.0.0-beta
+    implementation 'cn.testin.analysis:bugout-ndk:1.0.0-beta'
+
+    implementation 'cn.jiguang.sdk:jcore:2.1.6'
+    implementation 'cn.jiguang.sdk:jpush:3.4.0'
+}

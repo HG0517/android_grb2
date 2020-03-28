@@ -1,0 +1,12 @@
+*.iml
+*.lock
+/.gradle
+/.idea
+/gradle
+/buildCacheDir
+/local.properties
+.DS_Store
+/captures
+.externalNativeBuild
+/app/src/androidTest
+/app/src/test

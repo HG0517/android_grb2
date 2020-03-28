@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:orientation="vertical"
+    tools:context=".ui.activity.FlashSaleActivity">
+
+    <include layout="@layout/widget_toolbar" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topPanel"
+        android:layout_marginTop="41dp"
+        android:overScrollMode="never" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/topPanel"
+        android:layout_marginTop="1dp"
+        app:elevation="0dp"
+        app:tabBackground="@drawable/tablayout_item_flash_sale_bg_select"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="scrollable" />
+</RelativeLayout>

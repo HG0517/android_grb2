@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/evaluation_userhead"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:clickable="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@mipmap/ic_default_head" />
+
+        <TextView
+            android:id="@+id/evaluation_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="27dp"
+            android:clickable="false"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@+id/evaluation_userhead"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="公让宝" />
+
+        <TextView
+            android:id="@+id/evaluate_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="30dp"
+            android:clickable="false"
+            android:drawablePadding="4dp"
+            android:textColor="#FF4343"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toRightOf="@+id/evaluation_username"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:drawableLeft="@mipmap/ic_product_evaluate_good"
+            tools:text="好评" />
+
+        <TextView
+            android:id="@+id/evaluate_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:layout_marginRight="10dp"
+            android:clickable="false"
+            android:textColor="#999999"
+            android:textSize="12sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="2019.06.03" />
+
+        <TextView
+            android:id="@+id/evaluate_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="15dp"
+            android:clickable="false"
+            android:lineSpacingExtra="2dp"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toRightOf="@+id/evaluation_userhead"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/evaluation_userhead"
+            tools:text="打开包装就有股清香，淘洗时香气更浓，煮熟就更不用说了。 下次还要多屯点了了，这次买了3大袋子，父母说吃着可香了 还好多买的。" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:clickable="false"
+            android:overScrollMode="never"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toRightOf="@+id/evaluation_userhead"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/evaluate_desc" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="18dp"
+            android:background="#EEEEEE"
+            android:clickable="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view" />
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

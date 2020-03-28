@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gujujin.activity.GujujinPurchaseActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/contentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/bottomPanel"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/details_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:overScrollMode="never"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/page_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="#33000000"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="0dp"
+                app:contentPaddingBottom="3dp"
+                app:contentPaddingLeft="5dp"
+                app:contentPaddingRight="5dp"
+                app:contentPaddingTop="3dp"
+                app:layout_constraintBottom_toBottomOf="@+id/details_viewpager"
+                app:layout_constraintRight_toRightOf="@+id/details_viewpager">
+
+                <TextView
+                    android:id="@+id/page_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/page_num_text"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/details_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingBottom="17dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_viewpager"
+                app:layout_goneMarginTop="70dp">
+
+                <TextView
+                    android:id="@+id/shop_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:lineSpacingExtra="2dp"
+                    android:textColor="#323232"
+                    android:textSize="16sp"
+                    tools:text="谷聚金订购专用" />
+
+                <com.jgkj.grb.view.textview.BoldTextView
+                    android:id="@+id/total_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/shop_name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/total_top_text"
+                    android:textColor="#F74B70"
+                    android:textSize="18sp" />
+
+                <com.jgkj.grb.view.textview.BoldTextView
+                    android:id="@+id/total_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_top"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@mipmap/ic_gujvjin_two_purchase"
+                    android:drawablePadding="5dp"
+                    android:text="@string/total_top_text"
+                    android:textColor="#F74B70"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/monthly_sales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/total_top"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/gujujin_purchase_monthly_sales"
+                    android:textColor="#666666"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/monthly_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/total_bottom"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/gujujin_purchase_stock"
+                    android:textColor="#666666"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_info">
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginBottom="19dp"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/ic_product_details_title" />
+
+                <ImageView
+                    android:layout_width="58dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/ic_product_details_title_div" />
+
+                <com.tencent.smtt.sdk.WebView
+                    android:id="@+id/product_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp" />
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/widget_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/bottomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/customer_service"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/ic_customer_service" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:text="@string/customer_service_text"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/buy_now"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#F53C5E"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="@string/buy_now_text"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>
